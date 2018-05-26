@@ -25,12 +25,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
+
 <body>
-  <section id="innerbanner" role="banner">
+<div id="main-screen">
+<div id="screen">
+<div id="color-screen">
+  <section id="innerbanner2" role="banner">
     <header>
       <div class="header-content clearfix">
-        <nav id="header-nav" class="navbar-dfault">
+        <nav id="header-nav" class="navbar-fixed-top" style="width: 100vw;">
             <div class="container-fluid">
               <div class="navbar-header">
                 <a href="index.html" class="visible-lg visible-sm visible-md pull-left">
@@ -95,21 +100,45 @@
               </div>
             </div>
             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-6">
-              <div id="search-box">
+              <div id="search-box" style="width:100%">
                 <form method="get" action="">
-                  <input type="text" name="" placeholder="Search for the specific university" width="100%">
+                  <input type="text" name="search-university" id="search-university" placeholder="Search for the specific university" required="true" >
                 </form>
               </div>
             </div>
             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-">
               <div id="search-button" class="pull-right">
-                <a href="unidiscuss.html"><button>Go</button></a>
+                <button onclick="validate()">Go</button>
               </div>
             </div>
           </div>
         </div> <!-- #uni-searchbox -->
     </div> <!-- .container -->
   </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div id="selection" class="container-fluid">
+  	<div class="row" id="degree" style="width: 100%">
+	  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <center><a href="phd.html"><button>General</button></a></center>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <center><a href="bachelor.html"><button>Bachelor</button></a></center>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <center><a href="master.html"><button>Master</button></a></center>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <center><a href="phd.html"><button>Ph.D</button></a></center>
+      </div>
+	  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <center><a href="phd.html"><button>SUBMIT</button></a></center>
+       </div>
+	</div>
+  </div>
+	
 
   <footer>
     <div class="container">
@@ -164,16 +193,47 @@
   <script>
 
   // INCREASE HEIGHT OF INNERBANNER ON CLICK OF NAVIGATION BAR
-  $('.navbar-toggle').on('click', function () {
+   $('.navbar-toggle').on('click', function () {
 
-    if ($('.navbar-collapse').hasClass("collapse")) {
-      $('#innerbanner').css("height", "350px");
-    }
-    if ($('.navbar-collapse').hasClass("in")) {
-      $('#innerbanner').css("height", "100px");
-    }
+     if ($('.navbar-collapse').hasClass("collapse")) {
+       $('#innerbanner').css("height", "350px");
+
+     }
+     if ($('.navbar-collapse').hasClass("in")) {
+       $('#innerbanner').css("height", "100px");
+     }
 
   });
+  		
+//function to change the color of navbar while scrolling 
+  $(window).on('scroll', function(){
+    var scroll = $(window).scrollTop();
+    if (scroll > 0) {
+	  $("#header-nav").css("background-color" , "#f76543");
+	  }
+
+	else if(scroll <= 0){
+	  $("#header-nav").css("background-color" , "transparent");  	
+	}
+  });
+
+//function to change color and position while clicking the nav icon on small screen
+  $(".navbar-toggle").click(function(){
+		$("#main-section").toggleClass("main-position");
+	});
+
+//function to check for the null value of 'search university' input
+  function validate(){
+  	var university_name=document.getElementById('search-university').value;
+  	if(university_name==""){
+  		alert("Please enter the University name");
+  		console.log('fail');
+  	}
+  	else{
+  		window.location.assign("unidiscuss.html");
+  		console.log('success');
+  	}
+  	}
   </script>
 </body>
 </html>
