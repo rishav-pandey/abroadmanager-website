@@ -116,13 +116,33 @@
         </div>
         <div class="form-card">
           <div id="card2" class="cards">
-            <h4>2. Upload room Images:</h4>
+            <h4>2. You Identify yourself as:</h4>
+            <label>
+              <input type="radio" name="indentify">
+              <span>House Owner</span>            </label><br>
+            <label>
+              <input type="radio" name="indentify">
+              <span>Broker</span>
+            </label><br>
+            <label>
+              <input type="radio" name="indentify">
+              <span>Student looking for people to share rent</span>
+            </label><br>
+            <label>
+              <input type="radio" name="indentify">
+              <span>Other</span>
+            </label>
+          </div>
+        </div>
+        <div class="form-card">
+          <div id="card3" class="cards">
+            <h4>3. Upload room Images:</h4>
             <input type="file" name="roomImages">
           </div>
         </div>
         <div class="form-card">
-            <div id="card3" class="cards">
-            <h4>3. Rent Price:</h4>
+            <div id="card4" class="cards">
+            <h4>4. Rent Price:</h4>
             <select name="currency">
               <option>Currency</option>
               <option>Indian rupee</option>
@@ -136,12 +156,12 @@
           </div>
         </div>
         <div class="form-card">
-          <div id="card4" class="cards">
-            <h4>4. One line to describe your awesome room:</h4>
+          <div id="card5" class="cards">
+            <h4>5. One line to describe your awesome room:</h4>
             <input type="text" name="tagline">
           </div>
-          <div id="card5" class="cards">
-            <h4>5. Type of room:</h4>
+          <div id="card6" class="cards">
+            <h4>6. Type of room:</h4>
             <label>
               <input type="radio" name="roomtype">
               Studio Apartment
@@ -163,12 +183,12 @@
               <input type="text" name="owntype" placeholder="Enter your own type">
             </label>
           </div>
-          <div id="card6" class="cards">
-            <h4>6. Full Description of Room (write about all you to offer):</h4>
+          <div id="card7" class="cards">
+            <h4>7. Full Description of Room (write about all you to offer):</h4>
             <textarea></textarea>
           </div>
-          <div id="card7" class="cards">
-            <h4>7. Room Rules:</h4>
+          <div id="card8" class="cards">
+            <h4>8. Room Rules:</h4>
             <ul>
             <li><input type="text" name="roomrule"><br></li>
             <li><input type="text" name="roomrule"><br></li>
@@ -177,8 +197,8 @@
             <li><input type="text" name="roomrule"><br></li>
             </ul>
           </div>
-          <div id="card8" class="cards">
-            <h4>8. How many people are living currently in this room:</h4>
+          <div id="card9" class="cards">
+            <h4>9. How many people are living currently in this room:</h4>
             <input type="number" name="roomstrength" min="0">
             <label>Boys</label><br>
             <input type="number" name="roomstrength" min="0">
@@ -187,11 +207,13 @@
         </div>
         <div class="form-card">
           <div id="card3" class="cards">
-          <h4>5. Final Step:</h4>
+          <h4>10. Personal Details:</h4>
           <label>Name:</label>
           <input type="text" name="name" placeholder="John Doe" style="width: 90%;"><br>
           <label>Contact Info:</label>
           <input type="tel" name="contact" placeholder="+91 97xxxxxx20"><br>
+          <label>Facebook ID(optional):</label>
+          <input type="text" name="facebook" placeholder="John Doe"><br>
           <label>Address Line 1:</label>
           <input type="text" name="" placeholder="Street address, P.O. box, Company Name"><br>
           <label>Address Line 2:</label>
@@ -314,22 +336,22 @@
       i--;
       card[i].style.display = "block";
       step.innerHTML = i+1;
-      count = count - 20;
+      count = count - 16.6667;
       progress.style.width = count + "%";
     }
     save.style.display = "none";
   }
 
   function nextCard() {
-    if (i < 4) {
+    if (i < 5) {
       card[i].style.display = "none";
       i++;
       card[i].style.display = "block";
       step.innerHTML = i+1;
-      count = count + 20;
+      count = count + 16.6667;
       progress.style.width = count + "%";
     }
-    if (i == 4) {
+    if (i == 5) {
       save.style.display = "block";
     }
   }

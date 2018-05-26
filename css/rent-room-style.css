@@ -29,6 +29,10 @@ body {
   border: #fff;
 }
 
+.form-card input[name="facebook"] {
+  width: 60%;
+}
+
 .form-card input[type="number"] {
   margin-top: 5px;
   width: 50px;
