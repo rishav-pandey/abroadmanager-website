@@ -68,6 +68,12 @@
 	margin: 10px;
 }
 
+.primary {
+  border-top: 4px solid !important;
+  border-top-color: #02b3e4 !important;
+  border-radius: 8px !important;
+}
+
 #feed-heading {
 	padding: 20px;
 	margin: 20px;
