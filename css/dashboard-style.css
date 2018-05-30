@@ -1,16 +1,107 @@
-#innerbanner {
+* {
+	box-sizing: border-box;
+	font-family: Open Sans,sans-serif;
+}
+
+#nav-list1 {
+	margin-top: 10px;
+	font-size: 13px;
+	text-align: center;
+}
+
+
+#nav-list1 >li > a {
+	text-align: center;
+	color: #02b3e4;
+	transform: perspective(1px) translateZ(0); /*for hover effect*/
+	box-shadow: 0 0 1px transparent;
+	transition-duration: 0.5s;
+	text-transform: uppercase;
+}
+
+
+
+#nav-list1 button {
+	text-transform: uppercase;
+	background-color: #02b3e4;
+	color:white;
+	padding: 13px 30px 13px 30px;
+	margin-left: 20px;
+	border-radius: 5px;
+	border: 0;
+	margin-top:-15px;
+	transform: perspective(1px) translateZ(0); /*for hover effect*/
+	box-shadow: 0 0 1px transparent;
+	transition-duration: 0.5s;
+	font-size: 15px;
+}
+
+
+
+#nav-list1 #notification { 	/*WILL DISPLAY, WHEN LOGGED IN*/
+	display: none;
+}
+#innerbanner1 {
+		background-color:white;
+	
+}
+.navbar-brand h1 {
+	letter-spacing:5px;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	text-shadow: 0.5px 0.5px 0.5px #4289EF;
+	margin-top: 0;
+	margin-bottom: 0;
+	color:#02b3e4;
+	font-weight: 0.5em;
+}
+
+#innerbanner3 {
+	 font-size:12px;
 	height: 140px;
+	background-color:rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 0.0);
 }
 
 #main-dashboard {
 	position: relative;
-	background-color: #eee;
+	background-color:rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 0.0);
 	padding-bottom: 20px;
+	color:black;
+}
+
+
+#main-screen::before {
+	content: '';
+  width: 100%;
+  height: 600px;
+  z-index: -1000;
+  background: linear-gradient(to bottom right,#afa,#eafbff);
+  transform-origin: left bottom;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  transform: skew(0deg,-15deg);
+}
+
+#main-screen::after {
+  content: '';
+  width: 100%;
+  height: 500px;
+  z-index: -1000;
+  background: rgba(145,218,238,.1);
+  transform-origin: bottom right;
+  position: absolute;
+  top: 47%;
+  left: 0;
+  transform: skew(0deg,15deg);
 }
 
 #column-1 {
 	width: 20%;
 	padding: 0px;
+	background: linear-gradient(to bottom right,#afa,#eafbff);
 }
 
 #column-2 {
@@ -19,10 +110,11 @@
 
 #left-panel {
 	text-transform: uppercase;
-	box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.2), 0 4px 25px 0px rgba(0, 0, 0, 0.2), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 	padding: 20px;
 	font-weight: 300;
 	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.0);
 }
 
 .sticky {
@@ -462,7 +554,7 @@ select:hover, input:hover {
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
 
-	#innerbanner {
+	#innerbanner3 {
 		height: 100px;
 	}
 

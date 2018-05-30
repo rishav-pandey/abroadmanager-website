@@ -10,12 +10,26 @@
 
 #main-screen{
 	position:relative;
-  height: 800px;
+  height: 600px;
 }
 
 .main-position{
   position: absolute;
   top:500px;
+}
+
+#nav-list button {
+  margin-right: 20px;
+}
+
+#main-screen{
+	position:relative;
+  height: 600px;
+}
+
+.main-position{
+  position: absolute;
+  top:200px;
 }
 
 
@@ -29,6 +43,22 @@
 #color-screen{
   background-color: rgba(255, 71, 26, 0.8);
   height: 800px
+}
+#selection{
+	margin: 20px 5px 20px 5px;
+	background-color:#fff;
+}
+
+#screen{
+	 position:absolute;
+    bottom: 0;
+    color: #f1f1f1;
+    width: 100%;
+    height: 600px;
+}
+#color-screen{
+  background-color: rgba(255, 71, 26, 0.7);
+  height: 600px;
 }
 #selection{
 	margin: 20px 5px 20px 5px;
@@ -129,12 +159,21 @@
 /********** Large devices only **********/
 @media (min-width: 1200px) {
 
+
 #screen{
   background-image: url('../images/anthony-delanoix-48936-unsplash.jpg');
-  height: 800px;
+  height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+#screen{
+  background-image: url('../images/anthony-delanoix-48936-unsplash.jpg');
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 }
 
 /********** Medium devices only **********/
@@ -149,7 +188,7 @@
 
   #screen{
   background-image: url('../images/anthony-delanoix-48936-unsplash-crop3.jpg');
-  height: 800px;
+  height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -158,10 +197,28 @@
 
   #screen{
   background-image: url('../images/anthony-delanoix-48936-unsplash-crop3.jpg');
-  height: 800px;
+  height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+  #screen{
+  background-image: url('../images/anthony-delanoix-48936-unsplash-crop3.jpg');
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+}
+@media (min-width: 555px) and (max-width: 991px) {
+
+  #screen{
+  background-image: url('../images/anthony-delanoix-48936-unsplash-crop3.jpg');
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 }
 
 /********** Small devices only **********/
@@ -169,10 +226,37 @@
 
   #screen{
   background-image: url('../images/anthony-delanoix-48936-unsplash-crop2.jpg');
-  height: 800px;
+  height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
 }
+}
+
+@media (min-width: 300px) and (max-width: 991px) {
+
+	#degree button{
+		width:180px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		font-size: 12px;
+	}
+	#innerbannerpx2{
+		height:150;
+	}
+
+}
+
+
+
+@media (max-width: 554px) {
+
+  #screen{
+  background-image: url('../images/anthony-delanoix-48936-unsplash-crop2.jpg');
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 }
 @media (min-width: 300px) and (max-width: 991px) {
 
@@ -198,12 +282,11 @@
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
-	#degree button{
+	#degree button {
 		width:180px;
-		  margin-top: 15px;
+		margin-top: 15px;
     margin-bottom: 15px;
     font-size: 12px;
-
 	}
 
   #innerbanner2 {
@@ -222,12 +305,18 @@
     font-size: 0.8em;
     width: 150%;
   }
+
   #screen {
-	height:800px;
-}
-#btnn{
-	margin-left:-28%;
-}
+  	height:500px;
+    background-image: url('../images/anthony-delanoix-48936-unsplash-crop2.jpg');
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  #btnn{
+  	margin-left:-28%;
+  }
 
 }
 
@@ -242,6 +331,7 @@
     font-size: 3.5vw;
   }
 }
+
 @media (max-width: 564px) {
  #search-box input {
     width: 150%;
