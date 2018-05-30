@@ -29,13 +29,41 @@
 </head>
 
 <body>
+<<<<<<< HEAD
 <div id="main-screen">
 <div id="screen">
 <div id="color-screen">
   <section id="innerbanner2" role="banner">
+||||||| merged common ancestors
+  <section id="innerbanner" role="banner">
+=======
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:#4289EF; left:47%; margin-top:50px;">&times;</a>
+  <div class="overlay-content">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="gd.html">General Discussions</a>
+	<a href="ud.html">University Specific Discussions</a>
+    <a href="roommate-search.html">Rommate Finder</a>
+    <a href="rent.html">Rent A Room</a>
+	<a href="login.html"><button style="background-color:#f2f2f2; color:#4289EF;border-radius:7px; padding:14px 16px; width:220px; left:40%;transform: perspective(1px) translateZ(0); box-shadow: 0 0 1px transparent; transition-duration: 0.5s;">LOGIN / SIGNUP</button></a>
+  </div>
+</div>
+
+<div id="main-screen">
+<div id="screen">
+<div id="color-screen">
+  <section id="innerbanner2" role="banner">
+>>>>>>> 7f28e8e523fc7ebe052425c521cb085fed9a3cbd
     <header>
       <div class="header-content clearfix">
+<<<<<<< HEAD
         <nav id="header-nav" class="navbar-fixed-top" style="width: 100vw;">
+||||||| merged common ancestors
+        <nav id="header-nav" class="navbar-dfault">
+=======
+        <nav id="header-nav" class="navbar-fixed-top" style="width: 100vw; height:70px;">
+>>>>>>> 7f28e8e523fc7ebe052425c521cb085fed9a3cbd
             <div class="container-fluid">
               <div class="navbar-header">
                 <a href="index.html" class="visible-lg visible-sm visible-md pull-left">
@@ -47,7 +75,7 @@
                   </a>
                 </div>
 
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  aria-expanded="false" onclick="openNav()">
                   <span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
@@ -77,7 +105,7 @@
                     <a href="#" id="notification"><span class="fa fa-bell"></span></a>
                   </li>
                   <li>
-                    <a href="login.html" style="padding-top: 0px;"><button><i class="fa fa-graduation-cap" style="padding-right: 20px;"></i>Login/Signup</button>
+                  <a href="login.html" style="padding-top: 0px;"><button style="margin-top:0px; margin-right:-10px;"><i class="fa fa-graduation-cap" style="padding-right: 20px;"></i>Login/Signup</button>
                     </a>
                   </li>
                 </ul>
@@ -90,7 +118,7 @@
 
   <div id="main-section">
     <div class="container">
-      <div id="uni-box">
+      <div id="uni-box" style="padding-top:-100px;">
         <h2>Now you can easily discuss university-specific questions with the global community of students</h2>
         <div id="uni-searchbox">
           <div class="row">
@@ -201,6 +229,7 @@
      }
 
   });
+<<<<<<< HEAD
 
 //function to change the color of navbar while scrolling
   $(window).on('scroll', function(){
@@ -231,6 +260,58 @@
   		console.log('success');
   	}
   	}
+||||||| merged common ancestors
+=======
+
+
+
+//function to change color and position while clicking the nav icon on small screen
+  $(".navbar-toggle").click(function(){
+		$("#main-section").toggleClass("main-position");
+	});
+
+//function to check for the null value of 'search university' input
+  function validate(){
+  	var university_name=document.getElementById('search-university').value;
+  	if(university_name==""){
+  		alert("Please enter the University name");
+  		console.log('fail');
+  	}
+  	else{
+  		window.location.assign("unidiscuss.html");
+  		console.log('success');
+  	}
+  	}
+	
+	  //function to change the color of navbar while scrolling 
+  $(window).on('scroll', function(){
+    var scroll = $(window).scrollTop();
+    if (scroll > 0) {
+	  $("#header-nav").css({"background-color":"white"});
+    $("#header-nav h1").css("color" , "#02b3e4");
+	  $("#header-nav a").css("color" , "#02b3e4");
+    $("#header-nav button").css("color" , "#f1f1f1");
+    $("#header-nav button").css("background-color" , "#02b3e4"); 
+$("#navbar-collapse-1").css("background-color" , "white");	
+    }
+	else if(scroll <= 0){
+	  $("#header-nav").css("background-color" , "transparent"); 
+    $("#header-nav h1").css("color" , "#f1f1f1");  	
+    $("#header-nav a").css("color" , "#f1f1f1");
+    $("#header-nav button").css("background-color" , "#FF8DB2");
+    $("#header-nav button").css("color" , "#f1f1f1");
+	$("#navbar-collapse-1").css("background-color" , "transparent");
+  }
+  });
+  
+  	// function to open and close nav menu on small screen
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+>>>>>>> 7f28e8e523fc7ebe052425c521cb085fed9a3cbd
   </script>
 </body>
 </html>

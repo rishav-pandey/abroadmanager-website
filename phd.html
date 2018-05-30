@@ -26,12 +26,24 @@
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 </head>
 <body>
-  <section id="innerbanner" role="banner">
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:#4289EF; left:47%; margin-top:50px;">&times;</a>
+  <div class="overlay-content">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="gd.html">General Discussions</a>
+	<a href="ud.html">University Specific Discussions</a>
+    <a href="roommate-search.html">Rommate Finder</a>
+    <a href="rent.html">Rent A Room</a>
+	<a href="login.html"><button style="background-color:#f2f2f2; color:#4289EF;border-radius:7px; padding:14px 16px; width:220px; left:40%;transform: perspective(1px) translateZ(0); box-shadow: 0 0 1px transparent; transition-duration: 0.5s;">LOGIN / SIGNUP</button></a>
+  </div>
+  
+</div>
+  <section id="innerbanner1" role="banner">
     <header>
       <div class="header-content clearfix">
-        <nav id="header-nav" class="navbar-dfault">
+        <nav id="header-nav1" class="navbar-fixed-top" style="width: 100vw; height:70px; box-shadow: 0px 4px 8px 0 rgba(255, 255, 255,.2);">
             <div class="container-fluid">
-              <div class="navbar-header">
+              <div class="navbar-header" style="background-color:white;">
                 <a href="index.html" class="visible-lg visible-sm visible-md pull-left">
                   <div id="logo-img" alt="Logo Image"></div>
                 </a>
@@ -41,7 +53,7 @@
                   </a>
                 </div>
 
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  aria-expanded="false" onclick="openNav()" style="background-color:#02b3e4;">
                   <span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
@@ -49,8 +61,8 @@
                 </button>
               </div> <!-- navbar-header -->
 
-              <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                <ul id="nav-list" class="nav navbar-nav navbar-right">
+              <div class="collapse navbar-collapse" id="navbar-collapse-1" style="	background-color:white; box-shadow: 5px 3px 25px 0 #aba;">
+                <ul id="nav-list1" class="nav navbar-nav navbar-right">
                   <li>
                     <a href="dashboard.html">Dashboard</a>
                   </li>
@@ -71,7 +83,7 @@
                     <a href="#" id="notification"><span class="fa fa-bell"></span></a>
                   </li>
                   <li>
-                    <a href="login.html" style="padding-top: 0px;"><button><i class="fa fa-graduation-cap" style="padding-right: 20px;"></i>Login/Signup</button>
+                    <a href="login.html" style="padding-top: 0px;"><button style="margin-top:0px; margin-right:-10px;"><i class="fa fa-graduation-cap" style="padding-right: 20px;"></i>Login / Signup</button>
                     </a>
                   </li>
                 </ul>
@@ -84,7 +96,13 @@
 
   <div id="main-section">
     <div class="container">
+<<<<<<< HEAD
       <div id="first-card" class="primary">
+||||||| merged common ancestors
+      <div id="first-card">
+=======
+      <div id="first-card" style="margin-top:80px;">
+>>>>>>> 7f28e8e523fc7ebe052425c521cb085fed9a3cbd
         <h1>Welcome to PHD's Discussion Forum</h1>
         <hr>
         <div class="pull-left" style="margin-top: 15px;"><strong>Filter:</strong></div>
@@ -436,17 +454,17 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
 
-  <!-- INCREASE HEIGHT OF INNERBANNER ON CLICK OF NAVIGATION BAR -->
+ 
   <script>
-  $('.navbar-toggle').on('click', function () {
+ 	// function to open and close nav menu on small screen
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+ 
 
-    if ($('.navbar-collapse').hasClass("collapse")) {
-      $('#innerbanner').css("height", "350px");
-    }
-    if ($('.navbar-collapse').hasClass("in")) {
-      $('#innerbanner').css("height", "100px");
-    }
-  });
 
   // popup the suggestion bar
   $('#question').on('click', function () {

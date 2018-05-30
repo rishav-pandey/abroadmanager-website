@@ -1,11 +1,11 @@
 * {
 	box-sizing: border-box;
+	font-family: Open Sans,sans-serif;
 }
 
 
 /*Section body*/
 #innerbanner {
-	background: linear-gradient(160deg,#02cbba,#aa7efd);
 	height: 1250px;
 }
 /*Section body*/
@@ -16,11 +16,62 @@
 	padding-bottom: 10px;
 }
 
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #4289EF;
+    display: block;
+    transition: 0.3s;
+	text-transform: uppercase;
+	line-height:40px;
+	word-spacing:5px;
+}
+
+.overlay .closebtn {
+	color: black;
+    position: absolute;
+    top: 20px;
+    right: 50%;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size-adjust:auto;
+    top: 15px;
+    right: 50%;
+  }
+}
+
 #logo-img {
-	background: url(../images/logo.png);
+	background: url('../images/Abroad Manager V9 small.png');
+	background-repeat:no-repeat;
 	width: 60px;
 	height: 60px;
-	margin: 10px 15px 10px 0;
+	margin: 10px 5px 0 0;
 }
 
 
@@ -29,27 +80,27 @@
 }
 
 .navbar-brand h1 {
-	font-family: 'Montserrat';
-	font-size: 1.4em;
+	letter-spacing:5px;
+	font-size: 1.1em;
 	text-transform: uppercase;
-	font-weight: bold;
-	text-shadow: 0px 1px 1px #222;
+	text-shadow: 0.5px 0.5px 0.5px #4289EF;
 	margin-top: 0;
 	margin-bottom: 0;
-	color: #fff;
+	color:#ffffff;
+	font-weight: 0.5em;
 }
 
-
-.navbar-brand > a:hover, .navbar-brand > a:focus {
-	text-decoration: none;
+.navbar-brand h1:hover{
+	text-decoration:none;
 }
+
 
 #nav-list {
-	margin-top: 20px;
-	font-size: 1.2em;
+	margin-top: 10px;
+	font-size: 13px;
 	text-align: center;
-	text-transform: uppercase;
 }
+
 
 #nav-list >li > a {
 	text-align: center;
@@ -57,28 +108,26 @@
 	transform: perspective(1px) translateZ(0); /*for hover effect*/
 	box-shadow: 0 0 1px transparent;
 	transition-duration: 0.5s;
+	text-transform: uppercase;
 }
 
-#nav-list > li >a:hover {
-	color: #fff;
-	transform: scale(1.05);
-}
+
 
 #nav-list button {
-	background-color: #ee6bab;
-	padding: 10px;
+	text-transform: uppercase;
+	background-color: #02b3e4;
+	padding: 13px 30px 13px 30px;
 	margin-left: 20px;
 	border-radius: 5px;
 	border: 0;
+	margin-top:-15px;
 	transform: perspective(1px) translateZ(0); /*for hover effect*/
 	box-shadow: 0 0 1px transparent;
 	transition-duration: 0.5s;
+	font-size: 15px;
 }
 
-#nav-list button:hover {
-	box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
-	transform: scale(1.05);
-}
+
 
 #nav-list #notification { 	/*WILL DISPLAY, WHEN LOGGED IN*/
 	display: none;
@@ -111,7 +160,7 @@
 
 /*Main Content*/
 #main-content {
-  padding-top: 50px;
+  padding-top: 140px;
   text-align: center;
 }
 
@@ -124,7 +173,7 @@
 }
 
 #main-content-button {
-	background-color: #ee6bab;
+	background-color: #02b3e4;
   text-transform: uppercase;
   border: 0;
   padding: 20px 50px 20px 50px;
@@ -448,6 +497,9 @@ footer {
 		width: 420px;
 		height: 320px;
 	}
+	
+	
+	
 
 	/*Dashboard*/
 
@@ -650,6 +702,12 @@ footer {
 	/*Connect-abroad*/
 
 }
+
+@media (min-width: 768px){
+.navbar-right {
+    float: right;
+    margin-right: -15px;
+}}
 
 /********** Large Mobile devices only **********/
 @media (max-width: 450px) {

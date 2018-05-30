@@ -17,6 +17,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="images" href="images/logo_favi.ico">
+  <link rel="png" type="images" href="images/Abroad Manager V9 smaller.png">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/main-style.css">
   <link rel="stylesheet" href="css/rent-style.css">
@@ -27,14 +28,31 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:#4289EF; left:47%; margin-top:50px;">&times;</a>
+  <div class="overlay-content">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="gd.html">General Discussions</a>
+	<a href="ud.html">University Specific Discussions</a>
+    <a href="roommate-search.html">Rommate Finder</a>
+    <a href="rent.html">Rent A Room</a>
+	<a href="login.html"><button style="background-color:#f2f2f2; color:#4289EF;border-radius:7px; padding:14px 16px; width:220px; left:40%;transform: perspective(1px) translateZ(0); box-shadow: 0 0 1px transparent; transition-duration: 0.5s;">LOGIN / SIGNUP</button></a>
+  </div>
+</div>
+
+<div id="main-screen">
+<img src="images/christian-koch-79679-unsplash.jpg" style="width:100%; height:800px;">
+<div id="screen">
+
   <section id="innerbanner" role="banner">
     <header>
       <div class="header-content clearfix">
-        <nav id="header-nav" class="navbar-dfault">
+        <nav id="header-nav" class="navbar-fixed-top" style="width: 100vw; height:70px;">
             <div class="container-fluid">
               <div class="navbar-header">
                 <a href="index.html" class="visible-lg visible-sm visible-md pull-left">
-                  <div id="logo-img" alt="Logo Image"></div>
+                  <div id="logo-img" alt="Logo Image"><img href=="images/Abroad Manager V9 smaller.png"></div>
                 </a>
                 <div class="navbar-brand">
                   <a href="index.html">
@@ -42,7 +60,7 @@
                   </a>
                 </div>
 
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  aria-expanded="false" onclick="openNav()">
                   <span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
@@ -72,7 +90,7 @@
                     <a href="#" id="notification"><span class="fa fa-bell"></span></a>
                   </li>
                   <li>
-                    <a href="login.html" style="padding-top: 0px;"><button><i class="fa fa-graduation-cap" style="padding-right: 20px;"></i>Login/Signup</button>
+                   <a href="login.html" style="padding-top: 0px;"><button style="margin-top:0px; margin-right:-10px;"><i class="fa fa-graduation-cap" style="padding-right: 20px;"></i>Login/Signup</button>
                     </a>
                   </li>
                 </ul>
@@ -83,7 +101,11 @@
     </header>
   </section> <!-- #innerbanner -->
 
-  <div id="main-section">
+    <div id="general">
+  
+  <div id="sheet">
+  
+  <div id="main-section" style="margin-top:100px;">
     <div class="container">
       <div id="main-heading">
         <h1>You Can Now Easily Rent Apartments to Students in Just 2-Minutes!</h1>
@@ -116,6 +138,10 @@
         <h3>Rooms you have Posted!</h3>
       </div>
     </div> <!-- .container -->
+  </div>
+  </div>
+  </div>
+  </div>
   </div>
 
   <footer>
@@ -181,6 +207,37 @@
     }
 
   });
+   
+ 
+  // function to open and close nav menu on small screen
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+ 
+  //function to change the color of navbar while scrolling 
+  $(window).on('scroll', function(){
+    var scroll = $(window).scrollTop();
+    if (scroll > 0) {
+	  $("#header-nav").css({"background-color":"white"});
+    $("#header-nav h1").css("color" , "#02b3e4");
+	  $("#header-nav a").css("color" , "#02b3e4");
+    $("#header-nav button").css("color" , "#f1f1f1");
+    $("#header-nav button").css("background-color" , "#02b3e4");  
+$("#navbar-collapse-1").css("background-color" , "white");
+    }
+	else if(scroll <= 0){
+	  $("#header-nav").css("background-color" , "transparent"); 
+    $("#header-nav h1").css("color" , "#f1f1f1");  	
+    $("#header-nav a").css("color" , "#f1f1f1");
+    $("#header-nav button").css("background-color" , "#02b3e4");
+    $("#header-nav button").css("color" , "#f1f1f1");
+	$("#navbar-collapse-1").css("background-color" , "transparent");
+  }
+  });
+
   </script>
 </body>
 </html>
