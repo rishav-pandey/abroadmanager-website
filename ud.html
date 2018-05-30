@@ -29,15 +29,11 @@
 </head>
 
 <body>
-<<<<<<< HEAD
 <div id="main-screen">
 <div id="screen">
 <div id="color-screen">
   <section id="innerbanner2" role="banner">
-||||||| merged common ancestors
   <section id="innerbanner" role="banner">
-=======
-
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:#4289EF; left:47%; margin-top:50px;">&times;</a>
   <div class="overlay-content">
@@ -54,16 +50,9 @@
 <div id="screen">
 <div id="color-screen">
   <section id="innerbanner2" role="banner">
->>>>>>> 7f28e8e523fc7ebe052425c521cb085fed9a3cbd
     <header>
       <div class="header-content clearfix">
-<<<<<<< HEAD
-        <nav id="header-nav" class="navbar-fixed-top" style="width: 100vw;">
-||||||| merged common ancestors
-        <nav id="header-nav" class="navbar-dfault">
-=======
         <nav id="header-nav" class="navbar-fixed-top" style="width: 100vw; height:70px;">
->>>>>>> 7f28e8e523fc7ebe052425c521cb085fed9a3cbd
             <div class="container-fluid">
               <div class="navbar-header">
                 <a href="index.html" class="visible-lg visible-sm visible-md pull-left">
@@ -282,8 +271,8 @@
   		console.log('success');
   	}
   	}
-	
-	  //function to change the color of navbar while scrolling 
+
+	  //function to change the color of navbar while scrolling
   $(window).on('scroll', function(){
     var scroll = $(window).scrollTop();
     if (scroll > 0) {
@@ -291,19 +280,19 @@
     $("#header-nav h1").css("color" , "#02b3e4");
 	  $("#header-nav a").css("color" , "#02b3e4");
     $("#header-nav button").css("color" , "#f1f1f1");
-    $("#header-nav button").css("background-color" , "#02b3e4"); 
-$("#navbar-collapse-1").css("background-color" , "white");	
+    $("#header-nav button").css("background-color" , "#02b3e4");
+$("#navbar-collapse-1").css("background-color" , "white");
     }
 	else if(scroll <= 0){
-	  $("#header-nav").css("background-color" , "transparent"); 
-    $("#header-nav h1").css("color" , "#f1f1f1");  	
+	  $("#header-nav").css("background-color" , "transparent");
+    $("#header-nav h1").css("color" , "#f1f1f1");
     $("#header-nav a").css("color" , "#f1f1f1");
     $("#header-nav button").css("background-color" , "#FF8DB2");
     $("#header-nav button").css("color" , "#f1f1f1");
 	$("#navbar-collapse-1").css("background-color" , "transparent");
   }
   });
-  
+
   	// function to open and close nav menu on small screen
   function openNav() {
     document.getElementById("myNav").style.width = "100%";
