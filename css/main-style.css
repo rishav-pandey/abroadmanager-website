@@ -298,10 +298,6 @@ button.btn{
 
 }
 
-img{
-		width:620px;
-		height:550px;
-	}
 	@media only screen and (max-width: 600px) {
 
 	img.screen{

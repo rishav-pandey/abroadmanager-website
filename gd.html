@@ -27,18 +27,6 @@
 </head>
 <body>
 
-<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:#4289EF; left:47%; margin-top:50px;">&times;</a>
-  <div class="overlay-content">
-    <a href="dashboard.html">Dashboard</a>
-    <a href="gd.html">General Discussions</a>
-	<a href="ud.html">University Specific Discussions</a>
-    <a href="roommate-search.html">Rommate Finder</a>
-    <a href="rent.html">Rent A Room</a>
-	<a href="login.html"><button style="background-color:#f2f2f2; color:#4289EF;border-radius:7px; padding:14px 16px; width:220px; left:40%;transform: perspective(1px) translateZ(0); box-shadow: 0 0 1px transparent; transition-duration: 0.5s;">LOGIN / SIGNUP</button></a>
-  </div>
-</div>
-
 <div id="main-screen">
 <img src="images/alexis-brown-85793-unsplash.jpg" style="width:100%; height:800px;">
 <div id="screen">
@@ -100,9 +88,9 @@
   </section> <!-- #innerbanner -->
 
   <div id="general">
-  
+
   <div id="sheet">
- 
+
     <div class="container">
       <h1 style="color: #02b3e4;">Welcome to general discussion</h1>
       <h2>Which degree do you want to pursue</h2>
@@ -180,9 +168,9 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
 
- 
+
   <script>
- 
+
   // function to open and close nav menu on small screen
   function openNav() {
     document.getElementById("myNav").style.width = "100%";
@@ -190,8 +178,8 @@
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
- 
-  //function to change the color of navbar while scrolling 
+
+  //function to change the color of navbar while scrolling
   $(window).on('scroll', function(){
     var scroll = $(window).scrollTop();
     if (scroll > 0) {
@@ -199,12 +187,12 @@ function closeNav() {
     $("#header-nav h1").css("color" , "#02b3e4");
 	  $("#header-nav a").css("color" , "#02b3e4");
     $("#header-nav button").css("color" , "#f1f1f1");
-    $("#header-nav button").css("background-color" , "#02b3e4"); 
-$("#navbar-collapse-1").css("background-color" , "white");	
+    $("#header-nav button").css("background-color" , "#02b3e4");
+$("#navbar-collapse-1").css("background-color" , "white");
     }
 	else if(scroll <= 0){
-	  $("#header-nav").css("background-color" , "transparent"); 
-    $("#header-nav h1").css("color" , "#f1f1f1");  	
+	  $("#header-nav").css("background-color" , "transparent");
+    $("#header-nav h1").css("color" , "#f1f1f1");
     $("#header-nav a").css("color" , "#f1f1f1");
     $("#header-nav button").css("background-color" , "#02b3e4");
     $("#header-nav button").css("color" , "#f1f1f1");
