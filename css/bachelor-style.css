@@ -3,6 +3,11 @@
 	font-family: Open Sans,sans-serif;
 }
 
+#header-nav {
+	background-color: #aff0b8;
+	color: #02b3e4 !important;
+}
+
 #nav-list1 {
 	margin-top: 10px;
 	font-size: 13px;
@@ -43,7 +48,7 @@
 }
 #innerbanner1 {
 		background-color:white;
-	
+
 }
 .navbar-brand h1 {
 	letter-spacing:5px;
