@@ -28,6 +28,19 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:#4289EF; left:47%; margin-top:50px;">&times;</a>
+  <div class="overlay-content">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="gd.html">General Discussions</a>
+	<a href="ud.html">University Specific Discussions</a>
+    <a href="roommate-search.html">Rommate Finder</a>
+    <a href="rent.html">Rent A Room</a>
+	<a href="login.html"><button style="background-color:#f2f2f2; color:#4289EF;border-radius:7px; padding:14px 16px; width:220px; left:40%;transform: perspective(1px) translateZ(0); box-shadow: 0 0 1px transparent; transition-duration: 0.5s;">LOGIN / SIGNUP</button></a>
+  </div>
+</div>
+
 <div id="main-screen">
 <img src="images/christian-koch-79679-unsplash.jpg" style="width:100%; height:800px;">
 <div id="screen">
@@ -47,7 +60,7 @@
                   </a>
                 </div>
 
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  aria-expanded="false" onclick="openNav()">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  aria-expanded="false" onclick="openNav()" style="margin-right:20px;">
                   <span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
@@ -77,7 +90,7 @@
                     <a href="#" id="notification"><span class="fa fa-bell"></span></a>
                   </li>
                   <li>
-                   <a href="login.html" style="padding-top: 0px;"><button style="margin-top:0px; margin-right:-10px;"><i class="fa fa-graduation-cap" style="padding-right: 20px;"></i>Login/Signup</button>
+                   <a href="login.html" style="padding-top: 0px;"><button style="background-color:#f2f2f2; color:#4289EF; margin-top:0px; margin-right:30px;"><i class="fa fa-graduation-cap" style="padding-right: 20px; right:10px;"></i>Login/Signup</button>
                     </a>
                   </li>
                 </ul>
@@ -87,12 +100,12 @@
       </div>
     </header>
   </section> <!-- #innerbanner -->
-
+<section>
     <div id="general">
-
+  
   <div id="sheet">
-
-  <div id="main-section" style="margin-top:100px;">
+  
+  <div id="main-section" style="margin-top:2%;">
     <div class="container">
       <div id="main-heading">
         <h1>You Can Now Easily Rent Apartments to Students in Just 2-Minutes!</h1>
@@ -130,53 +143,53 @@
   </div>
   </div>
   </div>
-
-  <footer>
-    <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="margin-bottom: 30px;">
-            <div class="footer-content">
-              <h2>Social Media</h2>
-            </div>
-            <div class="footer-list">
-              <ul>
-                <li><a href=""><i class="fa fa-facebook"></i>Facebook</a></li>
-                <li><a href=""><i class="fa fa-twitter"></i>Twitter</a></li>
-                <li><a href=""><i class="fa fa-youtube"></i>YouTube</a></li>
-                <li><a href=""><i class="fa fa-linkedin"></i>Linkedln</a></li>
-                <li><a href=""><i class="fa fa-instagram"></i>Instagram</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            <div class="footer-content">
-              <h2>Features</h2>
-            </div>
-            <div class="footer-list">
-              <ul>
-                <li><a href="">General Discussions</a></li>
-                <li><a href="">University Discussions</a></li>
-                <li><a href="">Room-mate finder</a></li>
-                <li><a href="">Personal Dashboard</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            <div class="footer-content">
-              <h2>More</h2>
-            </div>
-            <div class="footer-list">
-              <ul>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Contact Us</a></li>
-                <li><a href="">Privacy Policy</a></li>
-                <li><a href="">Terms of Use</a></li>
-              </ul>
-            </div>
-          </div>
-        </div> <!-- .row -->
-    </div>
-  </footer>
+  </section>
+<section>
+  <footer style="width:100%;">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<div class="footer-content">
+					<h4>SOCIAL MEDIA</h4>
+				</div>
+				<div class="footer-list">
+					
+  							<p><a href=""><i class="fa fa-facebook"></i>Facebook</a><br></p>
+  							<p><a href=""><i class="fa fa-twitter"></i>Twitter</a><br></p>
+  							<p><a href=""><i class="fa fa-youtube"></i>YouTube</a><br></p>
+  							<p><a href=""><i class="fa fa-linkedin"></i>Linkedln</a><br></p>
+  							<p><a href=""><i class="fa fa-instagram"></i>Instagram</a><br></p>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<div class="footer-content">
+					<h4>FEATURES</h4>
+				</div>
+				<div class="footer-list">
+					
+  							<p><a href="">General Discussions</a><br></p>
+  							<p><a href="">University Discussions</a><br></p>
+  							<p><a href="">Room-mate finder</a><br></p>
+  							<p><a href="">Personal Dashboard</a><br></p>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<div class="footer-content">
+					<h4>MORE</h4>
+				</div>
+				<div class="footer-list">
+				
+							<p><a href="">About Us</a><br></p>
+  							<p><a href="">Contact Us</a><br></p>
+  							<p><a href="">Privacy Policy</a><br></p>
+  							<p><a href="">Terms of Use</a><br></p>
+				</div>
+			</div>
+			
+		</div>
+	</footer>
+	</section>
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -194,8 +207,8 @@
     }
 
   });
-
-
+   
+ 
   // function to open and close nav menu on small screen
   function openNav() {
     document.getElementById("myNav").style.width = "100%";
@@ -203,25 +216,25 @@
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
-
-  //function to change the color of navbar while scrolling
+ 
+  //function to change the color of navbar while scrolling 
   $(window).on('scroll', function(){
     var scroll = $(window).scrollTop();
     if (scroll > 0) {
-	  $("#header-nav").css({"background-color":"white"});
+    $("#header-nav").css({"background-color":"white"});
     $("#header-nav h1").css("color" , "#02b3e4");
-	  $("#header-nav a").css("color" , "#02b3e4");
+    $("#header-nav a").css("color" , "#02b3e4");
     $("#header-nav button").css("color" , "#f1f1f1");
-    $("#header-nav button").css("background-color" , "#02b3e4");
-$("#navbar-collapse-1").css("background-color" , "white");
+    $("#header-nav button").css("background-color" , "#02b3e4");  
+    $("#navbar-collapse-1").css("background-color" , "white");
     }
 	else if(scroll <= 0){
-	  $("#header-nav").css("background-color" , "transparent");
-    $("#header-nav h1").css("color" , "#f1f1f1");
-    $("#header-nav a").css("color" , "#f1f1f1");
-    $("#header-nav button").css("background-color" , "#02b3e4");
-    $("#header-nav button").css("color" , "#f1f1f1");
-	$("#navbar-collapse-1").css("background-color" , "transparent");
+	  $("#header-nav").css("background-color" , "transparent"); 
+    $("#header-nav h1").css("color" , "#f1f1f1");  	
+    $("#header-nav a").css("color" , "#f1f1f1");	
+    $("#header-nav button").css("background-color" , "#f2f2f2");
+    $("#header-nav button").css("color" , "#4289EF");
+    $("#navbar-collapse-1").css("background-color" , "transparent");
   }
   });
 

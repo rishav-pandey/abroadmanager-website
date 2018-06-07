@@ -27,6 +27,20 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
+
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:#4289EF; left:47%; margin-top:50px;">&times;</a>
+  <div class="overlay-content">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="gd.html">General Discussions</a>
+	<a href="ud.html">University Specific Discussions</a>
+    <a href="roommate-search.html">Rommate Finder</a>
+    <a href="rent.html">Rent A Room</a>
+	<a href="login.html"><button style="background-color:#f2f2f2; color:#4289EF;border-radius:7px; padding:14px 16px; width:220px; left:40%;transform: perspective(1px) translateZ(0); box-shadow: 0 0 1px transparent; transition-duration: 0.5s;">LOGIN / SIGNUP</button></a>
+  </div>
+</div>
+
   <div id="img-nav" class="sliding-img">
     <div class="closebtn"><a href="" onclick=""><i class="material-icons">clear</i></a></div>
     <div class="container" id="slide-section">
@@ -110,11 +124,11 @@
     </div>
   </div>
   <section id="innerbanner1" role="banner">
-    <header>
+    <header style="margin: 0px; padding: 0px;">
       <div class="header-content clearfix">
-        <nav id="header-nav1" class="navbar-fixed-top" style="width: 100vw; height:70px; box-shadow: 0px 4px 8px 0 rgba(255, 255, 255,.2);">
+	  <nav id="header-nav1" class="navbar-fixed-top"  style="width: 100vw; height:70px; box-shadow: 0px 4px 8px 0 rgba(255, 255, 255,.2);">
             <div class="container-fluid">
-            <div class="navbar-header" style="background-color:white;">
+              <div class="navbar-header"  style="background-color:white;">
                 <a href="index.html" class="visible-lg visible-sm visible-md pull-left">
                   <div id="logo-img" alt="Logo Image"></div>
                 </a>
@@ -124,39 +138,39 @@
                   </a>
                 </div>
 
-                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  aria-expanded="false" onclick="openNav()" style="background-color:#02b3e4;">
-                  <span class="sr-only">Toggle navigation</span>
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  aria-expanded="false" onclick="openNav()" style="background-color:#02b3e4; right:10px;">
+
+				<span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
               </div> <!-- navbar-header -->
 
-                <div class="collapse navbar-collapse" id="navbar-collapse-1" style="	background-color:white; box-shadow: 5px 3px 25px 0 #aba;">
-
+              <div class="collapse navbar-collapse" id="navbar-collapse-1" style="	background-color:white; box-shadow: 5px 3px 25px 0 #aba;">
                 <ul id="nav-list1" class="nav navbar-nav navbar-right">
                   <li>
-                    <a href="dashboard.html">Dashboard</a>
+                    <a href="#">Dashboard</a>
                   </li>
                   <li class="dropdown dropdown1">
-                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Ask Anything <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ask Anything <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-		            			<li><a href="gd.html">General Discussions</a></li>
-		            			<li><a href="ud.html">University Specific Discussions</a></li>
-		          			</ul>
+                      <li><a href="#" style="color:#02b3e4;">General Discussions</a></li>
+                      <li><a href="#" style="color:#02b3e4;">University Specific Discussions</a></li>
+                    </ul>
                   </li>
                   <li>
-                  	<a href="roommate-search.html">Room-mate Finder</a>
+                    <a href="#">Room-mate Finder</a>
                   </li>
                   <li>
-                    <a href="rent.html">Rent a Room</a>
+                    <a href="">Rent a Room</a>
                   </li>
                   <li>
-                  	<a href="#" id="notification"><span class="fa fa-bell"></span></a>
+                    <a href="#" id="notification"><span class="fa fa-bell"></span></a>
                   </li>
                   <li>
-                  <a href="login.html" style="padding-top: 0px;"><button style="margin-top:0px; margin-right:-10px;"><i class="fa fa-graduation-cap" style="padding-right: 20px;"></i>Login / Signup</button>
-                  	</a>
+                    <a href="login.html" style="padding-top: 0px;"><button style="margin-top:0px; margin-right:30px;"><i class="fa fa-graduation-cap" style="padding-right: 20px;"></i>Login/Signup</button>
+                    </a>
                   </li>
                 </ul>
             </div>
@@ -164,8 +178,7 @@
         </nav>
       </div>
     </header>
-  </section> <!-- #innerbanner -->
-
+  </section>
   <div id="main-content" class="container-fluid" style="margin-top:170px;">
     <div id="main-image">
       <div class="pull-left" id="img1"><img src="http://via.placeholder.com/420x300" width="100%"></div>
@@ -321,52 +334,50 @@
     </div>
   </div>
 
-  <footer>
-  	<div class="container">
-  			<div class="row">
-  				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="margin-bottom: 30px;">
-  					<div class="footer-content">
-  						<h2>Social Media</h2>
-  					</div>
-  					<div class="footer-list">
-  						<ul>
-  							<li><a href=""><i class="fa fa-facebook"></i>Facebook</a></li>
-  							<li><a href=""><i class="fa fa-twitter"></i>Twitter</a></li>
-  							<li><a href=""><i class="fa fa-youtube"></i>YouTube</a></li>
-  							<li><a href=""><i class="fa fa-linkedin"></i>Linkedln</a></li>
-  							<li><a href=""><i class="fa fa-instagram"></i>Instagram</a></li>
-  						</ul>
-  					</div>
-  				</div>
-  				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-  					<div class="footer-content">
-  						<h2>Features</h2>
-  					</div>
-  					<div class="footer-list">
-  						<ul>
-  							<li><a href="">General Discussions</a></li>
-  							<li><a href="">University Discussions</a></li>
-  							<li><a href="">Room-mate finder</a></li>
-  							<li><a href="">Personal Dashboard</a></li>
-  						</ul>
-  					</div>
-  				</div>
-  				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-  					<div class="footer-content">
-  						<h2>More</h2>
-  					</div>
-  					<div class="footer-list">
-  						<ul>
-  							<li><a href="">About Us</a></li>
-  							<li><a href="">Contact Us</a></li>
-  							<li><a href="">Privacy Policy</a></li>
-  							<li><a href="">Terms of Use</a></li>
-  						</ul>
-  					</div>
-  				</div>
-  			</div> <!-- .row -->
-  	</div>
-  </footer>
+   <footer style="width:100%; top:auto;">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<div class="footer-content">
+					<h4>SOCIAL MEDIA</h4>
+				</div>
+				<div class="footer-list">
+					
+  							<p><a href=""><i class="fa fa-facebook"></i>Facebook</a><br></p>
+  							<p><a href=""><i class="fa fa-twitter"></i>Twitter</a><br></p>
+  							<p><a href=""><i class="fa fa-youtube"></i>YouTube</a><br></p>
+  							<p><a href=""><i class="fa fa-linkedin"></i>Linkedln</a><br></p>
+  							<p><a href=""><i class="fa fa-instagram"></i>Instagram</a><br></p>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<div class="footer-content">
+					<h4>FEATURES</h4>
+				</div>
+				<div class="footer-list">
+					
+  							<p><a href="">General Discussions</a><br></p>
+  							<p><a href="">University Discussions</a><br></p>
+  							<p><a href="">Room-mate finder</a><br></p>
+  							<p><a href="">Personal Dashboard</a><br></p>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<div class="footer-content">
+					<h4>MORE</h4>
+				</div>
+				<div class="footer-list">
+				
+							<p><a href="">About Us</a><br></p>
+  							<p><a href="">Contact Us</a><br></p>
+  							<p><a href="">Privacy Policy</a><br></p>
+  							<p><a href="">Terms of Use</a><br></p>
+				</div>
+			</div>
+			
+		</div>
+	</footer>
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -448,7 +459,7 @@
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
-
+ 
 
   </script>
 </body>

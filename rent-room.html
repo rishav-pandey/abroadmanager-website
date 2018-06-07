@@ -1,38 +1,97 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109559667-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-109559667-1');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-109559667-1');
     </script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-
-  <title>Abroad Manager | Form For Renting Room</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="images" href="images/logo_favi.ico">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/main-style.css">
-  <link rel="stylesheet" href="css/rent-room-style.css">
-  <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <title>Abroad Manager | Form For Renting Room</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="images" href="images/logo_favi.ico">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/rent-room-style.css">
+    <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-  <section id="innerbanner1" role="banner">
-    <header>
+<script>
+        $(document).ready(function () {
+            $('#next-btn').click(function () {
+                var color1 = $('#defaultcard').css('display');
+                var color2 = $('#form-card-two').css('display');
+                var color3 = $('#form-card-three').css('display');
+                var color4 = $('#form-card-four').css('display');
+                var color5 = $('#form-card-five').css('display');
+                if (color1 == 'block') { // =='blue' <- IE hack
+                    $('#main-section').css("background-color", "#e6004c");
+                }
+                else if (color2 == 'block') { // =='blue' <- IE hack
+                    $('#main-section').css("background-color", "#8533ff");
+                }
+                else if (color3 == 'block') {
+                    $('#main-section').css("background-color", "#33cccc");
+                }
+                else if (color4 == 'block') {
+                    $('#main-section').css("background-color", "#66ff66");
+                }
+                else if (color5 == 'block') {
+                    $('#main-section').css("background-color", "#ff6600");
+                }
+            });
+            $('#prev-btn').click(function () {
+                var color1 = $('#defaultcard').css('display');
+                var color2 = $('#form-card-two').css('display');
+                var color3 = $('#form-card-three').css('display');
+                var color4 = $('#form-card-four').css('display');
+                var color5 = $('#form-card-five').css('display');
+                if (color1 == 'block') { // =='blue' <- IE hack
+                    $('#main-section').css("background-color", "#e6004c");
+                }
+                else if (color2 == 'block') { // =='blue' <- IE hack
+                    $('#main-section').css("background-color", "#8533ff");
+                }
+                else if (color3 == 'block') {
+                    $('#main-section').css("background-color", "#33cccc");
+                }
+                else if (color4 == 'block') {
+                    $('#main-section').css("background-color", "#66ff66");
+                }
+                else if (color5 == 'block') {
+                    $('#main-section').css("background-color", "#ff6600");
+                }
+            });
+        });
+</script>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:#4289EF; left:47%; margin-top:50px;">&times;</a>
+  <div class="overlay-content">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="gd.html">General Discussions</a>
+	<a href="ud.html">University Specific Discussions</a>
+    <a href="roommate-search.html">Rommate Finder</a>
+    <a href="rent.html">Rent A Room</a>
+	<a href="login.html"><button style="background-color:#f2f2f2; color:#4289EF;border-radius:7px; padding:14px 16px; width:220px; left:40%;transform: perspective(1px) translateZ(0); box-shadow: 0 0 1px transparent; transition-duration: 0.5s;">LOGIN / SIGNUP</button></a>
+  </div>
+</div>
+    <section id="innerbanner1" role="banner">
+    <header style="margin: 0px; padding: 0px;">
       <div class="header-content clearfix">
-               <nav id="header-nav1" class="navbar-fixed-top" style="width: 100vw; height:70px; box-shadow: 0px 4px 8px 0 rgba(255, 255, 255,.2);">
+	  <nav id="header-nav1" class="navbar-fixed-top"  style="width: 100vw; height:70px; box-shadow: 0px 4px 8px 0 rgba(255, 255, 255,.2);">
             <div class="container-fluid">
-              <div class="navbar-header" style="background-color:white;">
+              <div class="navbar-header"  style="background-color:white;">
                 <a href="index.html" class="visible-lg visible-sm visible-md pull-left">
                   <div id="logo-img" alt="Logo Image"></div>
                 </a>
@@ -42,37 +101,38 @@
                   </a>
                 </div>
 
-               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  aria-expanded="false" onclick="openNav()" style="background-color:#02b3e4;">
-                  <span class="sr-only">Toggle navigation</span>
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  aria-expanded="false" onclick="openNav()" style="background-color:#02b3e4;">
+
+				<span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
               </div> <!-- navbar-header -->
 
-                <div class="collapse navbar-collapse" id="navbar-collapse-1" style="	background-color:white; box-shadow: 5px 3px 25px 0 #aba;">
+              <div class="collapse navbar-collapse" id="navbar-collapse-1" style="	background-color:white; box-shadow: 5px 3px 25px 0 #aba;">
                 <ul id="nav-list1" class="nav navbar-nav navbar-right">
                   <li>
-                    <a href="dashboard.html">Dashboard</a>
+                    <a href="#">Dashboard</a>
                   </li>
                   <li class="dropdown dropdown1">
-                    <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Ask Anything <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="gd.html">General Discussions</a></li>
-                      <li><a href="ud.html">University Specific Discussions</a></li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ask Anything <span class="caret"></span></a>
+                    <ul class="dropdown-menu" style="background-color:#ffffff;">
+                      <li><a href="#" style="color:#02b3e4;">General Discussions</a></li>
+                      <li><a href="#" style="color:#02b3e4;">University Specific Discussions</a></li>
                     </ul>
                   </li>
                   <li>
-                    <a href="roommate-search.html">Room-mate Finder</a>
+                    <a href="#">Room-mate Finder</a>
                   </li>
                   <li>
-                    <a href="#">Rent a Room</a>
+                    <a href="">Rent a Room</a>
                   </li>
                   <li>
                     <a href="#" id="notification"><span class="fa fa-bell"></span></a>
                   </li>
                   <li>
-                     <a href="login.html" style="padding-top: 0px;"><button style="margin-top:0px; margin-right:-10px;"><i class="fa fa-graduation-cap" style="padding-right: 20px;"></i>Login / Signup</button>
+                    <a href="login.html" style="padding-top: 0px;"><button style="margin-top:0px; margin-right:30px;"><i class="fa fa-graduation-cap" style="padding-right: 20px;"></i>Login/Signup</button>
                     </a>
                   </li>
                 </ul>
@@ -81,10 +141,9 @@
         </nav>
       </div>
     </header>
-  </section> <!-- #innerbanner -->
-
-  <div id="main-section" style="margin-top:120px;">
-    <div class="container">
+  </section>
+  <div id="main-section" style="background-color:#e6004c;">
+    <div class="container1" id="step-screen">
       <div id="main-heading">
         <h1>You are posting a room near University Lorem Ipsum</h1>
       </div>
@@ -114,35 +173,15 @@
             </ul>
           </div>
         </div>
-        <div class="form-card">
+        <div class="form-card" id="form-card-two">
           <div id="card2" class="cards">
-            <h4>2. You Identify yourself as:</h4>
-            <label>
-              <input type="radio" name="indentify">
-              <span>House Owner</span>            </label><br>
-            <label>
-              <input type="radio" name="indentify">
-              <span>Broker</span>
-            </label><br>
-            <label>
-              <input type="radio" name="indentify">
-              <span>Student looking for people to share rent</span>
-            </label><br>
-            <label>
-              <input type="radio" name="indentify">
-              <span>Other</span>
-            </label>
-          </div>
-        </div>
-        <div class="form-card">
-          <div id="card3" class="cards">
-            <h4>3. Upload room Images:</h4>
+            <h4>2. Upload room Images:</h4>
             <input type="file" name="roomImages">
           </div>
         </div>
-        <div class="form-card">
-            <div id="card4" class="cards">
-            <h4>4. Rent Price:</h4>
+        <div class="form-card" id="form-card-three">
+            <div id="card3" class="cards">
+            <h4>3. Rent Price:</h4>
             <select name="currency">
               <option>Currency</option>
               <option>Indian rupee</option>
@@ -155,13 +194,13 @@
             <span> / month</span>
           </div>
         </div>
-        <div class="form-card">
-          <div id="card5" class="cards">
-            <h4>5. One line to describe your awesome room:</h4>
+        <div class="form-card" id="form-card-four"> 
+          <div id="card4" class="cards">
+            <h4>4. One line to describe your awesome room:</h4>
             <input type="text" name="tagline">
           </div>
-          <div id="card6" class="cards">
-            <h4>6. Type of room:</h4>
+          <div id="card5" class="cards">
+            <h4>5. Type of room:</h4>
             <label>
               <input type="radio" name="roomtype">
               Studio Apartment
@@ -183,12 +222,12 @@
               <input type="text" name="owntype" placeholder="Enter your own type">
             </label>
           </div>
-          <div id="card7" class="cards">
-            <h4>7. Full Description of Room (write about all you to offer):</h4>
+          <div id="card6" class="cards">
+            <h4>6. Full Description of Room (write about all you to offer):</h4>
             <textarea></textarea>
           </div>
-          <div id="card8" class="cards">
-            <h4>8. Room Rules:</h4>
+          <div id="card7" class="cards">
+            <h4>7. Room Rules:</h4>
             <ul>
             <li><input type="text" name="roomrule"><br></li>
             <li><input type="text" name="roomrule"><br></li>
@@ -197,23 +236,21 @@
             <li><input type="text" name="roomrule"><br></li>
             </ul>
           </div>
-          <div id="card9" class="cards">
-            <h4>9. How many people are living currently in this room:</h4>
+          <div id="card8" class="cards">
+            <h4>8. How many people are living currently in this room:</h4>
             <input type="number" name="roomstrength" min="0">
             <label>Boys</label><br>
             <input type="number" name="roomstrength" min="0">
             <label>Girls</label>
           </div>
         </div>
-        <div class="form-card">
+        <div class="form-card" id="form-card-five">
           <div id="card3" class="cards">
-          <h4>10. Personal Details:</h4>
+          <h4>5. Final Step:</h4>
           <label>Name:</label>
           <input type="text" name="name" placeholder="John Doe" style="width: 90%;"><br>
           <label>Contact Info:</label>
           <input type="tel" name="contact" placeholder="+91 97xxxxxx20"><br>
-          <label>Facebook ID(optional):</label>
-          <input type="text" name="facebook" placeholder="John Doe"><br>
           <label>Address Line 1:</label>
           <input type="text" name="" placeholder="Street address, P.O. box, Company Name"><br>
           <label>Address Line 2:</label>
@@ -258,70 +295,64 @@
     </div> <!-- .container -->
   </div>
 
-  <footer>
-    <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="margin-bottom: 30px;">
-            <div class="footer-content">
-              <h2>Social Media</h2>
-            </div>
-            <div class="footer-list">
-              <ul>
-                <li><a href=""><i class="fa fa-facebook"></i>Facebook</a></li>
-                <li><a href=""><i class="fa fa-twitter"></i>Twitter</a></li>
-                <li><a href=""><i class="fa fa-youtube"></i>YouTube</a></li>
-                <li><a href=""><i class="fa fa-linkedin"></i>Linkedln</a></li>
-                <li><a href=""><i class="fa fa-instagram"></i>Instagram</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            <div class="footer-content">
-              <h2>Features</h2>
-            </div>
-            <div class="footer-list">
-              <ul>
-                <li><a href="">General Discussions</a></li>
-                <li><a href="">University Discussions</a></li>
-                <li><a href="">Room-mate finder</a></li>
-                <li><a href="">Personal Dashboard</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            <div class="footer-content">
-              <h2>More</h2>
-            </div>
-            <div class="footer-list">
-              <ul>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Contact Us</a></li>
-                <li><a href="">Privacy Policy</a></li>
-                <li><a href="">Terms of Use</a></li>
-              </ul>
-            </div>
-          </div>
-        </div> <!-- .row -->
-    </div>
-  </footer>
-  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+   <footer style="width:100%;">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<div class="footer-content">
+					<h4>SOCIAL MEDIA</h4>
+				</div>
+				<div class="footer-list">
+					
+  							<p><a href=""><i class="fa fa-facebook"></i>Facebook</a><br></p>
+  							<p><a href=""><i class="fa fa-twitter"></i>Twitter</a><br></p>
+  							<p><a href=""><i class="fa fa-youtube"></i>YouTube</a><br></p>
+  							<p><a href=""><i class="fa fa-linkedin"></i>Linkedln</a><br></p>
+  							<p><a href=""><i class="fa fa-instagram"></i>Instagram</a><br></p>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<div class="footer-content">
+					<h4>FEATURES</h4>
+				</div>
+				<div class="footer-list">
+					
+  							<p><a href="">General Discussions</a><br></p>
+  							<p><a href="">University Discussions</a><br></p>
+  							<p><a href="">Room-mate finder</a><br></p>
+  							<p><a href="">Personal Dashboard</a><br></p>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<div class="footer-content">
+					<h4>MORE</h4>
+				</div>
+				<div class="footer-list">
+				
+							<p><a href="">About Us</a><br></p>
+  							<p><a href="">Contact Us</a><br></p>
+  							<p><a href="">Privacy Policy</a><br></p>
+  							<p><a href="">Terms of Use</a><br></p>
+				</div>
+			</div>
+			
+		</div>
+	</footer>
+	<!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
   <script>
-
   // INCREASE HEIGHT OF INNERBANNER ON CLICK OF NAVIGATION BAR
   $('.navbar-toggle').on('click', function () {
-
     if ($('.navbar-collapse').hasClass("collapse")) {
       $('#innerbanner').css("height", "350px");
     }
     if ($('.navbar-collapse').hasClass("in")) {
       $('#innerbanner').css("height", "100px");
     }
-
   });
-
   // TO TOGGLE BETEEN DIFFERENT QUESTIONS
   var progress = document.getElementById('progress')
   var card = document.getElementsByClassName('form-card');
@@ -329,33 +360,31 @@
   var step = document.getElementById('step-count');
   var count = 20;
   var i = 0;
-
   function prevCard() {
     if (i >= 1) {
       card[i].style.display = "none";
       i--;
       card[i].style.display = "block";
       step.innerHTML = i+1;
-      count = count - 16.6667;
+      count = count - 20;
       progress.style.width = count + "%";
     }
     save.style.display = "none";
   }
-
   function nextCard() {
-    if (i < 5) {
+    if (i < 4) {
       card[i].style.display = "none";
       i++;
       card[i].style.display = "block";
       step.innerHTML = i+1;
-      count = count + 16.6667;
+      count = count + 20;
       progress.style.width = count + "%";
     }
-    if (i == 5) {
+    if (i == 4) {
       save.style.display = "block";
     }
   }
-
+  
    	// function to open and close nav menu on small screen
   function openNav() {
     document.getElementById("myNav").style.width = "100%";
@@ -363,7 +392,6 @@
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
-
   </script>
 </body>
 </html>
