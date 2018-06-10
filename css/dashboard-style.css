@@ -3,6 +3,14 @@
 	font-family: Open Sans,sans-serif;
 }
 
+.modal-body .col-lg-6 {
+  padding: 0px;
+}
+
+.modal-body, .modal-footer {
+  padding: 15px 30px;
+}
+
 #nav-list1 {
 	margin-top: 10px;
 	font-size: 13px;
@@ -43,7 +51,7 @@
 }
 #innerbanner1 {
 		background-color:white;
-	
+
 }
 .navbar-brand h1 {
 	letter-spacing:5px;

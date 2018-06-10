@@ -45,7 +45,7 @@
 }
 #innerbanner1 {
 		background-color:white;
-	
+
 }
 .navbar-brand h1 {
 	letter-spacing:5px;
@@ -73,7 +73,7 @@ a{
 }
 
 #innerbanner {
-	
+
 	height: 70px;
 }
 
@@ -83,15 +83,14 @@ a{
   height: 1100px;
   z-index: -1000;
   background: linear-gradient(to bottom, #ff5050 0%, #ff99cc 100%);
- 
+
   position: absolute;
- 
+
 }
 
 #form-page::after {
   content: '';
   width: 100%;
-  height: 800px;
   z-index: -1000;
   background: rgba(145,218,238,.1);
   transform-origin: bottom right;
@@ -123,7 +122,7 @@ a{
 }
 @media (min-width: 320px) and(max-width: 425px)
 {
-	
+
 	.container{
 	padding-top:70px;
 }
@@ -140,12 +139,12 @@ a{
 	list-style: none;
 	padding: 0;
 	margin: 0 0 40px 0;
-	border-top: 0; 
+	border-top: 0;
 }
 
 .tab-group:after{
 	content: 0;
-	display: table; 
+	display: table;
 	clear: both;
 }
 
@@ -165,12 +164,12 @@ a{
 }
 
 .tab-group li a: hover {
-	background:#f2f2f2 ; 
+	background:#f2f2f2 ;
 	color: #808080;
 }
 
 .tab-group .active a {
-	background: white; 
+	background: white;
 	color: #808080;
 }
 
@@ -183,7 +182,7 @@ a{
 }
 
 header{
-	
+
 	color:#595959;
 	padding:50px;
 	padding-top: 30px;
@@ -192,7 +191,8 @@ header{
 }
 
 #email-input{
-  margin-right: 60px;
+  margin-right: 45px;
+  margin-left: 45px;
 }
 
 #input-data{
@@ -209,7 +209,7 @@ header{
 }
 
 #input-data:focus{
-	background-color:white; 
+	background-color:white;
 	outline: none;
 	border-color: #66d9ff;
 	animation: neon1 1.5s ease-in-out infinite alternate;
@@ -239,7 +239,7 @@ hr{
 #topRow li{
 	display: inline-block;
 	width: 300px;
-	
+
 }
 
 .top-row:after{
@@ -257,7 +257,7 @@ hr{
 
 .top-row > div: last-child{
 	margin: 0;
-	
+
 }
 
 
@@ -368,7 +368,7 @@ hr{
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-  
+
 
 }
 
@@ -406,7 +406,7 @@ hr{
 
 /********** Large Mobile devices only **********/
 @media (max-width: 450px) {
-  
+
   .field-wrap {
   	margin: 0px 10px 30px 10px;
   }
@@ -418,7 +418,7 @@ hr{
 
 /********** Medium Mobile devices only **********/
 @media (max-width: 380px) {
-  
+
 }
 
 /********** small Mobile devices only (eg: Iphone 4, ) **********/
