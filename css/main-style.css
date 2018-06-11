@@ -10,6 +10,10 @@ transition: all 250ms ease-in-out;}
   margin-right: 0px !important;
 }
 
+textarea {
+  resize: none;
+}
+
 .overlay {
     height: 100%;
     width: 0;

@@ -556,11 +556,51 @@
               <hr>
 
               <div id="academic">
-                <h2>Academic Qualification</h2>
-                <div id="academic-detail">
-                  <span data-toggle="modal" data-target="#academicModal">
-                    <i class="fa fa-plus">&nbsp; Add Academic Details</i>
-                  </span>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <h2>Academic Qualification</h2>
+                    <div id="academic-detail">
+                      <span data-toggle="modal" data-target="#academicModal">
+                        <i class="fa fa-plus">&nbsp; Add Academic Details</i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div id="academicDisplay">
+                      <h4>Your Academic Qualification</h4>
+                      <div class="displayData">
+                        <ul>
+                          <li>
+                            <strong>University Name:</strong>
+                            <em><strong id="universityName" ></strong></em>
+                          </li>
+                          <li>
+                            <strong>From:</strong>
+                            <em><strong id="universityFrom" ></strong></em>
+                          </li>
+                          <li>
+                            <strong>To:</strong>
+                            <em><strong id="universityTo" ></strong></em>
+                          </li>
+                          <li>
+                            <strong>Degree:</strong>
+                            <em><strong id="universityDegree" ></strong></em>
+                          </li>
+                          <li>
+                            <strong>Program:</strong>
+                            <em><strong id="universityProgram" ></strong></em>
+                          </li>
+                          <li>
+                            <strong>Your Grade:</strong>
+                            <em><strong id="universityGrade" ></strong></em>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="edit-displayData">
+                        <span class="fa fa-edit" data-toggle="modal" data-target="#academicModal"></span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <!-- ACADEMIC-MODAL SECTION-->
                 <div>
@@ -575,39 +615,39 @@
                           <div class="form-group">
                             <div>
                               <label>University Name:</label><br>
-                              <input type="text" name="university">
+                              <input id="universityNameValue" type="text" name="university">
                             </div>
                             <br>
                             <div class="row">
                               <div class="col-lg-6 col-xs-6">
                                 <label>From:</label><br>
-                                <input type="date" name="">
+                                <input id="universityFromValue" type="date" name="">
                               </div>
                               <div class="col-lg-6 col-xs-6">
                                 <label>To:</label><br>
-                                <input type="date" name="">
+                                <input id="universityToValue" type="date" name="">
                               </div>
                             </div>
                             <br>
                             <div class="row">
                               <div class="col-lg-6 col-xs-6">
                                 <label>Degree</label><br>
-                                <input type="text" name="">
+                                <input id="universityDegreeValue" type="text" name="">
                               </div>
                               <div class="col-lg-6 col-xs-6">
                                 <label>Program</label><br>
-                                <input type="text" name="">
+                                <input id="universityProgramValue" type="text" name="">
                               </div>
                             </div>
                             <br>
                             <div>
                               <label>Enter your grade:</label><br>
-                              <input type="text" name="grade" placeholder="YOUR SCORE/TOTAL">
+                              <input id="universityGradeValue" type="text" name="grade" placeholder="YOUR SCORE/TOTAL">
                             </div>
                           </div>
                         </div>
                         <div class="modal-footer" style="text-align: left;">
-                          <button type="button" data-dismiss="modal">SAVE</button>
+                          <button type="button" onclick="academicDetail();" data-dismiss="modal">SAVE</button>
                         </div>
                       </div> <!-- .modal-content -->
                     </div>
@@ -617,10 +657,30 @@
               <hr>
 
               <div id="work">
-                <h2>Work Experience</h2>
-                <div id="work-detail">
-                  <span data-toggle="modal" data-target="#workModal">
-                    <i class="fa fa-plus">&nbsp; Add Your Work Experience</i></span>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6">
+                    <h2>Work Experience</h2>
+                    <div id="work-detail">
+                      <span data-toggle="modal" data-target="#workModal">
+                        <i class="fa fa-plus">&nbsp; Add Your Work Experience</i></span>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div id="workDisplay">
+                      <h4>Your Work Experience</h4>
+                      <div class="displayData">
+                        <ul>
+                          <li>
+                            <strong>Total Month's of Experience:</strong>
+                            <em><strong id="workMonth" ></strong></em>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="edit-displayData">
+                        <span class="fa fa-edit" data-toggle="modal" data-target="#workModal"></span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <!-- WORK-MODAL SECTION-->
                 <div>
@@ -633,10 +693,10 @@
                         </div>
                         <div class="modal-body">
                           <label>Total months:</label><br>
-                          <input type="number" name="work-month">
+                          <input id="workMonthValue" type="number" name="work-month">
                         </div>
                         <div class="modal-footer" style="text-align: left;">
-                          <button type="button" data-dismiss="modal">SAVE</button>
+                          <button type="button" onclick="workDetail();" data-dismiss="modal">SAVE</button>
                         </div>
                       </div> <!-- .modal-content -->
                     </div>
@@ -646,10 +706,46 @@
               <hr>
 
               <div id="internship">
-                <h2>Internships</h2>
-                <div id="internship-detail">
-                  <span data-toggle="modal" data-target="#internshipModal">
-                  <i class="fa fa-plus">&nbsp; Add Your Intern Works</i></span>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6">
+                    <h2>Internships</h2>
+                    <div id="internship-detail">
+                      <span data-toggle="modal" data-target="#internshipModal">
+                      <i class="fa fa-plus">&nbsp; Add Your Intern Works</i></span>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div id="internshipDisplay">
+                      <h4>Your Internship Details:</h4>
+                      <div class="displayData">
+                        <ul>
+                          <li>
+                            <strong>Worked As:</strong>
+                            <em><strong id="workedAs" ></strong></em>
+                          </li>
+                          <li>
+                            <strong>From:</strong>
+                            <em><strong id="workedFrom" ></strong></em>
+                          </li>
+                          <li>
+                            <strong>To:</strong>
+                            <em><strong id="workedTo" ></strong></em>
+                          </li>
+                          <li>
+                            <strong>Project URL:</strong>
+                            <em><strong id="workedProjectUrl" ></strong></em>
+                          </li>
+                          <li>
+                            <strong>Location:</strong>
+                            <em><strong id="workedLocation" ></strong></em>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="edit-displayData">
+                        <span class="fa fa-edit" data-toggle="modal" data-target="#internshipModal"></span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <!-- INTERNSHIP-MODAL SECTION-->
                 <div>
@@ -664,34 +760,34 @@
                           <div class="form-group">
                             <div>
                               <label>Worked as:</label><br>
-                              <input type="text" name="internship" placeholder="Front-End Developer">
+                              <input id="workedAsValue" type="text" name="internship" placeholder="Front-End Developer">
                             </div>
                             <br>
                             <div class="row">
                               <div class="col-lg-6 col-xs-6">
                                 <label>Worked From:</label><br>
-                                <input type="date" name="">
+                                <input id="workedFromValue" type="date" name="">
                               </div>
                               <div class="col-lg-6 col-xs-6">
                                 <label>To:</label><br>
-                                <input type="date" name="">
+                                <input id="workedToValue" type="date" name="">
                               </div>
                             </div>
                             <br>
                             <div class="row">
                               <div class="col-lg-6 col-xs-6">
                                 <label>Project URL</label><br>
-                                <input type="url" name="">
+                                <input id="workedProjectUrlValue" type="url" name="">
                               </div>
                               <div class="col-lg-6 col-xs-6">
                                 <label>Location:</label><br>
-                                <input type="text" name="">
+                                <input id="workedLocationValue" type="text" name="">
                               </div>
                             </div>
                           </div>
                         </div>
                         <div class="modal-footer" style="text-align: left;">
-                          <button type="button" data-dismiss="modal">SAVE</button>
+                          <button type="button" onclick="internshipDetail();" data-dismiss="modal">SAVE</button>
                         </div>
                       </div> <!-- .modal-content -->
                     </div>
@@ -701,10 +797,34 @@
               <hr>
 
               <div id="research">
-                <h2>RESEARCH PAPERS/PATENTS</h2>
-                <div id="research-detail">
-                  <span data-toggle="modal" data-target="#researchModal">
-                  <i class="fa fa-plus">&nbsp; Add Your Research Paper/Patents</i></span>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6">
+                    <h2>RESEARCH PAPERS/PATENTS</h2>
+                    <div id="research-detail">
+                      <span data-toggle="modal" data-target="#researchModal">
+                      <i class="fa fa-plus">&nbsp; Add Your Research Paper/Patents</i></span>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <div id="researchDisplay">
+                      <h4>Your Research Paper/Patents Details:</h4>
+                      <div class="displayData">
+                        <ul>
+                          <li>
+                            <strong>No. of Research Papers:</strong>
+                            <em><strong id="researchPaper" ></strong></em>
+                          </li>
+                          <li>
+                            <strong>No. of Patents:</strong>
+                            <em><strong id="researchPatent" ></strong></em>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="edit-displayData">
+                        <span class="fa fa-edit" data-toggle="modal" data-target="#researchModal"></span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <!-- RESEARCH-MODAL SECTION-->
                 <div>
@@ -717,12 +837,12 @@
                         </div>
                         <div class="modal-body">
                           <label>NUMBER OF RESEARCH PAPERS:</label><br>
-                          <input type="number" name="research"><br><br>
+                          <input id="researchPaperValue" type="number" name="research"><br><br>
                           <label>NUMBER OF PATENTS:</label><br>
-                          <input type="number" name="research">
+                          <input id="researchPatentValue" type="number" name="research">
                         </div>
                         <div class="modal-footer" style="text-align: left;">
-                          <button type="button" data-dismiss="modal">SAVE</button>
+                          <button type="button" onclick="researchDetail();" data-dismiss="modal">SAVE</button>
                         </div>
                       </div> <!-- .modal-content -->
                     </div>
@@ -732,10 +852,30 @@
               <hr>
 
               <div id="more-info">
-                <h2>Additional information</h2>
-                <div id="more-detail">
-                  <span data-toggle="modal" data-target="#moreInfoModal">
-                  <i class="fa fa-plus">&nbsp; Add Information</i></span>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6">
+                    <h2>Additional information</h2>
+                    <div id="more-detail">
+                      <span data-toggle="modal" data-target="#moreInfoModal">
+                      <i class="fa fa-plus">&nbsp; Add Information</i></span>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <div id="additionalDisplay">
+                      <h4>Additional Information:</h4>
+                      <div class="displayData">
+                        <ul>
+                          <li>
+                            <strong>Additional Information:</strong>
+                            <em><strong id="additionalInfo" ></strong></em>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="edit-displayData">
+                        <span class="fa fa-edit" data-toggle="modal" data-target="#moreInfoModal"></span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <!-- MORE-INFO-MODAL SECTION-->
                 <div>
@@ -747,11 +887,11 @@
                           <h4 class="modal-title">More Informations</h4>
                         </div>
                         <div class="modal-body">
-                          <textarea placeholder="Enter any additional information">
+                          <textarea id="additionalInfoValue" placeholder="Enter any additional information">
                           </textarea>
                         </div>
                         <div class="modal-footer" style="text-align: left;">
-                          <button type="button" data-dismiss="modal">SAVE</button>
+                          <button type="button" onclick="additionalDetail();" data-dismiss="modal">SAVE</button>
                         </div>
                       </div> <!-- .modal-content -->
                     </div>
@@ -759,6 +899,9 @@
                 </div>
               </div> <!-- #more-info -->
               <hr>
+              <div id="submitBtn">
+                <button>Submit Details</button>
+              </div>
             </div> <!-- #profile-card -->
           </div> <!-- #profile -->
 
@@ -767,7 +910,7 @@
             <div id="document-card">
               <h3>Get your documents edited through the best professionals.</h3>
               <hr>
-              <h3 style="margin-bottom: 50px;">Tell us your requirements snd we will contact you.</h3>
+              <h3 style="margin-bottom: 50px;">Tell us your requirements and we will contact you.</h3>
               <div class="row">
                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                   <textarea></textarea>

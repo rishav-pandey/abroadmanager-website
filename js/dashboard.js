@@ -185,3 +185,87 @@ function satScore() {
     alert("Fill all the Score to Proceed!");
   }
 }
+
+function academicDetail() {
+  var universityName =  $('#universityNameValue').val();
+  var universityFrom = $('#universityFromValue').val();
+  var universityTo = $('#universityToValue').val();
+  var universityDegree = $('#universityDegreeValue').val();
+  var universityProgram = $('#universityProgramValue').val();
+  var universityGrade = $('#universityGradeValue').val();
+  if ((universityName != "") && (universityFrom != "") && (universityTo != "") && (universityDegree != "") && (universityProgram != "") && (universityGrade != "") ) {
+
+    $('#universityName').text(universityName);
+    $('#universityFrom').text(universityFrom);
+    $('#universityTo').text(universityTo);
+    $('#universityDegree').text(universityDegree);
+    $('#universityProgram').text(universityProgram);
+    $('#universityGrade').text(universityGrade);
+    $('#academicDisplay').css('display', 'block');
+  }
+  else
+  {
+    alert("Fill all the Details to Proceed!");
+  }
+}
+
+
+function workDetail() {
+  var workMonth =  $('#workMonthValue').val();
+  if ((workMonth != "")) {
+    $('#workMonth').text(workMonth);
+    $('#workDisplay').css('display', 'block');
+  }
+  else
+  {
+    alert("Fill all the Details to Proceed!");
+  }
+}
+
+
+function internshipDetail() {
+  var workedAs =  $('#workedAsValue').val();
+  var workedFrom = $('#workedFromValue').val();
+  var workedTo = $('#workedToValue').val();
+  var workedProjectUrl = $('#workedProjectUrlValue').val();
+  var workedLocation = $('#workedLocationValue').val();
+  if ((workedAs != "") && (workedFrom != "") && (workedTo != "") && (workedProjectUrl != "") && (workedLocation != "") ) {
+    $('#workedAs').text(workedAs);
+    $('#workedFrom').text(workedFrom);
+    $('#workedTo').text(workedTo);
+    $('#workedProjectUrl').text(workedProjectUrl);
+    $('#workedLocation').text(workedLocation);
+    $('#internshipDisplay').css('display', 'block');
+  }
+  else
+  {
+    alert("Fill all the Details to Proceed!");
+  }
+}
+
+function researchDetail() {
+  var researchPaper =  $('#researchPaperValue').val();
+  var researchPatent = $('#researchPatentValue').val();
+  if ((researchPaper != "") && (researchPatent != "")) {
+    $('#researchPaper').text(researchPaper);
+    $('#researchPatent').text(researchPatent);
+    $('#researchDisplay').css('display', 'block');
+  }
+  else
+  {
+    alert("Fill all the Details to Proceed!");
+  }
+}
+
+
+function additionalDetail() {
+  var additionalInfo =  $('#additionalInfoValue').val();
+  if ((additionalInfo != "")) {
+    $('#additionalInfo').text(additionalInfo);
+    $('#additionalDisplay').css('display', 'block');
+  }
+  else
+  {
+    alert("Fill all the Details to Proceed!");
+  }
+}
