@@ -114,31 +114,31 @@
                 <div id="topRow">
                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <div class="field-wrap">
-                        <input id="input-data" type="text" required="required" autocomplete="off"  placeholder="First Name">
+                        <input class="input-data" type="text" required="required" autocomplete="off"  placeholder="First Name">
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <div class="field-wrap">
-                        <input id="input-data" type="text" required="required" autocomplete="off" placeholder="Last name">
+                        <input class="input-data" type="text" required="required" autocomplete="off" placeholder="Last name">
                     </div>
                   </div>
                 </div>
               </div> <!-- .top-row -->
 
               <div class="field-wrap" id="email-input">
-                <input id="input-data" type="email" required="required" autocomplete="off" placeholder="Email">
+                <input class="input-data" type="email" required="required" autocomplete="off" placeholder="Email">
               </div>
 
               <div class="top-row row">
                 <div id="topRow">
                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <div class="field-wrap">
-                        <input id="input-data" type="text" required="required" autocomplete="phone" pattern="[0-9]{10}" maxlength="10" placeholder="Phone No">
+                        <input class="input-data" type="text" required="required" autocomplete="phone" pattern="[0-9]{10}" maxlength="10" placeholder="Phone No">
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <div class="field-wrap">
-                        <input id="input-data" type="password" required="required" autocomplete="off" placeholder="Password" minlength="7">
+                        <input class="input-data" type="password" required="required" autocomplete="off" placeholder="Password" minlength="7">
                     </div>
                   </div>
                 </div>
@@ -165,10 +165,10 @@
             </header>
             <form class="signin" action="" method="post">
               <div class="field-wrap">
-                <input id="input-data" type="email" required="required" autocomplete="off" placeholder="Email">
+                <input class="input-data" type="email" required="required" autocomplete="off" placeholder="Email">
               </div>
               <div class="field-wrap">
-                <input id="input-data" type="password" required="required" autocomplete="off" placeholder="Password" minlength="7">
+                <input class="input-data" type="password" required="required" autocomplete="off" placeholder="Password" minlength="7">
               </div>
               <div>
                 <button class="button">LOG IN</button>
@@ -189,14 +189,14 @@
       </div> <!-- .form -->
     </div>
   </div> <!-- #form-page -->
-   <footer style="width:100%;">
+   <footer style="width:100%; margin-top: 50px;">
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 				<div class="footer-content">
 					<h4>SOCIAL MEDIA</h4>
 				</div>
 				<div class="footer-list">
-					
+
   							<p><a href=""><i class="fa fa-facebook"></i>Facebook</a><br></p>
   							<p><a href=""><i class="fa fa-twitter"></i>Twitter</a><br></p>
   							<p><a href=""><i class="fa fa-youtube"></i>YouTube</a><br></p>
@@ -204,33 +204,33 @@
   							<p><a href=""><i class="fa fa-instagram"></i>Instagram</a><br></p>
 				</div>
 			</div>
-			
+
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 				<div class="footer-content">
 					<h4>FEATURES</h4>
 				</div>
 				<div class="footer-list">
-					
+
   							<p><a href="">General Discussions</a><br></p>
   							<p><a href="">University Discussions</a><br></p>
   							<p><a href="">Room-mate finder</a><br></p>
   							<p><a href="">Personal Dashboard</a><br></p>
 				</div>
 			</div>
-			
+
 			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 				<div class="footer-content">
 					<h4>MORE</h4>
 				</div>
 				<div class="footer-list">
-				
+
 							<p><a href="">About Us</a><br></p>
   							<p><a href="">Contact Us</a><br></p>
   							<p><a href="">Privacy Policy</a><br></p>
   							<p><a href="">Terms of Use</a><br></p>
 				</div>
 			</div>
-			
+
 		</div>
 	</footer>
 <!-- jQuery (Bootstrap JS plugins depend on it) -->
@@ -247,8 +247,8 @@
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
- 
-  //function to change the color of navbar while scrolling 
+
+  //function to change the color of navbar while scrolling
   $(window).on('scroll', function(){
     var scroll = $(window).scrollTop();
     if (scroll > 0) {
@@ -256,16 +256,16 @@ function closeNav() {
     $("#header-nav h1").css("color" , "#02b3e4");
 	  $("#header-nav a").css("color" , "#02b3e4");
     $("#header-nav button").css("color" , "#f1f1f1");
-    $("#header-nav button").css("background-color" , "#02b3e4");   
+    $("#header-nav button").css("background-color" , "#02b3e4");
     }
 	else if(scroll <= 0){
-	  $("#header-nav").css("background-color" , "transparent"); 
-    $("#header-nav h1").css("color" , "#f1f1f1");  	
+	  $("#header-nav").css("background-color" , "transparent");
+    $("#header-nav h1").css("color" , "#f1f1f1");
     $("#header-nav a").css("color" , "#f1f1f1");
     $("#header-nav button").css("background-color" , "#02b3e4");
     $("#header-nav button").css("color" , "#f1f1f1");
   }
-  });  
+  });
   </script>
 </body>
 </html>
