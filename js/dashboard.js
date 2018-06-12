@@ -270,33 +270,33 @@
   }
 
 
-  // finalScoreDetail = {
-  //     greVerbalScore: null ,
-  //     greQuantitativeScore: null ,
-  //     greAnalyticalScore: null ,
-  //     greTotalScore: null ,
-  //     gmatAnalyticalScore: null ,
-  //     gmatIntegratedScore: null ,
-  //     gmatQuantitativeScore: null ,
-  //     gmatVerbalScore: null ,
-  //     gmatTotalScore: null ,
-  //     toeflReadingScore: null ,
-  //     toeflListeningScore: null ,
-  //     toeflSpeakingScore: null ,
-  //     toeflWritingScore: null ,
-  //     toeflTotalScore: null ,
-  //     ieltsReadingScore: null ,
-  //     ieltsListeningScore: null ,
-  //     ieltsSpeakingScore: null ,
-  //     ieltsWritingScore: null ,
-  //     ieltsTotalScore: null ,
-  //     lsatTotalScore: null ,
-  //     mcatTotalScore: null ,
-  //     satEBRWSScore: null ,
-  //     satMathScore: null ,
-  //     satEssayScore: null ,
-  //     satTotalScore: null
-  //   }
+  finalScoreDetail = {
+      greVerbalScore:  null,
+      greQuantitativeScore: null ,
+      greAnalyticalScore: null ,
+      greTotalScore: null ,
+      gmatAnalyticalScore: null ,
+      gmatIntegratedScore: null ,
+      gmatQuantitativeScore: null ,
+      gmatVerbalScore: null ,
+      gmatTotalScore: null ,
+      toeflReadingScore: null ,
+      toeflListeningScore: null ,
+      toeflSpeakingScore: null ,
+      toeflWritingScore: null ,
+      toeflTotalScore: null ,
+      ieltsReadingScore: null ,
+      ieltsListeningScore: null ,
+      ieltsSpeakingScore: null ,
+      ieltsWritingScore: null ,
+      ieltsTotalScore: null ,
+      lsatTotalScore: null ,
+      mcatTotalScore: null ,
+      satEBRWSScore: null ,
+      satMathScore: null ,
+      satEssayScore: null ,
+      satTotalScore: null
+    }
 
     finalAcademicDetail = {
       universityName: $('#universityName').text() ,
@@ -333,68 +333,66 @@
 
   function addJSONDetail() {
 
-    var finalScoreDetail = {
-      greVerbalScore: parseInt($('#greVerbalScore').text()) ,
-      greQuantitativeScore: parseInt($('#greQuantitativeScore').text()) ,
-      greAnalyticalScore: parseInt($('#greAnalyticalScore').text()) ,
-      greTotalScore: parseInt($('#greTotalScore').text()),
-      gmatAnalyticalScore: parseInt($('#gmatAnalyticalScore').text()) ,
-      gmatIntegratedScore: parseInt($('#gmatIntegratedScore').text()) ,
-      gmatQuantitativeScore: parseInt($('#gmatQuantitativeScore').text()) ,
-      gmatVerbalScore: parseInt($('#gmatVerbalScore').text()) ,
-      gmatTotalScore: parseInt($('#gmatTotalScore').text()) ,
-      toeflReadingScore: parseInt($('#toeflReadingScore').text()) ,
-      toeflListeningScore: parseInt($('#toeflListeningScore').text()) ,
-      toeflSpeakingScore: parseInt($('#toeflSpeakingScore').text()) ,
-      toeflWritingScore: parseInt($('#toeflWritingScore').text()) ,
-      toeflTotalScore: parseInt($('#toeflTotalScore').text()) ,
-      ieltsReadingScore: parseInt($('#ieltsReadingScore').text()) ,
-      ieltsListeningScore: parseInt($('#ieltsListeningScore').text()) ,
-      ieltsSpeakingScore: parseInt($('#ieltsSpeakingScore').text()) ,
-      ieltsWritingScore: parseInt($('#ieltsWritingScore').text()) ,
-      ieltsTotalScore: parseInt($('#ieltsTotalScore').text()) ,
-      lsatTotalScore: parseInt($('#lsatTotalScore').text()) ,
-      mcatTotalScore: parseInt($('#mcatTotalScore').text()) ,
-      satEBRWSScore: parseInt($('#satEBRWSScore').text()) ,
-      satMathScore: parseInt($('#satMathScore').text()) ,
-      satEssayScore: parseInt($('#satEssayScore').text()) ,
-      satTotalScore: parseInt($('#satTotalScore').text())
+      finalScoreDetail.greVerbalScore = parseInt($('#greVerbalScore').text());
+      finalScoreDetail.greQuantitativeScore = parseInt($('#greQuantitativeScore').text());
+      finalScoreDetail.greAnalyticalScore = parseInt($('#greAnalyticalScore').text());
+      finalScoreDetail.greTotalScore = parseInt($('#greTotalScore').text());
+      finalScoreDetail.gmatAnalyticalScore = parseInt($('#gmatAnalyticalScore').text());
+      finalScoreDetail.gmatIntegratedScore = parseInt($('#gmatIntegratedScore').text());
+      finalScoreDetail.gmatQuantitativeScore = parseInt($('#gmatQuantitativeScore').text());
+      finalScoreDetail.gmatVerbalScore = parseInt($('#gmatVerbalScore').text());
+      finalScoreDetail.gmatTotalScore = parseInt($('#gmatTotalScore').text());
+      finalScoreDetail.toeflReadingScore = parseInt($('#toeflReadingScore').text());
+      finalScoreDetail.toeflListeningScore = parseInt($('#toeflListeningScore').text());
+      finalScoreDetail.toeflSpeakingScore = parseInt($('#toeflSpeakingScore').text());
+      finalScoreDetail.toeflWritingScore = parseInt($('#toeflWritingScore').text());
+      finalScoreDetail.toeflTotalScore = parseInt($('#toeflTotalScore').text());
+      finalScoreDetail.ieltsReadingScore = parseInt($('#ieltsReadingScore').text());
+      finalScoreDetail.ieltsListeningScore = parseInt($('#ieltsListeningScore').text());
+      finalScoreDetail.ieltsSpeakingScore = parseInt($('#ieltsSpeakingScore').text());
+      finalScoreDetail.ieltsWritingScore = parseInt($('#ieltsWritingScore').text());
+      finalScoreDetail.ieltsTotalScore = parseInt($('#ieltsTotalScore').text());
+      finalScoreDetail.lsatTotalScore = parseInt($('#lsatTotalScore').text());
+      finalScoreDetail.mcatTotalScore = parseInt($('#mcatTotalScore').text());
+      finalScoreDetail.satEBRWSScore = parseInt($('#satEBRWSScore').text());
+      finalScoreDetail.satMathScore = parseInt($('#satMathScore').text());
+      finalScoreDetail.satEssayScore = parseInt($('#satEssayScore').text());
+      finalScoreDetail.satTotalScore = parseInt($('#satTotalScore').text());
+
+      console.log(finalScoreDetail);
     }
 
-    console.log(finalScoreDetail);
+    // finalAcademicDetail = {
+    //   universityName: $('#universityName').text() ,
+    //   universityFrom: parseInt($('#universityFrom').text()) ,
+    //   universityTo: parseInt($('#universityTo').text()) ,
+    //   universityDegree: $('#universityDegree').text() ,
+    //   universityProgram: $('#universityProgram').text() ,
+    //   universityGrade: parseInt($('#universityGrade').text())
+    // }
 
-    finalAcademicDetail = {
-      universityName: $('#universityName').text() ,
-      universityFrom: parseInt($('#universityFrom').text()) ,
-      universityTo: parseInt($('#universityTo').text()) ,
-      universityDegree: $('#universityDegree').text() ,
-      universityProgram: $('#universityProgram').text() ,
-      universityGrade: parseInt($('#universityGrade').text())
-    }
-
-    finalWorkDetail = {
-      workMonth: parseInt($('#workMonth').text())
-    }
+    // finalWorkDetail = {
+    //   workMonth: parseInt($('#workMonth').text())
+    // }
 
 
-    finalInternshipDetail = {
-      workedAs: $('#workedAs').text() ,
-      workedFrom: parseInt($('#workedFrom').text()) ,
-      workedTo: parseInt($('#workedTo').text()) ,
-      workedProjectUrl: $('#workedProjectUrl').text() ,
-      workedLocation: $('#workedLocation').text()
-    }
+    // finalInternshipDetail = {
+    //   workedAs: $('#workedAs').text() ,
+    //   workedFrom: parseInt($('#workedFrom').text()) ,
+    //   workedTo: parseInt($('#workedTo').text()) ,
+    //   workedProjectUrl: $('#workedProjectUrl').text() ,
+    //   workedLocation: $('#workedLocation').text()
+    // }
 
-    finalResearchDetail = {
-      researchPaper: parseInt($('#researchPaper').text()) ,
-      researchPatent: parseInt($('#researchPatent').text())
-    }
+    // finalResearchDetail = {
+    //   researchPaper: parseInt($('#researchPaper').text()) ,
+    //   researchPatent: parseInt($('#researchPatent').text())
+    // }
 
-    finalAdditionalDetail = {
-      additionalDetail: $('#additionalDetail').text()
-    }
+    // finalAdditionalDetail = {
+    //   additionalDetail: $('#additionalDetail').text()
+    // }
 
-  }
 
   // function saveDetail() {
   //   console.log(finalScoreDetail);
