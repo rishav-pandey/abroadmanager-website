@@ -14,6 +14,19 @@ textarea {
   resize: none;
 }
 
+.mainbutton {
+  color: #02b3e4;
+  padding: 5px 10px;
+  border: 2px solid #02b3e4;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.mainbutton:hover {
+  background-color: #02b3e4;
+  color: #fff;
+}
+
 .overlay {
     height: 100%;
     width: 0;
