@@ -299,40 +299,39 @@
     }
 
     finalAcademicDetail = {
-      universityName: $('#universityName').text() ,
-      universityFrom: parseInt($('#universityFrom').text()) ,
-      universityTo: parseInt($('#universityTo').text()) ,
-      universityDegree: $('#universityDegree').text() ,
-      universityProgram: $('#universityProgram').text() ,
-      universityGrade: parseInt($('#universityGrade').text())
+      universityName: "",
+      universityFrom: "",
+      universityTo: "",
+      universityDegree: "",
+      universityProgram: "",
+      universityGrade: ""
     }
 
     finalWorkDetail = {
-      workMonth: parseInt($('#workMonth').text())
+      workMonth: null
     }
 
 
     finalInternshipDetail = {
-      workedAs: $('#workedAs').text() ,
-      workedFrom: parseInt($('#workedFrom').text()) ,
-      workedTo: parseInt($('#workedTo').text()) ,
-      workedProjectUrl: $('#workedProjectUrl').text() ,
-      workedLocation: $('#workedLocation').text()
+      workedAs: "" ,
+      workedFrom: "" ,
+      workedTo: "" ,
+      workedProjectUrl: "" ,
+      workedLocation: ""
     }
 
     finalResearchDetail = {
-      researchPaper: parseInt($('#researchPaper').text()) ,
-      researchPatent: parseInt($('#researchPatent').text())
+      researchPaper: null ,
+      researchPatent: null
     }
 
     finalAdditionalDetail = {
-      additionalDetail: $('#additionalDetail').text()
+      additionalDetail: ""
     }
 
 
 
-  function addJSONDetail() {
-
+  function addScoreDetail() {
       finalScoreDetail.greVerbalScore = parseInt($('#greVerbalScore').text());
       finalScoreDetail.greQuantitativeScore = parseInt($('#greQuantitativeScore').text());
       finalScoreDetail.greAnalyticalScore = parseInt($('#greAnalyticalScore').text());
@@ -358,47 +357,48 @@
       finalScoreDetail.satMathScore = parseInt($('#satMathScore').text());
       finalScoreDetail.satEssayScore = parseInt($('#satEssayScore').text());
       finalScoreDetail.satTotalScore = parseInt($('#satTotalScore').text());
-
-      console.log(finalScoreDetail);
+      ;
     }
 
-    // finalAcademicDetail = {
-    //   universityName: $('#universityName').text() ,
-    //   universityFrom: parseInt($('#universityFrom').text()) ,
-    //   universityTo: parseInt($('#universityTo').text()) ,
-    //   universityDegree: $('#universityDegree').text() ,
-    //   universityProgram: $('#universityProgram').text() ,
-    //   universityGrade: parseInt($('#universityGrade').text())
-    // }
-
-    // finalWorkDetail = {
-    //   workMonth: parseInt($('#workMonth').text())
-    // }
 
 
-    // finalInternshipDetail = {
-    //   workedAs: $('#workedAs').text() ,
-    //   workedFrom: parseInt($('#workedFrom').text()) ,
-    //   workedTo: parseInt($('#workedTo').text()) ,
-    //   workedProjectUrl: $('#workedProjectUrl').text() ,
-    //   workedLocation: $('#workedLocation').text()
-    // }
+    function addAcademicDetail() {
+      finalAcademicDetail.universityName = $('#universityName').text();
+      finalAcademicDetail.universityFrom = $('#universityFrom').text();
+      finalAcademicDetail.universityTo = $('#universityTo').text();
+      finalAcademicDetail.universityDegree = $('#universityDegree').text();
+      finalAcademicDetail.universityProgram = $('#universityProgram').text();
+      finalAcademicDetail.universityGrade = $('#universityGrade').text();
 
-    // finalResearchDetail = {
-    //   researchPaper: parseInt($('#researchPaper').text()) ,
-    //   researchPatent: parseInt($('#researchPatent').text())
-    // }
+    }
 
-    // finalAdditionalDetail = {
-    //   additionalDetail: $('#additionalDetail').text()
-    // }
+    function addWorkDetail() {
+      finalWorkDetail.workMonth = parseInt($('#workMonth').text());
+
+    }
+
+    function addInternshipDetail() {
+      finalInternshipDetail.workedAs = $('#workedAs').text();
+      finalInternshipDetail.workedFrom = $('#workedFrom').text();
+      finalInternshipDetail.workedTo = $('#workedTo').text();
+      finalInternshipDetail.workedProjectUrl = $('#workedProjectUrl').text();
+      finalInternshipDetail.workedLocation = $('#workedLocation').text();
+
+    }
 
 
-  // function saveDetail() {
-  //   console.log(finalScoreDetail);
-  //   console.log(finalAdditionalDetail);
-  //   console.log(finalWorkDetail);
-  //   console.log(finalInternshipDetail);
-  //   console.log(finalResearchDetail);
-  //   console.log(finalAdditionalDetail);
-  // }
+    function addResearchDetail() {
+      finalResearchDetail.researchPaper = parseInt($('#researchPaper').text());
+      finalResearchDetail.researchPatent = parseInt($('#researchPatent').text());
+
+    }
+
+    function addAdditionalDetail() {
+      finalAdditionalDetail.finalWorkDetail.additionalDetail = $('#additionalDetail').text();
+
+    }
+
+
+    function sendData() {
+      for(var key in )
+    }

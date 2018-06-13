@@ -2,7 +2,7 @@
 
 #innerbanner {
   height: 70px;
- 
+
 }
 
 #main-section {
@@ -24,8 +24,14 @@ margin-top:2%;
     height:800px;
 	top:0px;
 }
+
+#main-screen {
+  background-image: url('../images/christian-koch-79679-unsplash.jpg');
+  height: 800px;
+}
+
 #sheet {
-    
+
 	text-align: center;
 	padding: 100px 40px 120px 40px;
 	text-transform: uppercase;
@@ -83,7 +89,7 @@ margin-top:2%;
 
 #room-post h3{
   font-weight: 550;
-  
+
 }
 
 #room-post button {
@@ -199,7 +205,7 @@ margin-top:2%;
   background-size: cover;
 }
 #room-post{
-	margin: 50px 100px;	
+	margin: 50px 100px;
 	}
 
 }

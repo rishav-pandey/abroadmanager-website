@@ -542,7 +542,7 @@
                                   <input id="satEssayScoreValue" type="number" name="sat-essay" min="2" max="8" placeholder="2-8">
                                 </div>
                                 <div class="modal-footer" style="text-align: left;">
-                                  <button type="button" onclick="satScore();" data-dismiss="modal">SAVE</button>
+                                  <button type="button" onclick="satScore(); addScoreDetail();" data-dismiss="modal">SAVE</button>
                                 </div>
                               </div> <!-- .modal-content -->
                             </div>
@@ -647,7 +647,7 @@
                           </div>
                         </div>
                         <div class="modal-footer" style="text-align: left;">
-                          <button type="button" onclick="academicDetail();" data-dismiss="modal">SAVE</button>
+                          <button type="button" onclick="academicDetail(); addAcademicDetail();" data-dismiss="modal">SAVE</button>
                         </div>
                       </div> <!-- .modal-content -->
                     </div>
@@ -696,7 +696,7 @@
                           <input id="workMonthValue" type="number" name="work-month">
                         </div>
                         <div class="modal-footer" style="text-align: left;">
-                          <button type="button" onclick="workDetail();" data-dismiss="modal">SAVE</button>
+                          <button type="button" onclick="workDetail(); addWorkDetail();" data-dismiss="modal">SAVE</button>
                         </div>
                       </div> <!-- .modal-content -->
                     </div>
@@ -787,7 +787,7 @@
                           </div>
                         </div>
                         <div class="modal-footer" style="text-align: left;">
-                          <button type="button" onclick="internshipDetail();" data-dismiss="modal">SAVE</button>
+                          <button type="button" onclick="internshipDetail(); addInternshipDetail();" data-dismiss="modal">SAVE</button>
                         </div>
                       </div> <!-- .modal-content -->
                     </div>
@@ -842,7 +842,7 @@
                           <input id="researchPatentValue" type="number" name="research">
                         </div>
                         <div class="modal-footer" style="text-align: left;">
-                          <button type="button" onclick="researchDetail();" data-dismiss="modal">SAVE</button>
+                          <button type="button" onclick="researchDetail(); addResearchDetail();" data-dismiss="modal">SAVE</button>
                         </div>
                       </div> <!-- .modal-content -->
                     </div>
@@ -890,7 +890,7 @@
                           <textarea id="additionalInfoValue" placeholder="Enter any additional information"></textarea>
                         </div>
                         <div class="modal-footer" style="text-align: left;">
-                          <button type="button" onclick="additionalDetail();" data-dismiss="modal">SAVE</button>
+                          <button type="button" onclick="additionalDetail(); addAdditionalDetail();" data-dismiss="modal">SAVE</button>
                         </div>
                       </div> <!-- .modal-content -->
                     </div>
@@ -899,7 +899,7 @@
               </div> <!-- #more-info -->
               <hr>
               <div id="submitBtn">
-                <button onclick="addJSONDetail();" >Submit Details</button>
+                <button onclick="showDetail();" >Submit Details</button>
               </div>
             </div> <!-- #profile-card -->
           </div> <!-- #profile -->
@@ -1095,12 +1095,11 @@
 					<h4>SOCIAL MEDIA</h4>
 				</div>
 				<div class="footer-list">
-
-  							<p><a href=""><i class="fa fa-facebook"></i>Facebook</a><br></p>
-  							<p><a href=""><i class="fa fa-twitter"></i>Twitter</a><br></p>
-  							<p><a href=""><i class="fa fa-youtube"></i>YouTube</a><br></p>
-  							<p><a href=""><i class="fa fa-linkedin"></i>Linkedln</a><br></p>
-  							<p><a href=""><i class="fa fa-instagram"></i>Instagram</a><br></p>
+  				<p><a href=""><i class="fa fa-facebook"></i>Facebook</a><br></p>
+  				<p><a href=""><i class="fa fa-twitter"></i>Twitter</a><br></p>
+  				<p><a href=""><i class="fa fa-youtube"></i>YouTube</a><br></p>
+  				<p><a href=""><i class="fa fa-linkedin"></i>Linkedln</a><br></p>
+  				<p><a href=""><i class="fa fa-instagram"></i>Instagram</a><br></p>
 				</div>
 			</div>
 
