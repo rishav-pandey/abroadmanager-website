@@ -1,0 +1,96 @@
+#main-section {
+  height: 100vh;
+  background-image: url('../images/christian-koch-79679-unsplash.jpg');
+  width: 100%;
+  background-color: red;
+  position: relative;
+}
+
+#screen {
+  background-color: rgba(150, 50, 0, 0.5);
+  height: inherit;
+}
+
+
+.navbar-brand {
+  padding: 28px 25px 35px 15px;
+}
+
+.navbar-brand h1 {
+  letter-spacing:5px;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  text-shadow: 0.5px 0.5px 0.5px #4289EF;
+  margin-top: 0;
+  margin-bottom: 0;
+  color:#ffffff;
+  font-weight: 0.5em;
+}
+
+.navbar-brand a {
+  text-decoration:none !important;
+}
+
+
+#nav-list {
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 15px;
+  text-align: center;
+}
+
+
+#nav-list >li > a {
+  text-align: center;
+  color: #eee;
+  transform: perspective(1px) translateZ(0); /*for hover effect*/
+  box-shadow: 0 0 1px transparent;
+  transition-duration: 0.5s;
+  text-transform: uppercase;
+}
+
+
+
+#nav-list button {
+  text-transform: uppercase;
+  background-color: #02b3e4;
+  padding: 13px 30px 13px 30px;
+  margin-right: 0px;
+  border-radius: 5px;
+  border: 0;
+  color: #fff;
+  transform: perspective(1px) translateZ(0); /*for hover effect*/
+  box-shadow: 0 0 1px transparent;
+  transition-duration: 0.5s;
+  font-size: 15px;
+}
+
+
+
+#nav-list #notification {   /*WILL DISPLAY, WHEN LOGGED IN*/
+  display: none;
+}
+
+.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+.navbar-toggle span{
+  border: 1px solid #fff;
+}
+
+.dropdown-menu > li > a {
+  color: #eee;
+  transform: perspective(1px) translateZ(0); /*for hover effect*/
+  box-shadow: 0 0 1px transparent;
+  transition-duration: 0.5s;
+}
+
+.dropdown-menu > li {
+  text-align: center;
+}
+.dropdown-menu > li > a:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
