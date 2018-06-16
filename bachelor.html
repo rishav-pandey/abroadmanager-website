@@ -27,18 +27,6 @@
 </head>
 <body>
 
-<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:#4289EF; left:47%; margin-top:50px;">&times;</a>
-  <div class="overlay-content">
-    <a href="dashboard.html">Dashboard</a>
-    <a href="gd.html">General Discussions</a>
-	<a href="ud.html">University Specific Discussions</a>
-    <a href="roommate-search.html">Rommate Finder</a>
-    <a href="rent.html">Rent A Room</a>
-	<a href="login.html"><button style="background-color:#f2f2f2; color:#4289EF;border-radius:7px; padding:14px 16px; width:220px; left:40%;transform: perspective(1px) translateZ(0); box-shadow: 0 0 1px transparent; transition-duration: 0.5s;">LOGIN / SIGNUP</button></a>
-  </div>
-</div>
-
     <section id="innerbanner1" role="banner">
     <header style="margin: 0px; padding: 0px;">
       <div class="header-content clearfix">
@@ -54,7 +42,7 @@
                   </a>
                 </div>
 
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  aria-expanded="false" onclick="openNav()" style="background-color:#02b3e4;">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  aria-expanded="false" style="background-color:#02b3e4;">
 
 				<span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
@@ -163,13 +151,13 @@
       <div id="second-card">
         <h1>Ask a Question</h1>
         <div id="question">
-          <textarea name="question" placeholder="Enter your question..."></textarea>
+          <textarea id="question-area" name="question" placeholder="Enter your question..."></textarea>
         </div>
         <div id="suggestion">
-        	<a href=""><button>Post Your Profile</button></a>
-        	<a href=""><button>Admit Date</button></a>
-        	<a href=""><button>Review Date</button></a>
-        	<a href=""><button>Applied Date</button></a>
+        	<button id="suggestion-btn1">Post Your Profile</button>
+        	<button id="suggestion-btn2">Admit Date</button>
+        	<button id="suggestion-btn3">Review Date</button>
+        	<button id="suggestion-btn4">Applied Date</button>
         </div>
         <div class="pull-left" style="margin-top: 15px;">
           <p><strong>Choose Category:</strong></p>
@@ -333,7 +321,6 @@
 					<h4>SOCIAL MEDIA</h4>
 				</div>
 				<div class="footer-list">
-
   							<p><a href=""><i class="fa fa-facebook"></i>Facebook</a><br></p>
   							<p><a href=""><i class="fa fa-twitter"></i>Twitter</a><br></p>
   							<p><a href=""><i class="fa fa-youtube"></i>YouTube</a><br></p>
@@ -374,6 +361,7 @@
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/bachelor.js"></script>
 
   <!-- INCREASE HEIGHT OF INNERBANNER ON CLICK OF NAVIGATION BAR -->
   <script>
@@ -386,22 +374,6 @@
       $('#innerbanner').css("height", "100px");
     }
   });
-
-  // popup the suggestion bar
-  $('#question').on('click', function () {
-  	$('#suggestion').css("display", "block");
-  });
-  $('#question').on('focusout', function () {
-  	$('#suggestion').css("display", "none");
-  });
-
- 	// function to open and close nav menu on small screen
-  function openNav() {
-    document.getElementById("myNav").style.width = "100%";
-}
-function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-}
 
   //function to change the color of navbar while scrolling
   $(window).on('scroll', function(){
