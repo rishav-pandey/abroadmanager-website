@@ -43,7 +43,7 @@
 }
 #innerbanner1 {
 		background-color:white;
-	
+
 }
 .navbar-brand h1 {
 	letter-spacing:5px;
@@ -70,6 +70,7 @@
 }
 
 #first-card {
+	border-top: 5px solid #02b3e4;
 	text-transform: uppercase;
 	border-radius: 5px;
 	margin: 20px 5px;
@@ -141,6 +142,7 @@
 }
 
 #second-card {
+	border-top: 5px solid #02b3e4;
 	text-transform: uppercase;
 	border-radius: 5px;
 	margin: 20px 5px;
@@ -208,6 +210,8 @@ textarea {
 	margin: 20px 5px;
 	padding: 20px;
 	width: 70%;
+	border-radius: 5px;
+	border-top: 5px solid #02b3e4;
 }
 
 #add-discussion {
