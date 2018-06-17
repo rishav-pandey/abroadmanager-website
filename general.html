@@ -28,55 +28,49 @@
 <body>
 
     <section id="innerbanner1" role="banner">
-    <header style="margin: 0px; padding: 0px;">
-      <div class="header-content clearfix">
-    <nav id="header-nav1" class="navbar-fixed-top"  style="width: 100vw; height:70px; box-shadow: 0px 4px 8px 0 rgba(255, 255, 255,.2);">
-            <div class="container-fluid">
-              <div class="navbar-header"  style="background-color:white;">
-                <a href="index.html" class="visible-lg visible-sm visible-md pull-left">
-                  <div id="logo-img" alt="Logo Image"></div>
+    <header>
+      <div class="header-content cleafix">
+        <nav id="header-nav" class="navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <div class="navbar-brand">
+                <a href="index.html">
+                  <h1>Abroad Manager</h1>
                 </a>
-                <div class="navbar-brand">
-                  <a href="index.html">
-                    <h1>Abroad Manager</h1>
+              </div>
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false" style="margin-right:20px;">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div> <!-- navbar-header -->
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+              <ul id="nav-list" class="nav navbar-nav navbar-right">
+                <li>
+                  <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li class="dropdown dropdown1">
+                  <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Ask Anything <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="gd.html">General Discussions</a></li>
+                    <li><a href="ud.html">University Specific Discussions</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="roommate-search.html">Room-mate Finder</a>
+                </li>
+                <li>
+                  <a href="#">Rent a Room</a>
+                </li>
+                <li>
+                  <a href="#" id="notification"><span class="fa fa-bell"></span></a>
+                </li>
+                <li>
+                  <button> <i class="fa fa-graduation-cap"></i> Login/ Signup</button>
                   </a>
-                </div>
-
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  aria-expanded="false" style="background-color:#02b3e4;">
-
-        <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-              </div> <!-- navbar-header -->
-
-              <div class="collapse navbar-collapse" id="navbar-collapse-1" style="  background-color:white; box-shadow: 5px 3px 25px 0 #aba;">
-                <ul id="nav-list1" class="nav navbar-nav navbar-right">
-                  <li>
-                    <a href="#">Dashboard</a>
-                  </li>
-                  <li class="dropdown dropdown1">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ask Anything <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#" style="color:#02b3e4;">General Discussions</a></li>
-                      <li><a href="#" style="color:#02b3e4;">University Specific Discussions</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Room-mate Finder</a>
-                  </li>
-                  <li>
-                    <a href="">Rent a Room</a>
-                  </li>
-                  <li>
-                    <a href="#" id="notification"><span class="fa fa-bell"></span></a>
-                  </li>
-                  <li>
-                    <a href="login.html" style="padding-top: 0px;"><button style="margin-top:0px; margin-right:30px;"><i class="fa fa-graduation-cap" style="padding-right: 20px;"></i>Login/Signup</button>
-                    </a>
-                  </li>
-                </ul>
+                </li>
+              </ul>
             </div>
           </div> <!-- container-fluid -->
         </nav>
