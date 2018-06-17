@@ -43,7 +43,7 @@
 }
 #innerbanner1 {
 		background-color:white;
-	
+
 }
 .navbar-brand h1 {
 	letter-spacing:5px;
@@ -131,7 +131,8 @@
 }
 
 .batch {
-
+  font-size: 1.2em;
+  text-transform: lowercase;
 }
 
 .room-info {
