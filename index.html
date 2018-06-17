@@ -17,412 +17,230 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="images" href="images/logo_favi.ico">
   <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/main-style.css">
+  <link rel="stylesheet" href="css/main-style1.css">
   <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <section>
-    <div id="captioned-gallery">
-      <figure class="slider">
-        <figure>
-          <img src="images/imageonenew.jpg" style="width:100%; height:550px;">
-          <figcaption id="text">
-            <header>
-                <div class="header-content clearfix">
-                  <nav id="header-nav" class="navbar" style="width: 100vw; height:70px;">
-                      <div class="container-fluid">
-                        <div class="navbar-header">
-                          <a href="index.html" class="visible-lg visible-sm visible-md pull-left">
-                            <div id="logo-img" alt="Logo Image"></div>
-                          </a>
-                          <div class="navbar-brand">
-                            <a href="index.html">
-                              <h1>Abroad Manager</h1>
-                            </a>
-                          </div>
-
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  aria-expanded="false" style="background-color:white;">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                          </button>
-                        </div> <!-- navbar-header -->
-
-                        <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                          <ul id="nav-list" class="nav navbar-nav navbar-right">
-                            <li>
-                              <a href="dashboard.html">Dashboard</a>
-                            </li>
-                            <li class="dropdown dropdown1">
-                              <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Ask Anything <span class="caret"></span></a>
-                              <ul class="dropdown-menu">
-                                <li><a href="gd.html">General Discussions</a></li>
-                                <li><a href="ud.html">University Specific Discussions</a></li>
-                              </ul>
-                            </li>
-                            <li>
-                              <a href="roommate-search.html">Room-mate Finder</a>
-                            </li>
-                            <li>
-                              <a href="rent.html">Rent a Room</a>
-                            </li>
-                            <li>
-                              <a href="#" id="notification"><span class="fa fa-bell"></span></a>
-                            </li>
-
-                            <li>
-                              <a href="login.html" style="padding-top: 0px;"><button style="margin-top:0px; margin-right:-10px;"><i class="fa fa-graduation-cap" style="padding-right: 20px;"></i>Login/Signup</button>
-                              </a>
-                            </li>
-                          </ul>
-                      </div>
-                    </div> <!-- container-fluid -->
-                  </nav>
+  <div id="main-section">
+    <div class="container-fluid">
+      <div id="main-screen">
+        <header>
+          <div class="header-content cleafix">
+            <nav id="header-nav" class="navbar-fixed-top">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <div class="navbar-brand">
+                    <a href="index.html">
+                      <h1>Abroad Manager</h1>
+                    </a>
+                  </div>
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false" style="margin-right:20px;">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div> <!-- navbar-header -->
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                  <ul id="nav-list" class="nav navbar-nav navbar-right">
+                    <li>
+                      <a href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="dropdown dropdown1">
+                      <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Ask Anything <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="gd.html">General Discussions</a></li>
+                        <li><a href="ud.html">University Specific Discussions</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="roommate-search.html">Room-mate Finder</a>
+                    </li>
+                    <li>
+                      <a href="#">Rent a Room</a>
+                    </li>
+                    <li>
+                      <a href="#" id="notification"><span class="fa fa-bell"></span></a>
+                    </li>
+                    <li>
+                      <button> <i class="fa fa-graduation-cap"></i> Login/ Signup</button>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-              </header>
-            <div class="innerContent">
-            <h2>Facing difficulties in managing entire application process?</h2>
-            <p>We provide you an exclusive dashboard which is highly advanced and tailored to your application needs. You can use it all for free!</p>
-            <button class="mainbutton">Proceed to Dashboard</button>
-            </div>
-          </figcaption>
-        </figure>
-        <figure>
-          <img src="images/imagetwo.jpg" style="width:100%; height:550px;">
-          <figcaption id="text2">
-            <header>
-                <div class="header-content clearfix">
-                  <nav id="header-nav" class="navbar" style="width: 100vw; height:70px;">
-                      <div class="container-fluid">
-                        <div class="navbar-header">
-                          <a href="index.html" class="visible-lg visible-sm visible-md pull-left">
-                            <div id="logo-img" alt="Logo Image"></div>
-                          </a>
-                          <div class="navbar-brand">
-                            <a href="index.html">
-                              <h1>Abroad Manager</h1>
-                            </a>
-                          </div>
-
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  aria-expanded="false" style="background-color:white;">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                          </button>
-                        </div> <!-- navbar-header -->
-
-                        <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                          <ul id="nav-list" class="nav navbar-nav navbar-right">
-                            <li>
-                              <a href="dashboard.html">Dashboard</a>
-                            </li>
-                            <li class="dropdown dropdown1">
-                              <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Ask Anything <span class="caret"></span></a>
-                              <ul class="dropdown-menu">
-                                <li><a href="gd.html">General Discussions</a></li>
-                                <li><a href="ud.html">University Specific Discussions</a></li>
-                              </ul>
-                            </li>
-                            <li>
-                              <a href="roommate-search.html">Room-mate Finder</a>
-                            </li>
-                            <li>
-                              <a href="rent.html">Rent a Room</a>
-                            </li>
-                            <li>
-                              <a href="#" id="notification"><span class="fa fa-bell"></span></a>
-                            </li>
-
-                            <li>
-                              <a href="login.html" style="padding-top: 0px;"><button style="margin-top:0px; margin-right:-10px;"><i class="fa fa-graduation-cap" style="padding-right: 20px;"></i>Login/Signup</button>
-                              </a>
-                            </li>
-                          </ul>
-                      </div>
-                    </div> <!-- container-fluid -->
-                  </nav>
+              </div> <!-- container-fluid -->
+            </nav>
+          </div>
+        </header>
+        <div class="container">
+          <div class="screen1">
+            <div class="row">
+              <div class="col-lg-6 col-md-6">
+                <div class="screen1-img">
+                  <img src="http://via.placeholder.com/540x450">
                 </div>
-              </header>
-            <div class="innerContent">
-            <h2>Have doubts related to a particular university?</h2>
-            <p>Your search is over! We have built a separate group space for your dream university where you can ask any questions!</p>
-            <button class="mainbutton">Proceed to University Discussion Forum</button>
-            </div>
-          </figcaption>
-        </figure>
-        <figure>
-          <img src="images/imagethree.jpg" style="width:100%; height:550px;">
-          <figcaption id="text3">
-              <header>
-                <div class="header-content clearfix">
-                  <nav id="header-nav" class="navbar" style="width: 100vw; height:70px;">
-                      <div class="container-fluid">
-                        <div class="navbar-header">
-                          <a href="index.html" class="visible-lg visible-sm visible-md pull-left">
-                            <div id="logo-img" alt="Logo Image"></div>
-                          </a>
-                          <div class="navbar-brand">
-                            <a href="index.html">
-                              <h1>Abroad Manager</h1>
-                            </a>
-                          </div>
-
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  aria-expanded="false" style="background-color:white;">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                          </button>
-                        </div> <!-- navbar-header -->
-
-                        <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                          <ul id="nav-list" class="nav navbar-nav navbar-right">
-                            <li>
-                              <a href="dashboard.html">Dashboard</a>
-                            </li>
-                            <li class="dropdown dropdown1">
-                              <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Ask Anything <span class="caret"></span></a>
-                              <ul class="dropdown-menu">
-                                <li><a href="gd.html">General Discussions</a></li>
-                                <li><a href="ud.html">University Specific Discussions</a></li>
-                              </ul>
-                            </li>
-                            <li>
-                              <a href="roommate-search.html">Room-mate Finder</a>
-                            </li>
-                            <li>
-                              <a href="rent.html">Rent a Room</a>
-                            </li>
-                            <li>
-                              <a href="#" id="notification"><span class="fa fa-bell"></span></a>
-                            </li>
-
-                            <li>
-                              <a href="login.html" style="padding-top: 0px;"><button style="margin-top:0px; margin-right:-10px;"><i class="fa fa-graduation-cap" style="padding-right: 20px;"></i>Login/Signup</button>
-                              </a>
-                            </li>
-                          </ul>
-                      </div>
-                    </div> <!-- container-fluid -->
-                  </nav>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="screen1-text">
+                  <div class="caption-heading">
+                    <h2>
+                      <strong>
+                        Lorem Ipsum.
+                        <br>
+                        Lorem Ipsum.
+                      </strong>
+                    </h2>
+                  </div>
+                  <div class="caption-info">
+                    <span>
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                    </span>
+                  </div>
+                  <div class="caption-btn">
+                    <button> Lorem Ipsum </button>
+                  </div>
                 </div>
-              </header>
-            <div class="innerContent">
-             <h2>Have general doubts related to Study abroad journey?</h2>
-            <p>Use the filters provided at our platform to ask the right question at the right place!</p>
-            <button class="mainbutton">Proceed to General Discussion Forum</button>
+              </div>
             </div>
-          </figcaption>
-        </figure>
-        <figure>
-          <img src="images/imagefour.jpg" style="width:100%; height:550px;">
-          <figcaption id="text4">
-              <header>
-                <div class="header-content clearfix">
-                  <nav id="header-nav" class="navbar" style="width: 100vw; height:70px;">
-                      <div class="container-fluid">
-                        <div class="navbar-header">
-                          <a href="index.html" class="visible-lg visible-sm visible-md pull-left">
-                            <div id="logo-img" alt="Logo Image"></div>
-                          </a>
-                          <div class="navbar-brand">
-                            <a href="index.html">
-                              <h1>Abroad Manager</h1>
-                            </a>
-                          </div>
-
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  aria-expanded="false" style="background-color:white;">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                          </button>
-                        </div> <!-- navbar-header -->
-
-                        <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                          <ul id="nav-list" class="nav navbar-nav navbar-right">
-                            <li>
-                              <a href="dashboard.html">Dashboard</a>
-                            </li>
-                            <li class="dropdown dropdown1">
-                              <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Ask Anything <span class="caret"></span></a>
-                              <ul class="dropdown-menu">
-                                <li><a href="gd.html">General Discussions</a></li>
-                                <li><a href="ud.html">University Specific Discussions</a></li>
-                              </ul>
-                            </li>
-                            <li>
-                              <a href="roommate-search.html">Room-mate Finder</a>
-                            </li>
-                            <li>
-                              <a href="rent.html">Rent a Room</a>
-                            </li>
-                            <li>
-                              <a href="#" id="notification"><span class="fa fa-bell"></span></a>
-                            </li>
-
-                            <li>
-                              <a href="login.html" style="padding-top: 0px;"><button style="margin-top:0px; margin-right:-10px;"><i class="fa fa-graduation-cap" style="padding-right: 20px;"></i>Login/Signup</button>
-                              </a>
-                            </li>
-                          </ul>
-                      </div>
-                    </div> <!-- container-fluid -->
-                  </nav>
-                </div>
-              </header>
-            <div class="innerContent">
-             <h2>Never miss any important updates from your interest groups!</h2>
-            <p>Join our platform and get access to the entire discussion space and add the relevant groups to your interest. You will be notified whenever someone answers your question!</p>
-            </div>
-            <button class="mainbutton">Join Now</button>
-          </figcaption>
-        </figure>
-        <figure>
-          <img src="images/imageonenew.jpg" style="width:100%; height:550px;">
-          <figcaption id="text">
-            <header>
-                <div class="header-content clearfix">
-                  <nav id="header-nav" class="navbar" style="width: 100vw; height:70px;">
-                      <div class="container-fluid">
-                        <div class="navbar-header">
-                          <a href="index.html" class="visible-lg visible-sm visible-md pull-left">
-                            <div id="logo-img" alt="Logo Image"></div>
-                          </a>
-                          <div class="navbar-brand">
-                            <a href="index.html">
-                              <h1>Abroad Manager</h1>
-                            </a>
-                          </div>
-
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  aria-expanded="false" style="background-color:white;">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                          </button>
-                        </div> <!-- navbar-header -->
-
-                        <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                          <ul id="nav-list" class="nav navbar-nav navbar-right">
-                            <li>
-                              <a href="dashboard.html">Dashboard</a>
-                            </li>
-                            <li class="dropdown dropdown1">
-                              <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Ask Anything <span class="caret"></span></a>
-                              <ul class="dropdown-menu">
-                                <li><a href="gd.html">General Discussions</a></li>
-                                <li><a href="ud.html">University Specific Discussions</a></li>
-                              </ul>
-                            </li>
-                            <li>
-                              <a href="roommate-search.html">Room-mate Finder</a>
-                            </li>
-                            <li>
-                              <a href="rent.html">Rent a Room</a>
-                            </li>
-                            <li>
-                              <a href="#" id="notification"><span class="fa fa-bell"></span></a>
-                            </li>
-
-                            <li>
-                              <a href="login.html" style="padding-top: 0px;"><button style="margin-top:0px; margin-right:-10px;"><i class="fa fa-graduation-cap" style="padding-right: 20px;"></i>Login/Signup</button>
-                              </a>
-                            </li>
-                          </ul>
-                      </div>
-                    </div> <!-- container-fluid -->
-                  </nav>
-                </div>
-              </header>
-            <div class="innerContent">
-            <h2>Facing difficulties in managing entire application process?</h2>
-            <p>We provide you an exclusive dashboard which is highly advanced and tailored to your application needs. You can use it all for free!</p>
-            <button class="mainbutton">button1</button>
-            </div>
-          </figcaption>
-        </figure>
-      </figure>
+          </div>
+        </div> <!-- .container -->
+      </div> <!-- #screen -->
     </div>
-  </section>
-  <section class="sec">
-    <div class="container" style="width:100%; ">
-      <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="float:left;">
-        <img src="images/iconone.PNG" style="width:72px; height:auto; padding-left:10px;">
-        <h2>Get Access to a <span id="blue">Highly Advanced Dashboard</span> to <span id="pink">Manage your Profile</span></h2>
-
-        <h3>You can save so much time by having your own personal dashboard to manage the entire application process
-        tailored especially to your needs. Get instant updates on all universities that are of your interest right on your dashboard.</h3><br>
-
-      <button class="btnn" style="float:left;">button1</button>
+  </div>
+  <div id="screen2" class="screens">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 side-img">
+        <div class="screen-img">
+          <img src="http://via.placeholder.com/650x480">
+        </div>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <img class="screen" src="screenshot2.PNG" style=" filter:drop-shadow(0px 4px 10px  #999999);" >
-      </div>
+      <div class="col-lg-6 col-md-6">
+        <div class="screen-text">
+          <div class="screen-mini-img">
+            <img src="images/iconone_100x100.png">
+          </div>
+          <div class="caption-heading">
+            <h2>
+              <strong>
+                Lorem Ipsum is simply dummy text of the printing.
+                <br>
+                Lorem Ipsum.
+              </strong>
+            </h2>
+          </div>
+          <div class="caption-info">
+            <span>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+            </span>
+          </div>
+          <div class="caption-btn">
+            <button> Lorem Ipsum </button>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
-    <section class="sec" style="background-color: #f2f2f2;">
-    <div class="container"  style="width:100%;">
-      <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <img class="screen" src="screenshot2.PNG" style=" filter:drop-shadow(0px 4px 10px  #999999);" >
+  </div>
+  <div id="screen3" class="screens">
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+        <div class="screen-text">
+          <div class="screen-mini-img">
+            <img src="images/icontwo_100x100.png">
+          </div>
+          <div class="caption-heading">
+            <h2>
+              <strong>
+                Lorem Ipsum is simply dummy text of the printing.
+                <br>
+                Lorem Ipsum.
+              </strong>
+            </h2>
+          </div>
+          <div class="caption-info">
+            <span>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+            </span>
+          </div>
+          <div class="caption-btn">
+            <button> Lorem Ipsum </button>
+          </div>
+        </div>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="float:left;">
-        <img src="images/icontwo.PNG" style="width:72px; height:auto; padding-left:10px;">
-        <h2>There are so many <span id="green">discussion forums</span> available but all lack the proper filtering of relevant questions.</h2>
-
-        <h3>We have built a separate discussion space for different Degrees, Programs, Universities and all sub-categories. You name it, we have it!.</h3><br>
-
-      <button class="btnn" style="float:left;">button1</button>
-      </div>
-
-    </div>
-    </div>
-  </section>
-
-  <section class="sec">
-    <div class="container" style="width:100%;">
-      <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="float:left;">
-        <img src="images/iconthree.PNG" style="width:72px; height:auto; padding-left:10px;">
-        <h2>They say its difficult to <span id="blue">find home and friends abroad</span>. We say its the <span id="pink">easiest</span> part!</h2>
-
-        <h3>If you have finalized your dream university then find the perfect roommate right here! Check out an elaborate listing of rooms near your university abroad.</h3><br>
-
-      <button class="btnn" style="float:left;">button1</button>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <img class="screen" src="screenshot2.PNG" style=" filter:drop-shadow(0px 4px 10px  #999999);" >
-      </div>
+      <div class="col-lg-6 col-md-6 side-img">
+        <div class="screen-img">
+          <img src="http://via.placeholder.com/650x480">
+        </div>
       </div>
     </div>
-  </section>
-
-  <section class="sec" style="background-color: #f2f2f2;">
-    <div class="container"  style="width:100%;">
-      <div class="row">
-
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <img class="screen" src="screenshot2.PNG" style=" filter:drop-shadow(0px 4px 10px  #999999);" >
+  </div>
+  <div id="screen4" class="screens">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 side-img">
+        <div class="screen-img">
+          <img src="http://via.placeholder.com/650x480">
+        </div>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="float:left;">
-        <img src="images/iconfournew.PNG" style="width:72px; height:auto; padding-left:10px;">
-        <h2>Save your <span id="green">travel time and money</span>!</h2>
-
-        <h3>Check out our very easy to use interface to shortlist the best rooms near your university.</h3><br>
-
-        <button class="btnn" style="float:left;">button1</button>
-      </div>
-
+      <div class="col-lg-6 col-md-6">
+        <div class="screen-text">
+          <div class="screen-img">
+            <img src="images/iconthree_100x100.png">
+          </div>
+          <div class="caption-heading">
+            <h2>
+              <strong>
+                Lorem Ipsum is simply dummy text of the printing.
+                <br>
+                Lorem Ipsum.
+              </strong>
+            </h2>
+          </div>
+          <div class="caption-info">
+            <span>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+            </span>
+          </div>
+          <div class="caption-btn">
+            <button> Lorem Ipsum </button>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+  <div id="screen5" class="screens">
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+        <div class="screen-text">
+          <div class="screen-img">
+            <img src="images/iconfour_100x100.png">
+          </div>
+          <div class="caption-heading">
+            <h2>
+              <strong>
+                Lorem Ipsum is simply dummy text of the printing.
+                <br>
+                Lorem Ipsum.
+              </strong>
+            </h2>
+          </div>
+          <div class="caption-info">
+            <span>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+            </span>
+          </div>
+          <div class="caption-btn">
+            <button> Lorem Ipsum </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 side-img">
+        <div class="screen-img">
+          <img src="http://via.placeholder.com/650x480">
+        </div>
+      </div>
+    </div>
+  </div>
   <section class="sec">
     <footer style="background-color: #fff;">
       <div class="row">
@@ -463,26 +281,26 @@
       </div>
     </footer>
   </section>
-
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
   <script>
+    $(document).ready(function(){
+      $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 300) {
+          // $("#header-nav").css("background" , " #ffffff");
+          // $("#header-nav").css("font" , "#4289EF");
+          console.log("Hello World!");
+        }
 
-$(document).ready(function(){
-  $(window).scroll(function(){
-    var scroll = $(window).scrollTop();
-    if (scroll > 300) {
-      $(".topnav").css("background" , " #ffffff");
-    $(".topnav").css("font" , "#4289EF");
-    }
-
-    else{
-      $(".topnav").css("background" , "none");
-    }
-  })
-})
-</script>
+        else
+        {
+          $("#header-nav").css("background" , "none");
+        }
+      });
+    });
+  </script>
 </body>
 </html>
