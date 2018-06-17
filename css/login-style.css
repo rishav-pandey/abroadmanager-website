@@ -5,43 +5,56 @@
 	font-family: Open Sans,sans-serif;
 }
 
-#nav-list1 {
-	margin-top: 10px;
-	font-size: 13px;
-	text-align: center;
+.navbar-brand h1 {
+    color: #02b3e4;
+}
+
+.dropdown-menu {
+  background-color: #fff;
+}
+
+#nav-list >li > a, .dropdown-menu > li > a {
+    color: #02b3e4;
+}
+
+.dropdown-menu > li > a:hover {
+  color: #02b3e4;
+  transform: scale(1.05);
+}
+
+.navbar-collapse {
+    box-shadow: 5px 3px 25px 0 #aba;
+    background-color: #fff;
+}
+
+#nav-list button {
+  background-color: #02b3e4;
+  border: none;
+  color: #fff;
+  transform: perspective(1px) translateZ(0); /*for hover effect*/
+  box-shadow: 0 0 1px transparent;
+  transition-duration: 0.5s;
+  font-size: 15px;
 }
 
 
-#nav-list1 >li > a {
-	text-align: center;
-	color: #02b3e4;
-	transform: perspective(1px) translateZ(0); /*for hover effect*/
-	box-shadow: 0 0 1px transparent;
-	transition-duration: 0.5s;
-	text-transform: uppercase;
+#innerbanner1 {
+    background-color:white;
+
+}
+.navbar-brand h1 {
+  letter-spacing:5px;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  text-shadow: 0.5px 0.5px 0.5px #4289EF;
+  margin-top: 0;
+  margin-bottom: 0;
+  color:#02b3e4;
+  font-weight: 0.5em;
 }
 
-
-
-#nav-list1 button {
-	text-transform: uppercase;
-	background-color: #02b3e4;
-	color:white;
-	padding: 13px 30px 13px 30px;
-	margin-left: 20px;
-	border-radius: 5px;
-	border: 0;
-	margin-top:-15px;
-	transform: perspective(1px) translateZ(0); /*for hover effect*/
-	box-shadow: 0 0 1px transparent;
-	transition-duration: 0.5s;
-	font-size: 15px;
-}
-
-
-
-#nav-list1 #notification { 	/*WILL DISPLAY, WHEN LOGGED IN*/
-	display: none;
+#nav-list >li > a {
+  color: #02b3e4;
 }
 #innerbanner1 {
 		background-color:white;

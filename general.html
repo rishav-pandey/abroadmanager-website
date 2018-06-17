@@ -19,7 +19,7 @@
   <link rel="icon" type="images" href="images/logo_favi.ico">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/main-style.css">
-  <link rel="stylesheet" href="css/bachelor-style.css">
+  <link rel="stylesheet" href="css/discussion-style.css">
   <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -367,25 +367,6 @@
     if ($('.navbar-collapse').hasClass("in")) {
       $('#innerbanner').css("height", "100px");
     }
-  });
-
-  //function to change the color of navbar while scrolling
-  $(window).on('scroll', function(){
-    var scroll = $(window).scrollTop();
-    if (scroll > 0) {
-    $("#header-nav").css({"background-color":"white"});
-    $("#header-nav h1").css("color" , "#02b3e4");
-    $("#header-nav a").css("color" , "#02b3e4");
-    $("#header-nav button").css("color" , "#f1f1f1");
-    $("#header-nav button").css("background-color" , "#02b3e4");
-    }
-  else if(scroll <= 0){
-    $("#header-nav").css("background-color" , "transparent");
-    $("#header-nav h1").css("color" , "#f1f1f1");
-    $("#header-nav a").css("color" , "#f1f1f1");
-    $("#header-nav button").css("background-color" , "#02b3e4");
-    $("#header-nav button").css("color" , "#f1f1f1");
-  }
   });
 
   </script>
