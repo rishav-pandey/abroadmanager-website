@@ -398,7 +398,23 @@
 
     }
 
+    function checkForNull() {
+      arguments.forEach( function(argument) {
+        for (var i in argument)
+        {
 
-    function sendData() {
-      for(var key in )
+        }
+      });
+    }
+
+
+    function sendData () {
+      var flag = checkForNull(finalScoreDetail, finalAcademicDetail, finalWorkDetail, finalInternshipDetail, finalResearchDetail, finalAdditionalDetail);
+      if (flag) {
+
+      }
+      else
+      {
+        alert("Some of your details are not filled");
+      }
     }

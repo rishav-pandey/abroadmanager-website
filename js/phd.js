@@ -3,10 +3,10 @@
     $('#suggestion').css("display", "block");
   });
 
-  var suggestionValue1 = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's "
-  var suggestionValue2 = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's "
-  var suggestionValue3 = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's "
-  var suggestionValue4 = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's "
+  var suggestionValue1 = "Post your Profile: \nGRE/GMAT/XYZ = \nAcademic Qualification: \nWork Experience: \nInternships: \nResearch Papers: \nPatents: \nAdditional Information: "
+  var suggestionValue2 = "Admit Date: DD/MM/YYYY "
+  var suggestionValue3 = "Review Date: DD/MM/YYYY "
+  var suggestionValue4 = "Applied Date: DD/MM/YYYY "
 
   $('#suggestion-btn1').on('click', function () {
     $('#question-area').val("");
