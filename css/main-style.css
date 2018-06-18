@@ -394,7 +394,6 @@ button.btn{
   }
 }
 
-}
 .btn:hover{
   background-color: none;
   border-color: white;
@@ -418,7 +417,7 @@ button.btn{
 
 }
 
-img{
+img .screen{
     width:620px;
     height:550px;
   }
