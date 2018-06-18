@@ -3,7 +3,7 @@
 }
 
 #main-section {
-	
+
 	text-align: center;
 }
 #main-screen{
@@ -23,7 +23,7 @@
   height: 800px;
 }
 #uni-box {
-  margin: 150px 100px 100px 100px; 
+  margin: 150px 100px 100px 100px;
   font-size: 2em;
 }
 
@@ -33,22 +33,11 @@
   font-size: 1.3em;
 }
 #sheet {
-    
+
 	text-align: center;
 	padding: 100px 40px 120px 40px;
 	text-transform: uppercase;
 }
-
-
-/*#roommate-box {
-	margin: 100px 100px 30px 100px;
-	font-size: 2em;
-}
-#roommate-box h1 {
-	margin-right: 50px;
-	font-weight: 700 !important;
-}
-*/
 
 #roommate-searchbox {
   background-color: #fff;
@@ -107,9 +96,9 @@
 
 }
 #screen{
-  background-image: url('../images/ialicante-mediterranean-homes-475799-unsplash.jpg'); 
-  height: 800px; 
-  background-repeat: no-repeat; 
+  background-image: url('../images/ialicante-mediterranean-homes-475799-unsplash.jpg');
+  height: 800px;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 }
@@ -128,11 +117,11 @@
 	font-size:25px;
 }
 }
-  
+
 
 @media (min-width: 992px) and (max-width: 1199px) {
-	
- 
+
+
   #screen{
   background-image: url('../images/ialicante-mediterranean-homes-475799-unsplashCrop2.jpg');
   height: 800px;
@@ -141,7 +130,7 @@
 }
 }
 @media (min-width: 555px) and (max-width: 991px) {
-  
+
   #screen{
   background-image: url('../images/ialicante-mediterranean-homes-475799-unsplashCrop2.jpg');
   height: 800px;
@@ -175,7 +164,7 @@
 
 }
 @media (max-width: 554px) {
-  
+
   #screen{
   background-image: url('../images/ialicante-mediterranean-homes-475799-unsplashCrop3.jpg');
   height: 800px;
@@ -227,7 +216,7 @@
     height: 25px;
     margin-left: -5px;
     font-size: 0.6em;
-} 
+}
 }
 
 /********** Large Mobile devices only **********/

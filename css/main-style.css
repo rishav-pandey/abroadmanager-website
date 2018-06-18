@@ -15,7 +15,6 @@ transition: all 250ms ease-in-out;}
   height:72px;
 }
 
-
 .white{
   background-color:white;
   color: #4289EF;
@@ -316,7 +315,7 @@ figure.slider figure figcaption {
   font-size: 20px;
 }
 
-.btn{
+.button{
   text-align: center;
   border-radius:5px;
   background-color: white;
@@ -363,7 +362,7 @@ border: none
 }
 
 
-button.btn{
+button.button{
   text-align: center;
   border-radius:5px;
   background-color: white;
@@ -373,7 +372,7 @@ button.btn{
   padding: 10px, 40px, 40px, 10px;
   font-size: 15px;
 }
-.btn:hover{
+.button:hover{
   background-color: none;
   border-color: white;
 }
@@ -394,7 +393,7 @@ button.btn{
   }
 }
 
-.btn:hover{
+.button:hover{
   background-color: none;
   border-color: white;
 }
