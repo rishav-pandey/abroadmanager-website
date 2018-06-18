@@ -180,8 +180,10 @@
       $("#header-nav button").css("color" , "#f1f1f1");
       $("#header-nav button").css("background-color" , "#02b3e4");
       $('.dropdown-menu').css('background-color', '#fff');
+      $('.navbar-collapse').css("box-shadow", "5px 3px 25px 0 #aba");
     }
     else if(scroll <= 0){
+      $('.navbar-collapse').css("box-shadow", "none");
       $("#header-nav").css("background-color" , "transparent");
       $("#header-nav h1").css("color" , "#f1f1f1");
       $("#header-nav a").css("color" , "#f1f1f1");
