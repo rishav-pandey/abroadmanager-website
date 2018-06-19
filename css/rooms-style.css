@@ -133,6 +133,6 @@
 }
 
 .room-info {
-    text-transform: none;
-    color: #484848;
+  text-transform: none;
+  font-size: 1.2em;
 }
