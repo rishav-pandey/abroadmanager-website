@@ -1,3 +1,52 @@
+  function opensection(event, divName) {
+      var i, mycontent, contentlink;
+      mycontent = document.getElementsByClassName("mycontent");
+      for (i = 0; i < mycontent.length; i++) {
+        mycontent[i].style.display = "none";
+      }
+
+      contentlink = document.getElementsByClassName("contentlink");
+      for (i = 0; i < contentlink.length; i++) {
+        contentlink[i].className = contentlink[i].className.replace(" active", "");
+      }
+
+      document.getElementById(divName).style.display = "block";
+      event.currentTarget.className += " active";
+    }
+
+    document.getElementById("defaultOpen").click();
+
+    // FOR DISPLAYING OF DIFFERENT SCORE-CARDS
+    function openScore(event, cardName) {
+      var tabLink, tabContent;
+      tabContent = document.getElementsByClassName("tabContent");
+      for (i = 0; i < tabContent.length; i++) {
+        tabContent[i].style.display = "none";
+      }
+
+      tabLink = document.getElementsByClassName("tabLink");
+      for (i = 0; i < tabLink.length; i++) {
+        tabLink[i].className = tabLink[i].className.replace(" active", "");
+      }
+
+      document.getElementById(cardName).style.display = "block";
+      event.currentTarget.className += " active";
+    }
+
+  // display of university detail on click of button
+  function university() {
+    $('#university-detail').css("display", "block");
+  }
+
+  $('#university-detail').on('mouseover', function () {
+    $('#edit').css("display", "block");
+  });
+
+  $('#university-detail').on('mouseout', function () {
+    $('#edit').css("display", "none");
+  });
+
+// ***********************************************************************************************************
 
   // FOR CALCULATING AND STORING SCORE OF GRE EXAMS
   function greScore() {
@@ -186,6 +235,7 @@
     }
   }
 
+  // FOR STORING ACADEMIC DETAIL DATA ON INPUT
   function academicDetail() {
     var universityName =  $('#universityNameValue').val();
     var universityFrom = $('#universityFromValue').val();
@@ -209,7 +259,7 @@
     }
   }
 
-
+  // FOR STORING WORK DETAIL DATA ON INPUT
   function workDetail() {
     var workMonth =  $('#workMonthValue').val();
     if ((workMonth != "")) {
@@ -223,6 +273,7 @@
   }
 
 
+// FOR STORING INTERNSHIP DETAIL DATA ON INPUT
   function internshipDetail() {
     var workedAs =  $('#workedAsValue').val();
     var workedFrom = $('#workedFromValue').val();
@@ -243,6 +294,7 @@
     }
   }
 
+  // FOR STORING RESEARCH DETAIL DATA ON INPUT
   function researchDetail() {
     var researchPaper =  $('#researchPaperValue').val();
     var researchPatent = $('#researchPatentValue').val();
@@ -257,6 +309,7 @@
     }
   }
 
+  // FOR STORING ADDITIONAL DETAIL DATA ON INPUT
   function additionalDetail() {
     var additionalInfo =  $('#additionalInfoValue').val();
     if ((additionalInfo != "")) {
@@ -270,6 +323,9 @@
   }
 
 
+// *************************************************************
+// OBJECT FORMAT OF DETAIL FOR SAVING AND SENDING FURTHER
+// *******************************************************
   finalScoreDetail = {
       greVerbalScore:  null,
       greQuantitativeScore: null ,
@@ -328,10 +384,12 @@
     finalAdditionalDetail = {
       additionalDetail: ""
     }
+// *******************************************************
+// OBJECT FORMAT OF DETAIL FOR SAVING AND SENDING FURTHER
+// *************************************************************
 
-
-
-  function addScoreDetail() {
+    // THIS FUNCTION STORES THE DATA IN OBJECT FORMAT
+    function addScoreDetail() {
       finalScoreDetail.greVerbalScore = parseInt($('#greVerbalScore').text());
       finalScoreDetail.greQuantitativeScore = parseInt($('#greQuantitativeScore').text());
       finalScoreDetail.greAnalyticalScore = parseInt($('#greAnalyticalScore').text());
@@ -357,11 +415,9 @@
       finalScoreDetail.satMathScore = parseInt($('#satMathScore').text());
       finalScoreDetail.satEssayScore = parseInt($('#satEssayScore').text());
       finalScoreDetail.satTotalScore = parseInt($('#satTotalScore').text());
-      ;
     }
 
-
-
+    // THIS FUNCTION STORES THE DATA IN OBJECT FORMAT
     function addAcademicDetail() {
       finalAcademicDetail.universityName = $('#universityName').text();
       finalAcademicDetail.universityFrom = $('#universityFrom').text();
@@ -369,52 +425,227 @@
       finalAcademicDetail.universityDegree = $('#universityDegree').text();
       finalAcademicDetail.universityProgram = $('#universityProgram').text();
       finalAcademicDetail.universityGrade = $('#universityGrade').text();
-
     }
 
+    // THIS FUNCTION STORES THE DATA IN OBJECT FORMAT
     function addWorkDetail() {
       finalWorkDetail.workMonth = parseInt($('#workMonth').text());
-
     }
 
+    // THIS FUNCTION STORES THE DATA IN OBJECT FORMAT
     function addInternshipDetail() {
       finalInternshipDetail.workedAs = $('#workedAs').text();
       finalInternshipDetail.workedFrom = $('#workedFrom').text();
       finalInternshipDetail.workedTo = $('#workedTo').text();
       finalInternshipDetail.workedProjectUrl = $('#workedProjectUrl').text();
       finalInternshipDetail.workedLocation = $('#workedLocation').text();
-
     }
 
-
+    // THIS FUNCTION STORES THE DATA IN OBJECT FORMAT
     function addResearchDetail() {
       finalResearchDetail.researchPaper = parseInt($('#researchPaper').text());
       finalResearchDetail.researchPatent = parseInt($('#researchPatent').text());
-
     }
 
+    // THIS FUNCTION STORES THE DATA IN OBJECT FORMAT
     function addAdditionalDetail() {
       finalAdditionalDetail.finalWorkDetail.additionalDetail = $('#additionalDetail').text();
-
     }
 
-    function checkForNull() {
-      arguments.forEach( function(argument) {
-        for (var i in argument)
-        {
+// ***********************************************************************************************************************
 
+    // THIS FUNCTION CHECKS FOR COMPLETE DATA AND SENDS THE SCORE OF PROFILE SECTION IN JASON FORMAT
+    function sendScoreDetail() {
+      var checkEmpty = false; // Check weather all the data is filled to perform further action
+      for (let item in finalScoreDetail) {
+        if (finalScoreDetail[item] == "" || finalScoreDetail[item] == null) {
+          checkEmpty = true;
         }
-      });
-    }
-
-
-    function sendData () {
-      var flag = checkForNull(finalScoreDetail, finalAcademicDetail, finalWorkDetail, finalInternshipDetail, finalResearchDetail, finalAdditionalDetail);
-      if (flag) {
-
+      }
+      if (checkEmpty == true) {
+        alert("Any of the data Empty");
       }
       else
       {
-        alert("Some of your details are not filled");
+        jQuery.ajax({
+          url: '/path/to/file',
+          type: "post",
+          dataType: "json",
+          data: finalScoreDetail,
+        })
+        .done(function() {
+          console.log("success");
+        })
+        .fail(function() {
+          console.log("error");
+        })
+        .always(function() {
+          console.log("complete");
+        });
       }
+    }
+
+    // THIS FUNCTION CHECKS FOR COMPLETE DATA AND SENDS THE ACADEMIC DETAIL OF PROFILE SECTION IN JASON FORMAT
+    function sendAcademicDetail() {
+      var checkEmpty = false; // Check weather all the data is filled to perform further action
+      for (let item in finalAcademicDetail) {
+        if (finalAcademicDetail[item] == "" || finalAcademicDetail[item] == null) {
+          checkEmpty = true;
+        }
+      }
+      if (checkEmpty == true) {
+        alert("Any of the data Empty");
+      }
+      else
+      {
+        jQuery.ajax({
+          url: '/path/to/file',
+          type: "post",
+          dataType: "json",
+          data: finalAcademicDetail,
+        })
+        .done(function() {
+          console.log("success");
+        })
+        .fail(function() {
+          console.log("error");
+        })
+        .always(function() {
+          console.log("complete");
+        });
+      }
+    }
+
+    // THIS FUNCTION CHECKS FOR COMPLETE DATA AND SENDS THE WORK DETAIL OF PROFILE SECTION IN JASON FORMAT
+    function sendWorkDetail() {
+      var checkEmpty = false; // Check weather all the data is filled to perform further action
+      for (let item in finalWorkDetail) {
+        if (finalWorkDetail[item] == "" || finalWorkDetail[item] == null) {
+          checkEmpty = true;
+        }
+      }
+      if (checkEmpty == true) {
+        alert("Any of the data Empty");
+      }
+      else
+      {
+        jQuery.ajax({
+          url: '/path/to/file',
+          type: "post",
+          dataType: "json",
+          data: finalWorkDetail,
+        })
+        .done(function() {
+          console.log("success");
+        })
+        .fail(function() {
+          console.log("error");
+        })
+        .always(function() {
+          console.log("complete");
+        });
+      }
+    }
+
+    // THIS FUNCTION CHECKS FOR COMPLETE DATA AND SENDS THE INTERNSHIP DETAIL OF PROFILE SECTION IN JASON FORMAT
+    function sendInternshipDetail() {
+      var checkEmpty = false; // Check weather all the data is filled to perform further action
+      for (let item in finalInternshipDetail) {
+        if (finalInternshipDetail[item] == "" || finalInternshipDetail[item] == null) {
+          checkEmpty = true;
+        }
+      }
+      if (checkEmpty == true) {
+        alert("Any of the data Empty");
+      }
+      else
+      {
+        jQuery.ajax({
+          url: '/path/to/file',
+          type: "post",
+          dataType: "json",
+          data: finalInternshipDetail,
+        })
+        .done(function() {
+          console.log("success");
+        })
+        .fail(function() {
+          console.log("error");
+        })
+        .always(function() {
+          console.log("complete");
+        });
+      }
+    }
+
+    // THIS FUNCTION CHECKS FOR COMPLETE DATA AND SENDS THE RESEARCH DETAIL OF PROFILE SECTION IN JASON FORMAT
+    function sendResearchDetail() {
+      var checkEmpty = false; // Check weather all the data is filled to perform further action
+      for (let item in finalResearchDetail) {
+        if (finalResearchDetail[item] == "" || finalResearchDetail[item] == null) {
+          checkEmpty = true;
+        }
+      }
+      if (checkEmpty == true) {
+        alert("Any of the data Empty");
+      }
+      else
+      {
+        jQuery.ajax({
+          url: '/path/to/file',
+          type: "post",
+          dataType: "json",
+          data: finalResearchDetail,
+        })
+        .done(function() {
+          console.log("success");
+        })
+        .fail(function() {
+          console.log("error");
+        })
+        .always(function() {
+          console.log("complete");
+        });
+      }
+    }
+
+    // THIS FUNCTION CHECKS FOR COMPLETE DATA AND SENDS THE ADDITIONAL DETAIL OF PROFILE SECTION IN JASON FORMAT
+    function sendAdditionalDetail() {
+      var checkEmpty = false; // Check weather all the data is filled to perform further action
+      for (let item in finalAdditionalDetail) {
+        if (finalAdditionalDetail[item] == "" || finalAdditionalDetail[item] == null) {
+          checkEmpty = true;
+        }
+      }
+      if (checkEmpty == true) {
+        alert("Any of the data Empty");
+      }
+      else
+      {
+        jQuery.ajax({
+          url: '/path/to/file',
+          type: "post",
+          dataType: "json",
+          data: finalAdditionalDetail,
+        })
+        .done(function() {
+          console.log("success");
+        })
+        .fail(function() {
+          console.log("error");
+        })
+        .always(function() {
+          console.log("complete");
+        });
+      }
+    }
+
+    // THIS FUNCTION CALL AL THE OTHER SENDING FUNCTION ON CLICK OF SUBMIT DETAIL FUNCTION IN PROFILE SECTION
+    function sendDetails() {
+      sendScoreDetail();
+      sendAcademicDetail();
+      sendWorkDetail();
+      sendInternshipDetail();
+      sendResearchDetail();
+      sendAdditionalDetail();
     }

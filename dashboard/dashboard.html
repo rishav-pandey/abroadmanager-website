@@ -878,7 +878,7 @@
               </div> <!-- #more-info -->
               <hr>
               <div id="submitBtn">
-                <button onclick="sendData();" >Submit Details</button>
+                <button onclick="sendDetails();" >Submit Details</button>
               </div>
             </div> <!-- #profile-card -->
           </div> <!-- #profile -->
@@ -1098,10 +1098,10 @@
 				</div>
 				<div class="footer-list">
 
-  							<p><a href="">General Discussions</a><br></p>
-  							<p><a href="">University Discussions</a><br></p>
-  							<p><a href="">Room-mate finder</a><br></p>
-  							<p><a href="">Personal Dashboard</a><br></p>
+				<p><a href="">General Discussions</a><br></p>
+				<p><a href="">University Discussions</a><br></p>
+				<p><a href="">Room-mate finder</a><br></p>
+				<p><a href="">Personal Dashboard</a><br></p>
 				</div>
 			</div>
 
@@ -1111,10 +1111,10 @@
 				</div>
 				<div class="footer-list">
 
-							<p><a href="">About Us</a><br></p>
-  							<p><a href="">Contact Us</a><br></p>
-  							<p><a href="">Privacy Policy</a><br></p>
-  							<p><a href="">Terms of Use</a><br></p>
+			<p><a href="">About Us</a><br></p>
+				<p><a href="">Contact Us</a><br></p>
+				<p><a href="">Privacy Policy</a><br></p>
+				<p><a href="">Terms of Use</a><br></p>
 				</div>
 			</div>
 
@@ -1124,55 +1124,6 @@
   <script src="../js/jquery-2.1.4.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
   <script src="../js/script.js"></script>
-  <script src="../dashboard/dashboard.js"></script>
-  <script>
-    function opensection(event, divName) {
-      var i, mycontent, contentlink;
-      mycontent = document.getElementsByClassName("mycontent");
-      for (i = 0; i < mycontent.length; i++) {
-        mycontent[i].style.display = "none";
-      }
-
-      contentlink = document.getElementsByClassName("contentlink");
-      for (i = 0; i < contentlink.length; i++) {
-        contentlink[i].className = contentlink[i].className.replace(" active", "");
-      }
-
-      document.getElementById(divName).style.display = "block";
-      event.currentTarget.className += " active";
-    }
-
-    document.getElementById("defaultOpen").click();
-
-    // FOR DISPLAYING OF DIFFERENT SCORE-CARDS
-    function openScore(event, cardName) {
-      var tabLink, tabContent;
-      tabContent = document.getElementsByClassName("tabContent");
-      for (i = 0; i < tabContent.length; i++) {
-        tabContent[i].style.display = "none";
-      }
-
-      tabLink = document.getElementsByClassName("tabLink");
-      for (i = 0; i < tabLink.length; i++) {
-        tabLink[i].className = tabLink[i].className.replace(" active", "");
-      }
-
-      document.getElementById(cardName).style.display = "block";
-      event.currentTarget.className += " active";
-    }
-
-  // display of university detail on click of button
-  function university() {
-    $('#university-detail').css("display", "block");
-  }
-
-  $('#university-detail').on('mouseover', function () {
-    $('#edit').css("display", "block");
-  });
-
-  $('#university-detail').on('mouseout', function () {
-    $('#edit').css("display", "none");
-  });
-</script>
+  <script src="dashboard.js"></script>
 </body>
 </html>
