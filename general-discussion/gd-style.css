@@ -1,0 +1,152 @@
+#innerbanner1 {
+	font-size:12px;
+	height: 140px;
+	background-color:rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 0.0);
+}
+#main-screen{
+	position:relative;
+}
+#screen{
+	 position:absolute;
+    bottom: 0;
+    background: rgba(172, 57, 172, 0.8);
+    color: #f1f1f1;
+    width: 100%;
+    height:800px;
+}
+#sheet {
+
+	text-align: center;
+	padding: 100px 40px 120px 40px;
+	text-transform: uppercase;
+}
+
+.container{
+	margin-bottom:50px;
+}
+
+.button button {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-size: 13px;
+	width: 300px;
+  text-transform: uppercase;
+  border: 2px solid #FF8DB2;
+  padding: 20px 40px 20px 40px;
+  border-radius: 5px;
+  font-family: brandon-grotesque,'Helvetica',sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #02b3e4;
+  transform: perspective(1px) translateZ(0); /*for hover effect*/
+  box-shadow: 0 0 1px transparent;
+  transition-duration: 0.5s;
+  background-color: #fff;
+}
+
+.button button:hover {
+	transform: scale(1.05);
+	color: #fff;
+	background-color: #FF8DB2;
+}
+
+/***###*** MEDIA QUERIES ***###***/
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+#uni-box{
+	margin-top:-100px;
+}
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	#innerbanner1 {
+		height: 150px;
+	}
+	#main-screen{
+		height:100%;
+	}
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+	#innerbanner1 {
+		height: 150px;
+	}
+
+	.button button {
+		width: 200px;
+	}
+	#main-screen{
+		height:100%;
+	}
+
+
+}
+
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+	#innerbanner1 {
+		height: 100px;
+	}
+
+	#general h1 {
+		font-size: 1.8em;
+	}
+
+	#general h2 {
+		font-size: 1.5em;
+	}
+	#main-screen{
+		height:100%;
+	}
+
+}
+
+/********** Large Mobile devices only **********/
+@media (max-width: 450px) {
+  #general {
+  	margin: 30px 20px 50px 20px;
+	height:750px;
+  }
+  #main-screen{
+		height:100%;
+	}
+	#sheet{
+	padding:0px 40px 100px 40px;
+}
+.container{
+	margin-top:50px;
+	margin-bottom:50px;
+}
+}
+
+/********** Medium Mobile devices only **********/
+@media (max-width: 380px) {
+
+}
+
+/********** small Mobile devices only (eg: Iphone 4, ) **********/
+@media (max-width: 330px) {
+
+  .button button {
+  	width: 250px;
+  }
+  #main-screen, #screen{
+		height:100%;
+	}
+	#sheet{
+		padding-top:0;
+		padding-left:30px;
+		padding-right:30px;
+
+	}
+
+}
