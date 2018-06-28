@@ -2,7 +2,6 @@ $(document).ready(function() {
 	// navigation onmouseover
 	$('.dropdown1').on('mouseover', function () {
 		$('#nav-list > li.dropdown1').addClass("open");
-
 	})
 
 	$('.dropdown1').on('mouseout', function () {
@@ -26,6 +25,14 @@ $(document).ready(function() {
   $('.dropdown3').on('mouseout', function () {
     $('#nav-list > li.dropdown3').removeClass("open");
   })
+
+  $('.navbar-toggle').on('click', function() {
+    document.getElementById("myNav").style.width = "100%";
+  });
+
+   $('.closebtn').on('click', function() {
+    document.getElementById("myNav").style.width = "0%";
+  });
 
 	// Login Page
 	$('.form').find('input, textarea').on('keyup blur focus', function (e) {

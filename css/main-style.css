@@ -14,6 +14,65 @@ transition: all 250ms ease-in-out;}
   outline: none;
 }
 
+a:hover {
+  text-decoration: none !important;
+}
+
+.overlay a:hover {
+  color: #02b3e4 !important;
+  text-decoration: none !important;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #02b3e4;
+    display: block;
+    transition: 0.3s;
+  text-transform: uppercase;
+  line-height:40px;
+  word-spacing:5px;
+}
+
+.overlay .closebtn {
+  color: black;
+    position: absolute;
+    top: 20px;
+    right: 50%;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size-adjust:auto;
+    top: 15px;
+    right: 50%;
+  }
+}
+
 input {
   color: black !important;
 }
@@ -25,7 +84,7 @@ input {
 
 .white{
   background-color:white;
-  color: #4289EF;
+  color: #02b3e4;
 }
 .topnav a {
   float:right;
@@ -40,7 +99,7 @@ input {
 
 .topnav: scroll{
   background-color:white;
-  color: #4289EF;
+  color: #02b3e4;
 }
 .topnav a:hover{
   color:white;
@@ -78,7 +137,7 @@ input {
 
 #header-nav .navbar-toggle {
   border: 2px solid #02b3e4;
-  background-color: transparent;
+  background-color: #fff;
   color: #02b3e4;
 }
 
@@ -94,7 +153,7 @@ input {
   letter-spacing:5px;
   font-size: 1.1em;
   text-transform: uppercase;
-  text-shadow: 0.5px 0.5px 0.5px #4289EF;
+  text-shadow: 0.5px 0.5px 0.5px #02b3e4;
   margin-top: 0;
   margin-bottom: 0;
   color:#ffffff;
@@ -171,54 +230,6 @@ input {
 
 #login-btn {
   padding: 0px;
-}
-
-
-.overlay {
-    height: 0;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(255, 255, 255);
-    background-color: rgba(255, 255, 255, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
-}
-
-.overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-}
-
-.overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #4289EF;
-    display: block;
-    transition: 0.3s;
-}
-
-.overlay .closebtn {
-  color: black;
-    position: absolute;
-    top: 20px;
-    right: 50%;
-    font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size-adjust:auto;
-    top: 15px;
-    right: 50%;
-  }
 }
 
 @import url(https://fonts.googleapis.com/css?family=Istok+Web);
