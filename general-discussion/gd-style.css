@@ -6,6 +6,9 @@
 }
 #main-screen{
 	position:relative;
+  height: 800px;
+  background-image: url('../images/alexis-brown-85793-unsplash.jpg');
+  background-size: 100% 100%;
 }
 #screen{
 	 position:absolute;
@@ -67,9 +70,6 @@
 	#innerbanner1 {
 		height: 150px;
 	}
-	#main-screen{
-		height:100%;
-	}
 
 }
 
@@ -82,9 +82,6 @@
 
 	.button button {
 		width: 200px;
-	}
-	#main-screen{
-		height:100%;
 	}
 
 
@@ -104,9 +101,6 @@
 	#general h2 {
 		font-size: 1.5em;
 	}
-	#main-screen{
-		height:100%;
-	}
 
 }
 
@@ -116,29 +110,34 @@
   	margin: 30px 20px 50px 20px;
 	height:750px;
   }
-  #main-screen{
-		height:100%;
-	}
 	#sheet{
 	padding:0px 40px 100px 40px;
-}
-.container{
-	margin-top:50px;
-	margin-bottom:50px;
-}
+  }
+  .container{
+  	margin-top:50px;
+  	margin-bottom:50px;
+  }
+
+  .button button {
+    width: 100%;
+  }
 }
 
 /********** Medium Mobile devices only **********/
 @media (max-width: 380px) {
 
+  .button button {
+    width: 100%;
+  }
 }
 
 /********** small Mobile devices only (eg: Iphone 4, ) **********/
 @media (max-width: 330px) {
 
   .button button {
-  	width: 250px;
+    width: 100%;
   }
+
   #main-screen, #screen{
 		height:100%;
 	}

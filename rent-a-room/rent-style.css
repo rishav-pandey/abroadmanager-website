@@ -27,6 +27,7 @@ margin-top:2%;
 
 #main-screen {
   background-image: url('../images/christian-koch-79679-unsplash.jpg');
+  background-size: 100%;
   height: 800px;
 }
 
@@ -183,6 +184,15 @@ margin-top:2%;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+#rent-box {
+    margin: 20px;
+    font-size: 1.0em;
+  }
+
+  #search-button button {
+    font-size: 4vw;
+  }
 }
 
 /********** Large Mobile devices only **********/
@@ -206,8 +216,7 @@ margin-top:2%;
   }
 
   #search-box input {
-    width: 150%;
-    margin-left: -15px;
+    width: 120%;
   }
 
   #rent-box h1 {
@@ -223,7 +232,10 @@ margin-top:2%;
 	margin: 50px 100px;
 	}
 
-}
+    #search-button button {
+    font-size: 4vw;
+  }
+
 }
 
 /********** Medium Mobile devices only **********/
@@ -232,11 +244,16 @@ margin-top:2%;
 @media (max-width: 380px) {
 
   #screen{
-  background-image: url('../images/christian-koch-79679-unsplashCrop3.jpg');
-  height: 800px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+    background-image: url('../images/christian-koch-79679-unsplashCrop3.jpg');
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #search-button button {
+    font-size: 4vw;
+  }
+
 }
 
 /********** small Mobile devices only (eg: Iphone 4, ) **********/
@@ -251,4 +268,13 @@ margin-top:2%;
 #main-section{
 	margin-top:0px;
 }
+
+  #search-button button {
+    font-size: 4vw;
+  }
+
+#search-box input {
+    width: 100%;
+  }
+
 }

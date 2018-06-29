@@ -22,7 +22,7 @@
   transform: scale(1.05);
 }
 
-.navbar-collapse {
+#header-nav {
     box-shadow: 5px 3px 25px 0 #aba;
     background-color: #fff;
 }
