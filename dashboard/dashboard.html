@@ -242,17 +242,19 @@
                                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                                   <h4 class="modal-title">GRE SCORES</h4>
                                 </div>
-                                <div class="modal-body">
-                                  <label>Verbal Score:</label><br>
-                                  <input id="greVerbalScoreValue" type="number" name="gre-verbal" min="130" max="170" placeholder="130-170"><br><br>
-                                  <label>Quantitative Score:</label><br>
-                                  <input id="greQuantitativeScoreValue" type="number" name="gre-quantitative" min="130" max="170" placeholder="130-170"><br><br>
-                                  <label>Analytical Writing:</label><br>
-                                  <input id="greAnalyticalScoreValue" type="number" name="ger-analytical" min="0" max="6" placeholder="0-6">
-                                </div>
-                                <div class="modal-footer" style="text-align: left;">
-                                  <button type="button" onclick="greScore();" data-dismiss="modal">SAVE</button>
-                                </div>
+                                  <form action="" method="post">
+                                    <div class="modal-body">
+                                      <label>Verbal Score:</label><br>
+                                      <input id="greVerbalScoreValue" required="required" type="number" name="gre-verbal" min="130" max="170" placeholder="130-170"><br><br>
+                                      <label>Quantitative Score:</label><br>
+                                      <input id="greQuantitativeScoreValue" required="required" type="number" name="gre-quantitative" min="130" max="170" placeholder="130-170"><br><br>
+                                      <label>Analytical Writing:</label><br>
+                                      <input id="greAnalyticalScoreValue" required="required" type="number" name="ger-analytical" min="0" max="6" placeholder="0-6">
+                                    </div>
+                                    <div class="modal-footer" style="text-align: left;">
+                                      <button type="submit" onclick="greScore();">SAVE</button>
+                                    </div>
+                                  </form>
                               </div> <!-- .modal-content -->
                             </div>
                           </div> <!-- #greModal -->
@@ -906,14 +908,16 @@
               <hr>
               <h3 style="margin-bottom: 50px;">Tell us your requirements and we will contact you.</h3>
               <div class="row">
-                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                  <textarea></textarea>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                  <div style="text-align: center;">
-                    <button>send</button>
+                <form action="" method="post">
+                  <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <textarea required="required"></textarea>
                   </div>
-                </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div style="text-align: center;">
+                      <button type="submit">send</button>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div> <!-- #document-card -->
           </div>
@@ -954,36 +958,36 @@
                 </div>
               </div>
               <hr>
-                <form style="margin: 20px;">
-                  <h4>Applicant Details:</h4>
-                  <label for="name">Name: &nbsp;</label> <br>
-                  <input type="text" name="name" placeholder="Full Name"><br>
-                  <label for="contact">Contact: &nbsp;</label> <br>
-                  <input type="text" name="contact" placeholder=""><br>
-                  <label for="birthdate">BirthDate: &nbsp;</label> <br>
-                  <input type="text" name="birthdate" placeholder="DD/MM/YYYY"><br>
-                  <label for="profile">Profile: &nbsp;</label> <br>
-                  <input type="text" name="profile" placeholder=""><br>
-                  <h4>Co-Applicant Details:</h4>
-                  <label for="full-name">Full Name: &nbsp;</label> <br>
-                  <input type="text" name="full-name" placeholder="Full Name"><br>
-                  <label for="annual-income">Annual Income: &nbsp;</label> <br>
-                  <input type="text" name="annual-income" placeholder=""><br>
-                  <label for="relationship">Relationship: &nbsp;</label> <br>
-                  <input type="text" name="relationship" placeholder=""><br>
-                  <label for="collateral-detail">Collateral details: &nbsp;</label> <br>
-                  <input type="text" name="collateral-detail" placeholder=""><br>
-                  <label for="will-provide-collateral">Will You Provide Collateral: &nbsp;</label> <br>
-                  <input style="height: auto; width: auto;" type="radio" name="will-provide-collateral" placeholder="" value="yes" required><span>Yes</span>
-                  <input style="height: auto; width: auto;" type="radio" name="will-provide-collateral" value="no" required><span>No</span><br>
-                  <label for="collateral-type">Collateral Type: &nbsp;</label> <br>
-                  <input type="text" name="collateral-type" placeholder=""><br>
-                  <label for="estimated-value">Estimated Value: &nbsp;</label> <br>
-                  <input type="number" name="estimated-value" placeholder=""><br>
-                </form>
+              <form action="" method="post" style="margin: 20px;">
+                <h4>Applicant Details:</h4>
+                <label for="name">Name: &nbsp;</label> <br>
+                <input required="required" type="text" name="name" placeholder="Full Name"><br>
+                <label for="contact">Contact: &nbsp;</label> <br>
+                <input required="required" type="text" name="contact" placeholder=""><br>
+                <label for="birthdate">BirthDate: &nbsp;</label> <br>
+                <input required="required" type="text" name="birthdate" placeholder="DD/MM/YYYY"><br>
+                <label for="profile">Profile: &nbsp;</label> <br>
+                <input required="required" type="text" name="profile" placeholder=""><br>
+                <h4>Co-Applicant Details:</h4>
+                <label for="full-name">Full Name: &nbsp;</label> <br>
+                <input required="required" type="text" name="full-name" placeholder="Full Name"><br>
+                <label for="annual-income">Annual Income: &nbsp;</label> <br>
+                <input required="required" type="text" name="annual-income" placeholder=""><br>
+                <label for="relationship">Relationship: &nbsp;</label> <br>
+                <input required="required" type="text" name="relationship" placeholder=""><br>
+                <label for="collateral-detail">Collateral details: &nbsp;</label> <br>
+                <input required="required" type="text" name="collateral-detail" placeholder=""><br>
+                <label for="will-provide-collateral">Will You Provide Collateral: &nbsp;</label> <br>
+                <input required="required" style="height: auto; width: auto;" type="radio" name="will-provide-collateral" placeholder="" value="yes" required><span>Yes</span>
+                <input required="required" style="height: auto; width: auto;" type="radio" name="will-provide-collateral" value="no" required><span>No</span><br>
+                <label for="collateral-type">Collateral Type: &nbsp;</label> <br>
+                <input required="required" type="text" name="collateral-type" placeholder=""><br>
+                <label for="estimated-value">Estimated Value: &nbsp;</label> <br>
+                <input required="required" type="number" name="estimated-value" placeholder=""><br>
                 <div style="text-align: center;">
-                  <button>Submit</button>
+                  <button type="submit">Submit</button>
                 </div>
+              </form>
             </div>
           </div>
           <div id="interest" class="mycontent">
@@ -1019,27 +1023,27 @@
                     <form>
                       <div class="uni-detail">
                         <label for="sel1">University Name: &nbsp;</label>
-                        <input type="text" name="">
+                        <input required="required" type="text" name="">
                       </div>
                       <hr>
                       <div class="uni-detail">
                         <label for="sel1">Program: &nbsp;</label>
-                        <input type="text" name="">
+                        <input required="required" type="text" name="">
                       </div>
                       <hr>
                       <div class="uni-detail">
                         <label for="sel1">Applied on: &nbsp;</label>
-                        <input type="date" name="">
+                        <input required="required" type="date" name="">
                       </div>
                       <hr>
                       <div class="uni-detail">
                         <label for="sel1">Review started on: &nbsp;</label>
-                        <input type="date" name="date">
+                        <input required="required" type="date" name="date">
                       </div>
                       <hr>
                       <div class="uni-detail">
                         <label for="sel1">Decision reviewed on: &nbsp;</label>
-                        <input type="date" name="date">
+                        <input required="required" type="date" name="date">
                       </div>
                       <hr>
                       <div class="uni-detail">
@@ -1050,12 +1054,11 @@
                           <option>Reject</option>
                         </select>
                       </div>
-                      <hr>
-                    </form>
-                  </div>
-                  <div class="modal-footer" style="text-align: center;">
-                    <button type="button" data-dismiss="modal" onclick="university()">SAVE</button>
-                  </div>
+                    </div>
+                    <div class="modal-footer" style="text-align: center;">
+                      <button type="submit" onclick="university()">SAVE</button>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
