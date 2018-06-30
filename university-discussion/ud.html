@@ -232,22 +232,23 @@
     $(window).on('scroll', function(){
     var scroll = $(window).scrollTop();
     if (scroll > 0) {
-      $("#header-nav").css({"background-color":"white"});
-      $("#header-nav h1").css("color" , "#02b3e4");
-      $("#header-nav a").css("color" , "#02b3e4");
-      $("#header-nav button").css("color" , "#f1f1f1");
-      $("#header-nav button").css("background-color" , "#fff");
-      $('.dropdown-menu').css('background-color', '#fff');
-      $('.navbar-collapse').css("box-shadow", "5px 3px 25px 0 #aba");
+   $("#header-nav").css({"background-color":"white"});
+     $("#header-nav h1").css("color" , "#02b3e4");
+   $("#header-nav a").css("color" , "#02b3e4");
+     $("#header-nav button").css("color" , "#f1f1f1");
+     $("#header-nav button").css("background-color" , "#02b3e4");
+     $("#navbar-collapse-1").css("background-color" , "white");
+     $(".dropdown-menu").css("background-color", "white");
     }
-    else if(scroll <= 0){
-      $('.navbar-collapse').css("box-shadow", "none");
-      $("#header-nav").css("background-color" , "transparent");
-      $("#header-nav h1").css("color" , "#f1f1f1");
-      $("#header-nav a").css("color" , "#f1f1f1");
-      $("#header-nav button").css("background-color" , "#fff");
-      $("#header-nav button").css("color" , "#02b3e4");
-      $('.dropdown-menu').css('background-color', 'transparent');
+  else if(scroll <= 0){
+  $("#header-nav").css("background-color" , "transparent");
+    $("#header-nav h1").css("color" , "#f1f1f1");
+    $("#header-nav a").css("color" , "#f1f1f1");
+    $("#header-nav button").css("background-color" , "####");
+    $("#header-nav button").css("color" , "#fff");
+    $("#navbar-collapse-1").css("background-color", "transparent");
+    $(".dropdown-menu").css("background-color", "transparent");
+
   }
   });
   </script>

@@ -20,77 +20,68 @@
 <body>
 
 <div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:#4289EF; left:47%; margin-top:50px;">&times;</a>
-  <div class="overlay-content">
-    <a href="dashboard/dashboard.html">Dashboard</a>
-    <a href="general-discussion/gd.html">General Discussions</a>
-    <a href="university-discussion/ud.html">University Specific Discussions</a>
-    <a href="roommate-finder/roommate-search.html">Rommate Finder</a>
-    <a href="rent-a-room/rent.html">Rent A Room</a>
-    <a href="authenticate/login.html">
-    <button style="background-color:#f2f2f2; color:#4289EF;border-radius:7px; padding:14px 16px; width:220px; left:40%;transform: perspective(1px) translateZ(0); box-shadow: 0 0 1px transparent; transition-duration: 0.5s;">LOGIN / SIGNUP</button></a>
+    <a href="javascript:void(0)" class="closebtn" style="color:#02b3e4; left:47%; margin-top:50px;">&times;
+    </a>
+    <div class="overlay-content">
+      <a href="dashboard/dashboard.html">Dashboard</a>
+      <a href="general-discussion/gd.html">General Discussions</a>
+      <a href="university-discussion/ud.html">University Specific Discussions</a>
+      <a href="roommate-finder/roommate-search.html">Rommate Finder</a>
+      <a href="rent-a-room/rent.html">Rent A Room</a>
+      <a href="authenticate/login.html">
+        <button style="background-color:#f2f2f2; color:#02b3e4;border-radius:7px; padding:14px 16px; width:220px; left:40%;transform: perspective(1px) translateZ(0); box-shadow: 0 0 1px transparent; transition-duration: 0.5s;">
+          LOGIN / SIGNUP
+        </button>
+      </a>
+    </div>
   </div>
-</div>
 
 <section>
     <section id="innerbanner2" role="banner">
     <header>
-      <div class="header-content clearfix">
-        <nav id="header-nav" class="navbar-fixed-top" style="width: 100vw; height:70px;">
-            <div class="container-fluid">
-              <div class="navbar-header">
-                <a href="index.html" class="visible-lg visible-sm visible-md pull-left">
-                  <div style="margin-top:5px;" id="logo-img" alt="Logo Image"></div>
+      <div class="header-content cleafix">
+        <nav id="header-nav" class="navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <div class="navbar-brand">
+                <a href="../index.html">
+                  <h1>Abroad Manager</h1>
                 </a>
-                <div class="navbar-brand">
-                  <a href="index.html">
-                    <h1 style="padding-top:10px;">Abroad Manager</h1>
+              </div>
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  aria-expanded="false" style="margin-right:20px;">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div> <!-- navbar-header -->
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+              <ul id="nav-list" class="nav navbar-nav navbar-right">
+                <li>
+                  <a href="#">Dashboard</a>
+                </li>
+                <li class="dropdown dropdown1">
+                  <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Ask Anything <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="general-discussion/gd.html">General Discussions</a></li>
+                    <li><a href="university-discussion/ud.html">University Specific Discussions</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="roommate-finder/roommate-search.html">Room-mate Finder</a>
+                </li>
+                <li>
+                  <a href="rent-a-room/rent.html">Rent a Room</a>
+                </li>
+                <li>
+                  <a href="#" id="notification"><span class="fa fa-bell"></span></a>
+                </li>
+                <li>
+                  <a href="authenticate/login.html" id="login-btn">
+                    <button> <i class="fa fa-graduation-cap"></i> Login/ Signup</button>
                   </a>
-                </div>
-
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  aria-expanded="false" onclick="openNav()" style="bottom:40px;">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-              </div> <!-- navbar-header -->
-
-              <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                <ul id="nav-list" class="nav navbar-nav navbar-right">
-                  <li>
-                    <a href="dashboard/dashboard.html">Dashboard</a>
-                  </li>
-                  <li>
-                    <li class="dropdown show">
-                        <a class="btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Ask Anything
-                        </a>
-
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color:transparent">
-
-                            <li><a class="dropdown-item" href="general-discussion/gd.html" style="white-space:nowrap; font-size:12px; color:rgb(241, 241, 241)">General discussions</a></li>
-                            <li><a class="dropdown-item" href="university-discussion/ud.html" style="white-space:nowrap; font-size:12px; color:rgb(241, 241, 241)">University Specific discussions</a></li>
-
-                        </ul>
-                    </li>
-                  </li>
-
-
-                  <li>
-                    <a href="roommate-finder/roommate-search.html">Room-mate Finder</a>
-                  </li>
-                  <li>
-                    <a href="rent-a-room/rent.html">Rent a Room</a>
-                  </li>
-                  <li>
-                    <a href="#" id="notification"><span class="fa fa-bell"></span></a>
-                  </li>
-                  <li>
-                  <a href="authenticate/login.html" style="padding-top: 0px;"><button style="background-color:#f2f2f2; color:#4289EF; margin-top:0px; margin-right:20px; padding-left:5px;"><i class="fa fa-graduation-cap" style="padding-right: 20px;"></i>Login/Signup</button>
-                    </a>
-                  </li>
-                </ul>
+                </li>
+              </ul>
             </div>
           </div> <!-- container-fluid -->
         </nav>
@@ -250,6 +241,11 @@
   </footer>
 </section>
 
+<script src="../js/jquery-2.1.4.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/script.js"></script>
+<script src="dashboard.js"></script>
+
 <script>
     //function to change the color of navbar while scrolling
   $(window).on('scroll', function(){
@@ -267,8 +263,8 @@
   $("#header-nav").css("background-color" , "transparent");
     $("#header-nav h1").css("color" , "#f1f1f1");
     $("#header-nav a").css("color" , "#f1f1f1");
-    $("#header-nav button").css("background-color" , "#f2f2f2");
-    $("#header-nav button").css("color" , "#4289EF");
+    $("#header-nav button").css("background-color" , "####");
+    $("#header-nav button").css("color" , "#fff");
     $("#navbar-collapse-1").css("background-color", "transparent");
     $(".dropdown-menu").css("background-color", "transparent");
 
