@@ -47,6 +47,7 @@
   });
 
 // ***********************************************************************************************************
+// FOR FILLING AND SUBMITING DETAILS OF PROFILE SECTION
 
   // FOR CALCULATING AND STORING SCORE OF GRE EXAMS
   function greScore() {
@@ -641,7 +642,7 @@
     }
 
     // THIS FUNCTION CALL AL THE OTHER SENDING FUNCTION ON CLICK OF SUBMIT DETAIL FUNCTION IN PROFILE SECTION
-    function sendDetails() {
+    function sendProfileDetails() {
       sendScoreDetail();
       sendAcademicDetail();
       sendWorkDetail();
@@ -649,3 +650,46 @@
       sendResearchDetail();
       sendAdditionalDetail();
     }
+
+// FOR FILLING AND SUBMITING DETAILS OF PROFILE SECTION
+// ***********************************************************************************************************
+
+// ***********************************************************************************************************
+// FOR FILLING AND SUBMITING DETAILS OF EDIT-DOCUMENTS SECTION
+
+  finalEditDocument = {
+      details: ""
+    }
+
+function sendEditDocumentDetails() {
+  // if ($('editDocument').val() == "" || $('editDocument').val() == null) {
+  //   alert($('editDocument').val());
+  // }
+  var editDocument = document.getElementById('editDocumentValue').value;
+  if (editDocument == "") {
+    alert("Fill all the Details to Proceed Further!");
+  }
+  else
+  {
+    finalEditDocument.details = editDocument;
+    jQuery.ajax({
+      url: '/path/to/file',
+      type: "post",
+      dataType: "json",
+      data: finalEditDocument,
+    })
+    .done(function() {
+      console.log("success");
+    })
+    .fail(function() {
+      console.log("error");
+    })
+    .always(function() {
+      console.log("complete");
+    });
+  }
+
+}
+
+// FOR FILLING AND SUBMITING DETAILS OF EDIT-DOCUMENTS SECTION
+// ***********************************************************************************************************
