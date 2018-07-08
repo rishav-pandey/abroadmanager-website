@@ -14,7 +14,9 @@ transition: all 250ms ease-in-out;}
   outline: none;
 }
 
-
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+  background-color: transparent !important;
+}
 
 #header-nav .navbar-toggle {
   border: 2px solid #02b3e4;
