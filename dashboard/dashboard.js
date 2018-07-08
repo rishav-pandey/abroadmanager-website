@@ -323,6 +323,31 @@
     }
   }
 
+  // FOR STORING ACADEMIC DETAIL DATA ON INPUT
+  function universityDetail() {
+    var universityName =  $('#dreamuniversityNameValue').val();
+    var programName = $('#programNameValue').val();
+    var appliedDate = $('#appliedDateValue').val();
+    var reviewstartDate = $('#reviewstartDateValue').val();
+    var decisionreviewDate = $('#decisionreviewDateValue').val();
+    var currentStatus = $('#currentStatusValue').val();
+    if ((universityName != "") && (programName != "") && (appliedDate != "") && (reviewstartDate != "") && (decisionreviewDate != "") && (currentStatus != "") ) {
+
+      $('#dreamuniversityName').text(universityName);
+      $('#programName').text(programName);
+      $('#appliedDate').text(appliedDate);
+      $('#reviewstartDate').text(reviewstartDate);
+      $('#decisionreviewDate').text(decisionreviewDate);
+      $('#currentStatus').text(currentStatus);
+      $('#university-detail').css('display', 'block');
+    }
+    else
+    {
+      alert("Fill all the Details to Proceed!");
+    }
+  }
+
+  // <option disabled selected>Select current Status</option>
 
 // *************************************************************
 // OBJECT FORMAT OF DETAIL FOR SAVING AND SENDING FURTHER

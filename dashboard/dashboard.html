@@ -1016,67 +1016,57 @@
                     <h3 class="modal-title">Edit/Add the credentials</h3>
                   </div>
                   <div class="modal-body">
-                    <form>
-                      <div class="uni-detail">
-                        <label for="universityname">University Name: &nbsp;</label>
-                        <input required="required" type="text" name="universityname">
-                      </div>
-                      <hr>
-                      <div class="uni-detail">
-                        <label for="programname">Program: &nbsp;</label>
-                        <input required="required" type="text" name="programname">
-                      </div>
-                      <hr>
-                      <div class="uni-detail">
-                        <label for="applieddate">Applied on: &nbsp;</label>
-                        <input required="required" type="date" name="applieddate">
-                      </div>
-                      <hr>
-                      <div class="uni-detail">
-                        <label for="reviewstartdate">Review started on: &nbsp;</label>
-                        <input required="required" type="date" name="reviewstartdate">
-                      </div>
-                      <hr>
-                      <div class="uni-detail">
-                        <label for="decisionreviewdate">Decision reviewed on: &nbsp;</label>
-                        <input required="required" type="date" name="decisionreviewdate">
-                      </div>
-                      <hr>
-                      <div class="uni-detail">
-                        <label for="status">Current Staus: &nbsp;</label>
-                        <select class="form-control" id="sel1" name="status">
-                          <option>Pending</option>
-                          <option>Admit</option>
-                          <option>Reject</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="modal-footer" style="text-align: center;">
-                      <button type="submit" onclick="university()">SAVE</button>
-                    </div>
-                  </form>
+                    <label>UNIVERSITY NAME:</label> &nbsp;
+                    <input id="dreamuniversityNameValue" type="text" name="universityName"><br><br>
+                    <label>PROGRAM:</label> &nbsp;
+                    <input id="programNameValue" type="text" name="programName"><br><br>
+                    <label>APPLIED ON:</label> &nbsp;
+                    <input id="appliedDateValue" type="date" name="appliedDate"><br><br>
+                    <label>REVIEW STARTED ON:</label> &nbsp;
+                    <input id="reviewstartDateValue" type="date" name="reviewstartDate"><br><br>
+                    <label>DECISION REVIEWED ON:</label> &nbsp;
+                    <input id="decisionreviewDateValue" type="date" name="decisionreviewDate"><br><br>
+                    <label>CURRENT STATUS:</label> &nbsp;
+                    <select id="currentStatusValue">
+                      <option disabled selected>Select current Status</option>
+                      <option value="Pending">Pending</option>
+                      <option value="Admit">Admit</option>
+                      <option value="Reject">Reject</option>
+                    </select>
+                  </div>
+                  <div class="modal-footer" style="text-align: center;">
+                    <button type="submit" data-dismiss="modal" onclick="universityDetail();">SAVE</button>
+                  </div>
                 </div>
               </div>
             </div>
-            <hr>
             <div id="university-detail">
               <div>
-                <h1>University Name</h1>
+                <h1 id="dreamuniversityName"></h1>
+
               </div>
               <hr>
               <div id="university-info">
                 <ul>
                   <li>
-                    <span><strong>Applied On:</strong></span>
+                    <strong>Program Name:</strong>
+                    <em><strong id="programName" ></strong></em>
                   </li>
                   <li>
-                    <span><strong>Review started on:</strong></span>
+                    <strong>Applied On:</strong>
+                    <em><strong id="appliedDate" ></strong></em>
                   </li>
                   <li>
-                    <span><strong>Decision reviewed on:</strong></span>
+                    <strong>Review started on:</strong>
+                    <em><strong id="reviewstartDate" ></strong></em>
                   </li>
                   <li>
-                    <span><strong>Current Status:</strong></span>
+                    <strong>Decision reviewed on:</strong>
+                    <em><strong id="decisionreviewDate" ></strong></em>
+                  </li>
+                  <li>
+                    <strong>Current Status:</strong>
+                    <em><strong id="currentStatus" ></strong></em>
                   </li>
                 </ul>
               </div> <!-- #university-info -->

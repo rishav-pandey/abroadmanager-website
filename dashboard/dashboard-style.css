@@ -498,20 +498,6 @@ textarea {
 	text-transform: uppercase;
 }
 
-.uni-detail {
-	font-family:Cursive;
-	font-size:18px;
-}
-
-.uni-detail input {
-	border-radius: 5px;
-	border: 1px solid #ccc;
-}
-
-.uni-detail input:hover {
-	border: 1px solid #02b3e4;
-}
-
 .form-control {
     display: block;
     width: 200px;
