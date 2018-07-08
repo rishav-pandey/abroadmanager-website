@@ -2,6 +2,7 @@ $(document).ready(function() {
 	// navigation onmouseover
 	$('.dropdown1').on('mouseover', function () {
 		$('#nav-list > li.dropdown1').addClass("open");
+    console.log('Hello');
 	})
 
 	$('.dropdown1').on('mouseout', function () {
