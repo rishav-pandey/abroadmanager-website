@@ -296,7 +296,7 @@ section{
   box-sizing: border-box;
 }
 body, figure {
-  margin: 0; background: #101010;
+  margin: 0; background: #fff;
   font-family: Istok Web, sans-serif;
   font-weight: 100;
 }
