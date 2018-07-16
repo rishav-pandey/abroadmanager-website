@@ -1,0 +1,214 @@
+ *{
+	box-sizing: border-box;
+	font-family: Open Sans,sans-serif;
+}
+p{
+	color:black;
+}
+.navbar-brand h1 {
+    color: #02b3e4;
+} 
+
+.dropdown-menu {
+  background-color: #fff;
+}
+
+#nav-list >li > a, .dropdown-menu > li > a {
+    color: #02b3e4;
+}
+
+.dropdown-menu > li > a:hover {
+  color: #02b3e4;
+  transform: scale(1.05);
+}
+
+#header-nav {
+    box-shadow: 5px 3px 25px 0 #aba;
+    background-color: #fff;
+}
+
+#nav-list button {
+  background-color: #02b3e4;
+  border: none;
+  color: #fff;
+  transform: perspective(1px) translateZ(0); /*for hover effect*/
+  box-shadow: 0 0 1px transparent;
+  transition-duration: 0.5s;
+  font-size: 15px;
+}
+
+
+#innerbanner1 {
+    background-color:white;
+
+}
+.navbar-brand h1 {
+  letter-spacing:5px;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  text-shadow: 0.5px 0.5px 0.5px #4289EF;
+  margin-top: 0;
+  margin-bottom: 0;
+  color:#02b3e4;
+  font-weight: 0.5em;
+}
+
+#nav-list >li > a {
+  color: #02b3e4;
+}
+
+#innerbanner1 {
+		background-color:white;
+}
+
+
+body {
+  background-color: #fff;
+}
+
+#innerbanner {
+  height: 140px;
+}
+
+.primary {
+    border-top-color: #02b3e4 !important;
+}
+
+.post {
+    margin: 30px 0px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 15px 20px;
+    border-top: 4px solid;
+    background: white;
+    box-shadow: 0px 0px 15px 0px #ccc;
+}
+
+#ans-card {
+  position: relative;
+  padding: 0px 12px;
+  margin: 10px 0px;
+  border: 1px solid #ebeff1;
+  border-bottom: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.15);
+}
+
+.author-name {
+  margin: 5px 5px 5px 0px;
+  font-size: 18px;
+  display: inline-block;
+  color: #02b3e4;
+}
+
+.author-date {
+  display: inline-block;
+  margin: 2px 0px;
+  font-size: 14px;
+}
+
+.ans-post {
+  padding: 5px;
+}
+
+#ans-detail {
+  margin: 0 -12px;
+  background-color: rgba(0, 10, 245, 0.09);
+  border-top: 1px solid #ebeff1;
+}
+
+#ans-detail .button {
+  float: left;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  vertical-align: top;
+  border-right: 1px solid #cdd7dc;
+  border-bottom: 1px solid #cdd7dc;
+}
+
+#ans-detail .button--fill {
+  width: calc(100% - 140px);
+  padding: 0 10px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  color: #89989c;
+}
+
+.post__comments {
+    display: block;
+    margin-top: 40px;
+    border-top: 1px solid #cdd7dc;
+    padding: 15px;
+}
+
+.comment-group .post {
+  position: relative;
+    padding: 0px 12px;
+    margin: 10px 0px;
+    border: 1px solid #ebeff1;
+    border-bottom: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.15);
+}
+
+.comment-form {
+  height: 100%;
+}
+
+.comment-form textarea {
+  width: 100%;
+  height: 4em;
+  resize: none;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #cdd7dc;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px #ebeff1 inset;
+}
+
+#ans-detail .button i.solid {
+  display: none;
+}
+#ans-detail .button:not(.comment):active i {
+  transform: scale(1.2);
+}
+#ans-detail .button:not(.comment-trigger):hover, #ans-detail .button:not(.comment-trigger).active {
+  background-color: #FFF;
+  cursor: pointer;
+}
+#ans-detail .button:not(.comment-trigger):hover i.solid, #ans-detail .button:not(.comment-trigger).active i.solid {
+  display: inline-block;
+}
+#ans-detail .button:not(.comment-trigger):hover i:not(.solid), #ans-detail .button:not(.comment-trigger).active i:not(.solid) {
+  display: none;
+}
+#ans-detail .button:not(.comment-trigger):hover.button--approve, #ans-detail .button:not(.comment-trigger).active.button--approve {
+  color: #5fbc71;
+}
+
+#ans-detail .button:not(.comment-trigger):hover.button--deny, #ans-detail .button:not(.comment-trigger).active.button--deny {
+  color: #f26f54;
+}
+#ans-detail .button--flag {
+  width: 60px;
+  border-right: none;
+  font-weight: 400;
+}
+#ans-detail .button--flag i {
+  margin-right: 5px;
+}
+#ans-detail .button--fill {
+  width: calc(100% - 140px);
+  padding: 0 10px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  color: #89989c;
+}
+
+.button.comment-trigger span {
+  display: none;
+}

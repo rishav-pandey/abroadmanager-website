@@ -1,0 +1,735 @@
+* {
+	box-sizing: border-box;
+	font-family: Open Sans,sans-serif;
+}
+
+.navbar-brand h1 {
+    color: #02b3e4;
+}
+
+.dropdown-menu {
+  background-color: #fff;
+}
+
+#nav-list >li > a, .dropdown-menu > li > a {
+    color: #02b3e4;
+}
+
+.dropdown-menu > li > a:hover {
+  color: #02b3e4;
+  transform: scale(1.05);
+}
+
+#header-nav {
+    box-shadow: 5px 3px 25px 0 #aba;
+    background-color: #fff;
+}
+
+#nav-list button {
+  background-color: #02b3e4;
+  border: none;
+  color: #fff;
+  transform: perspective(1px) translateZ(0); /*for hover effect*/
+  box-shadow: 0 0 1px transparent;
+  transition-duration: 0.5s;
+  font-size: 15px;
+}
+
+
+#innerbanner1 {
+    background-color:white;
+
+}
+.navbar-brand h1 {
+  letter-spacing:5px;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  text-shadow: 0.5px 0.5px 0.5px #4289EF;
+  margin-top: 0;
+  margin-bottom: 0;
+  color:#02b3e4;
+  font-weight: 0.5em;
+}
+
+#nav-list >li > a {
+  color: #02b3e4;
+}
+
+.modal-body .col-lg-6 {
+  padding: 0px;
+}
+
+.modal-body, .modal-footer {
+  padding: 15px 30px;
+}
+
+#academicDisplay, #workDisplay, #internshipDisplay, #researchDisplay, #additionalDisplay {
+  display: none;
+}
+
+#submitBtn {
+  text-align: center;
+}
+
+#submitBtn button {
+  padding: 5px 10px;
+  border: 2px solid #02b3e4;
+  background-color: #fff;
+  color: #02b3e4;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+#submitBtn button:hover {
+  background-color: #02b3e4;
+  color: #fff;
+}
+
+#nav-list1 {
+	margin-top: 10px;
+	font-size: 13px;
+	text-align: center;
+}
+
+
+#nav-list1 >li > a {
+	text-align: center;
+	color: #02b3e4;
+	transform: perspective(1px) translateZ(0); /*for hover effect*/
+	box-shadow: 0 0 1px transparent;
+	transition-duration: 0.5s;
+	text-transform: uppercase;
+}
+
+
+
+#nav-list1 button {
+	text-transform: uppercase;
+	background-color: #02b3e4;
+	color:white;
+	padding: 13px 30px 13px 30px;
+	margin-left: 20px;
+	border-radius: 5px;
+	border: 0;
+	margin-top:-15px;
+	transform: perspective(1px) translateZ(0); /*for hover effect*/
+	box-shadow: 0 0 1px transparent;
+	transition-duration: 0.5s;
+	font-size: 15px;
+}
+
+
+
+#nav-list1 #notification { 	/*WILL DISPLAY, WHEN LOGGED IN*/
+	display: none;
+}
+#innerbanner1 {
+		background-color:white;
+
+}
+.navbar-brand h1 {
+	letter-spacing:5px;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	text-shadow: 0.5px 0.5px 0.5px #4289EF;
+	margin-top: 0;
+	margin-bottom: 0;
+	color:#02b3e4;
+	font-weight: 0.5em;
+}
+
+#innerbanner3 {
+	 font-size:12px;
+	height: 140px;
+	background-color:rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 0.0);
+}
+
+#main-dashboard {
+	position: relative;
+	background-color:rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 0.0);
+	padding-bottom: 20px;
+	color:black;
+}
+
+
+#main-screen::before {
+	content: '';
+  width: 100%;
+  height: 600px;
+  z-index: -1000;
+  background: linear-gradient(to bottom right,#afa,#eafbff);
+  transform-origin: left bottom;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  transform: skew(0deg,-15deg);
+}
+
+#main-screen::after {
+  content: '';
+  width: 100%;
+  height: 500px;
+  z-index: -1000;
+  background: rgba(145,218,238,.1);
+  transform-origin: bottom right;
+  position: absolute;
+  top: 47%;
+  left: 0;
+  transform: skew(0deg,15deg);
+}
+
+#column-1 {
+	width: 20%;
+	padding: 0px;
+	background: linear-gradient(to bottom right,#afa,#eafbff);
+}
+
+#column-2 {
+	width: 80%;
+}
+
+#left-panel {
+	text-transform: uppercase;
+	box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.2), 0 4px 25px 0px rgba(0, 0, 0, 0.2), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	font-weight: 300;
+	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.0);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: inherit;
+}
+
+.absolute {
+  position: absolute;
+  top: 650px;
+  width: 100%;
+}
+
+#panel-logo {
+	padding: 10px;
+}
+
+#side-bar-content li button {
+	border-radius: 5px;
+	border:2px solid #02b3e4;
+	background-color: #fff;
+	box-shadow: 10px 10px 30px -10px rgba(0, 0, 0, 0.42);
+	color: #02b3e4;
+	font-weight: 500;
+	padding: 5px 10px 5px 30px;
+	width: 100%;
+	text-align: left;
+}
+
+#side-bar-content li button:hover {
+	background-color: #eee;
+}
+
+#side-bar-content li button.active {
+	background-color: #02b3e4;
+	color: #fff;
+}
+
+/*RIGHT PANEL*/
+
+#right-panel {
+	margin: 10px;
+}
+
+#feed-heading {
+  border-top: 5px solid #02b3e4;
+	padding: 20px;
+	margin: 20px;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+}
+#your-feed h3, p{
+	color:black;
+}
+.question-card{
+  border-top: 5px solid #02b3e4;
+	margin: 20px;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+	padding: 20px;
+}
+
+#question-button {
+	text-align: center;
+}
+
+#question-button button {
+	font-size: 2em;
+	padding: 5px 10px 5px 10px;
+	border: 2px solid #02b3e4;
+	border-radius: 5px;
+	color: #02b3e4;
+	background-color: #fff;
+	transform: perspective(1px) translateZ(0); /*for hover effect*/
+	transition-duration: 0.5s;
+}
+
+#question-button button:hover {
+	color: #fff;
+	background-color: #02b3e4;
+	transform: scale(1.05);
+}
+
+#profile-card {
+	margin: 30px;
+	text-transform: uppercase;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+	padding: 20px;
+
+}
+
+#profile-card p {
+	font-size: 2em;
+}
+
+#test-name {
+  width: 100%;
+}
+
+#drop {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+#drop button {
+  width: 200px;
+  font-size: 1.5em;
+  border: 2px solid #02b3e4;
+  color: #02b3e4;
+  background-color: #fff;
+}
+
+.modal-footer button {
+  border: 2px solid #02b3e4 !important;
+}
+
+
+#dropdown1 {
+  margin: 0px;
+  margin-top: -2px;
+  width: 100%;
+  border: 2px solid #02b3e4;
+  text-align: center;
+  font-size: 1.2em;
+  padding-top: 5px;
+  background-color: #fff;
+}
+
+#dropdown1 ul {
+  list-style-type: none;
+  margin-left: -40px;
+  padding-left: -10px;
+}
+
+#dropdown1 li:hover {
+  cursor: pointer;
+  background-color: #eee;
+  width: 100%;
+}
+
+#test-score {
+  position: relative;
+}
+
+.edit-score {
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
+  font-size: 2em;
+  color: #02b3e4;
+  cursor: pointer;
+}
+
+.edit-displayData {
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  font-size: 2em;
+  color: #02b3e4;
+  cursor: pointer;
+}
+
+#test-score h3{
+  margin-left: 20px;
+}
+
+.score, .displayData {
+  box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.14);
+  margin: 10px;
+  padding: 10px;
+}
+
+.score li, .displayData ul {
+  margin-left: -20px;
+}
+
+.score li, .displayData li {
+  padding: 10px 0px;
+}
+
+.tabContent {
+  display: none;
+}
+
+#academic-detail, #work-detail, #internship-detail, #research-detail, #more-detail {
+  margin: 10px;
+}
+
+#academic-detail span, .modal-footer button, #work-detail span, #internship-detail span, #research-detail span, #more-detail span{
+  font-size: 1.2em;
+  color: #02b3e4 !important;
+  padding: 5px 10px;
+  background-color: #fff !important;
+  cursor: pointer;
+}
+
+#document-card{
+	margin: 20px;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+	padding: 20px;
+	text-transform: uppercase;
+}
+
+textarea {
+	width: 100%;
+	height: 200px;
+}
+
+
+#document-card button {
+	margin-top: 25%;
+	padding: 5px 20px 5px 20px;
+	font-size: 1.8em;
+	border-radius: 5px;
+	border: 2px solid #02b3e4;
+	color: #eee;
+	background-color: #02b3e4;
+	text-transform: uppercase;
+}
+
+#document-card button:hover {
+	color: #fff;
+	font-weight: 600;
+}
+
+#finance-card {
+	margin: 20px;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+	padding: 20px;
+	text-transform: uppercase;
+}
+
+.financer-img {
+	margin: 20px;
+	border-radius: 50px;
+	background-color: #eee;
+	padding: 10px;
+}
+
+#finance-card h4 {
+	margin: 20px;
+	font-style: italic;
+	font-weight: 500;
+}
+
+#finance-card label {
+	padding: 10px;
+}
+
+#finance-card input {
+	border-radius: 5px;
+	margin-left: 10px;
+	border: 1px solid #aaa;
+	height: 30px;
+	width: 30%;
+	padding: 10px;
+}
+
+#finance-card button {
+	margin-top: 25px;
+	padding: 5px 20px 5px 20px;
+	font-size: 1.8em;
+	border-radius: 5px;
+	border: 2px solid #02b3e4;
+	color: #eee;
+	background-color: #02b3e4;
+	text-transform: uppercase;
+}
+
+#finance-card button:hover {
+	color: #fff;
+	font-weight: 600;
+}
+
+.interest-card {
+	margin: 20px;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+	padding: 20px;
+	text-transform: uppercase;
+}
+
+#university {
+	margin: 20px;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+	padding: 20px;
+	text-transform: uppercase;
+}
+
+.uni-detail {
+	font-family:Cursive;
+	font-size:18px;
+}
+
+.uni-detail input {
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+.uni-detail input:hover {
+	border: 1px solid #02b3e4;
+}
+
+.form-control {
+    display: block;
+    width: 200px;
+}
+
+
+select, input {
+    padding: 1px;
+    text-transform: uppercase;
+    width: 200px;
+    height: 34px;
+    font-family:Cursive;
+    border-radius:5px;
+    font-size:20px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+select:hover, input:hover {
+    border: 1px solid #02b3e4;
+}
+
+#university button {
+	font-size: 2em;
+    padding: 5px 20px;
+    border: 2px solid #02b3e4;
+    border-radius: 5px;
+    color: #02b3e4;
+    background-color: #fff;
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.5s;
+}
+
+#university button:hover {
+	color: #fff;
+	background-color: #02b3e4;
+	transform: scale(1.05);
+}
+
+#university-detail {
+	box-shadow: 2px 2px 40px 0 rgba(0, 0, 0, 0.14);
+	margin: 10px;
+	padding: 10px;
+	width: 500px;
+	display: none;
+	position: relative;
+}
+
+#university-info li {
+	margin: 20px 0px;
+	font-size: 1.2em;
+}
+
+#edit {
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	background-color: rgb(0, 0, 0);
+	opacity: 0.8;
+	width: 100%;
+	height: 100%;
+}
+
+#edit button {
+	color: #fff;
+	background-color: #02b3e4;
+	padding: 5px 30px;
+	position: absolute;
+	top: 40%;
+	left: 37%;
+}
+
+
+#university-info ul{
+	list-style-type: none;
+	margin-left: -20px;
+}
+
+
+/***###*** MEDIA QUERIES ***###***/
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	#column-1 {
+		width: 30%;
+		padding: 0px;
+	}
+
+	#column-2 {
+		width: 70%;
+	}
+
+	#finance-card input {
+		width: 40%;
+	}
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+	#column-1 {
+		width: 35%;
+		padding: 0px;
+	}
+
+	#column-2 {
+		width: 65%;
+	}
+
+	#finance-card input {
+		width: 50%;
+	}
+
+}
+
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+
+	#innerbanner3 {
+		height: 100px;
+	}
+
+	#column-1 {
+		width: 35%;
+		padding: 0px;
+	}
+
+	#column-2 {
+		width: 65%;
+	}
+
+	#finance-card input {
+		width: 100%;
+	}
+
+}
+
+/********** Large Mobile devices only (ON SCREEN ROTATION) **********/
+
+@media (max-width: 640px) {
+
+}
+
+/********** Large Mobile devices only **********/
+@media (max-width: 450px) {
+
+	#column-1 {
+		width: 100%;
+		padding: 0px;
+	}
+
+	#column-2 {
+		width: 100%;
+	}
+
+	#finance-card input {
+		width: 100%;
+	}
+
+	#feed-heading, .question-card, #profile-card, .interest-card, #university, #document-card, #finance-card {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	#university-detail {
+		width: 100%;
+		margin: 0px;
+		font-size: 1em;
+	}
+
+}
+
+/********** Medium Mobile devices only **********/
+@media (max-width: 380px) {
+
+	#column-1 {
+		width: 100%;
+		padding: 0px;
+	}
+
+	#column-2 {
+		width: 100%;
+	}
+
+	#finance-card input {
+		width: 100%;
+	}
+
+}
+
+/********** small Mobile devices only (eg: Iphone 4, ) **********/
+@media (max-width: 330px) {
+
+	#column-1 {
+		width: 100%;
+		padding: 0px;
+	}
+
+	#column-2 {
+		width: 100%;
+	}
+
+	#finance-card input {
+		width: 100%;
+	}
+
+}

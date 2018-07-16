@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109559667-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-109559667-1');
+    </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <title>Abroad Manager | Dashboard</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="images" href="../resources/images/logo_favi.ico">
+  <link rel="stylesheet" href="../resources/lib/css/bootstrap.css">
+  <link rel="stylesheet" href="../resources/css/main-style.css">
+  <link rel="stylesheet" href="../resources/css/dashboard-style.css">
+  <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="bootd.css">
+</head>
+<body>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" style="color:#02b3e4; left:47%; margin-top:50px;">&times;
+    </a>
+    <div class="overlay-content">
+      <a href="../views/dashboard.html">Dashboard</a>
+      <a href="../views/gd.html">General Discussions</a>
+      <a href="../views/ud.html">University Specific Discussions</a>
+      <a href="../views/roommate-search.html">Rommate Finder</a>
+      <a href="../views/rent.html">Rent A Room</a>
+      <a href="../views/login.html">
+        <button style="background-color:#f2f2f2; color:#02b3e4;border-radius:7px; padding:14px 16px; width:220px; left:40%;transform: perspective(1px) translateZ(0); box-shadow: 0 0 1px transparent; transition-duration: 0.5s;">
+          LOGIN / SIGNUP
+        </button>
+      </a>
+    </div>
+  </div>
+<div id="main-screen">
+<div id="screen">
+ <section id="innerbanner1" role="banner">
+    <header>
+      <div class="header-content cleafix">
+        <nav id="header-nav" class="navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+			<a href="../index.html" class="visible-lg visible-sm visible-md pull-left">
+                <div id="../resources/images/logo-img" alt="Logo Image"></div>
+                </a>
+              <div class="navbar-brand">
+                <a href="../index.html">
+                  <h1>Abroad Manager</h1>
+                </a>
+              </div>
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  aria-expanded="false" style="margin-right:20px; bottom:10px;">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div> <!-- navbar-header -->
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+              <ul id="nav-list" class="nav navbar-nav navbar-right">
+                <li>
+                  <a href="../views/dashboard.html">Dashboard</a>
+                </li>
+                <li class="dropdown dropdown1">
+                  <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Ask Anything <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="../views/gd.html">General Discussions</a></li>
+                    <li><a href="../views/ud.html">University Specific Discussions</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="../views/roommate-search.html">Room-mate Finder</a>
+                </li>
+                <li>
+                  <a href="../views/rent.html">Rent a Room</a>
+                </li>
+                <li>
+                  <a href="#" id="notification"><span class="fa fa-bell"></span></a>
+                </li>
+                <li>
+                  <a href="../views/login.html" id="login-btn">
+                    <button> <i class="fa fa-graduation-cap"></i> Login/ Signup</button>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div> <!-- container-fluid -->
+        </nav>
+      </div>
+    </header>
+  </section>
+
+  <div id="main-dashboard" class="container-fluid" style="margin-top:80px;">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="column-1">
+        <div id="left-panel">
+          <div id="panel-logo" style="text-align: center;">
+            <img src="../resources/images/user.png" alt="user-image" width="70px" height="70px">
+            <h3 style="color:#fff;">John Doe</h3>
+          </div>
+          <hr>
+          <div id="side-bar-content">
+            <ul class="nav">
+              <li class="active"><a href="#"><button id="defaultOpen" class="contentlink" onclick="opensection(event, 'your-feed')"><i class="material-icons">explore</i> &nbsp; Your Feed</button></a></li>
+              <li><a href="#"><button class="contentlink" onclick="opensection(event, 'profile')"><i class="material-icons">perm_identity</i> &nbsp; Profile</button></a></li>
+              <li><a href="#"><button class="contentlink" onclick="opensection(event, 'edit-documents')"><i class="material-icons">description</i> &nbsp; Edit Documents</button></a></li>
+              <li><a href="#"><button class="contentlink" onclick="opensection(event, 'financial-help')"><i class="material-icons">help</i> &nbsp; Financial Help</button></a></li>
+              <li><a href="#"><button class="contentlink" onclick="opensection(event, 'interest')"><i class="material-icons">dashboard</i> &nbsp; Interests</button></a></li>
+              <li><a href="#"><button class="contentlink" onclick="opensection(event, 'university')"><i class="material-icons">account_balance</i> &nbsp; Universities</button></a></li>
+            </ul>
+          </div>
+        </div> <!-- #left-panel -->
+      </div>
+      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12" id="column-2">
+        <div id="right-panel">
+          <div id="your-feed" class="mycontent">
+            <div id="feed-heading">
+              <h3>Hello John Doe,</h3>
+              <h1 style=" text-align:center;">Welcome to your personalised Dashboard</h1>
+            </div>
+            <h2 style="margin-left: 20px; color:#fff;">Below are the questions asked from you in discussion forum</h2>
+            <div id="question-card1" class="question-card">
+              <h3>University X Group</h3>
+              <hr>
+              <p><strong>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</strong></p>
+              <p>Posted in <strong>Lorem Ipsum</strong> on</p>
+              <p><strong><time>08 march, 2018</time></strong></p>
+              <hr>
+              <div id="question-button">
+                <button>CHECK IT</button>
+              </div>
+            </div>
+            <div id="question-card2" class="question-card">
+              <h3>University X Group</h3>
+              <hr>
+              <p><strong>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</strong></p>
+              <p>Posted in <strong>Lorem Ipsum</strong> on</p>
+              <p><strong><time>08 march, 2018</time></strong></p>
+              <hr>
+              <div id="question-button">
+                <button>CHECK IT</button>
+              </div>
+            </div>
+            <div id="question-card3" class="question-card">
+              <h3>University X Group</h3>
+              <hr>
+              <p><strong>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</strong></p>
+              <p>Posted in <strong>Lorem Ipsum</strong> on</p>
+              <p><strong><time>08 march, 2018</time></strong></p>
+              <hr>
+              <div id="question-button">
+                <button>CHECK IT</button>
+              </div>
+            </div>
+          </div> <!-- #your-feed -->
+          <div id="profile" class="mycontent">
+            <div id="profile-card">
+              <h1>MANAGE YOUR PROFILES HERE</h1>
+              <hr>
+              <div id="test">
+                <h2>Test Scores:</h2>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div id="test-name">
+                      <h4>SELECT COURSE (SELECT ONE):</h4>
+                      <br>
+                      <div id="test-list">
+                        <div id="drop">
+                          <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+                            Course Score <i class="caret"></i>
+                          </button>
+                          <div class="dropdown-menu dropdown-filter" id="dropdown1">
+                            <ul>
+                              <li>
+                                <span id="default" class="tabLink" onclick="openScore(event, 'gre')">GRE SCORES</span>
+                              </li>
+                              <li>
+                                <span class="tabLink" onclick="openScore(event, 'gmat')">GMAT SCORES</span>
+                              </li>
+                              <li>
+                                <span class="tabLink" onclick="openScore(event, 'toefl')">TOEFL SCORES</span>
+                              </li>
+                              <li>
+                                <span class="tabLink" onclick="openScore(event, 'ielts')">IELTS SCORES</span>
+                              </li>
+                              <li>
+                                <span class="tabLink" onclick="openScore(event, 'lsat')">LSAT SCORES</span>
+                              </li>
+                              <li>
+                                <span class="tabLink" onclick="openScore(event, 'mcat')">MCAT SCORES</span>
+                              </li>
+                              <li>
+                                <span class="tabLink" onclick="openScore(event, 'sat')">SAT SCORES</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div> <!-- #test-list -->
+                    </div> <!-- #test-name -->
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div id="test-score">
+                      <div id="gre" class="tabContent">
+                        <h4>Your Score in GRE</h4>
+                        <div class="score">
+                            <ul>
+                              <li>
+                                <strong>Verbal Score:</strong>
+                                <em><strong id="greVerbalScore" ></strong></em>
+                              </li>
+                              <li>
+                                <strong>Quantitative Score:</strong>
+                                <em><strong id="greQuantitativeScore" ></strong></em>
+                              </li>
+                              <li>
+                                <strong>Analytical Writing:</strong>
+                                <em><strong id="greAnalyticalScore" ></strong></em>
+                              </li>
+                            </ul>
+                            <div>
+                              <strong>Total:</strong>
+                              <em><strong id="greTotalScore" ></strong></em>
+                            </div>
+                        </div>
+                        <div class="edit-score">
+                          <span class="fa fa-edit" data-toggle="modal" data-target="#greModal"></span>
+                        </div>
+                        <!-- GRE-SCORE-MODAL SECTION-->
+                        <div>
+                          <div class="modal fade" id="greModal" role="dialog">
+                            <div class="modal-dialog modal-md">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">GRE SCORES</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <label>Verbal Score:</label><br>
+                                  <input id="greVerbalScoreValue" required="required" type="number" name="gre-verbal" min="130" max="170" placeholder="130-170"><br><br>
+                                  <label>Quantitative Score:</label><br>
+                                  <input id="greQuantitativeScoreValue" required="required" type="number" name="gre-quantitative" min="130" max="170" placeholder="130-170"><br><br>
+                                  <label>Analytical Writing:</label><br>
+                                  <input id="greAnalyticalScoreValue" required="required" type="number" name="ger-analytical" min="0" max="6" placeholder="0-6">
+                                </div>
+                                <div class="modal-footer" style="text-align: left;">
+                                  <button type="submit" onclick="greScore();" data-dismiss="modal">SAVE</button>
+                                </div>
+                              </div> <!-- .modal-content -->
+                            </div>
+                          </div> <!-- #greModal -->
+                        </div>
+                      </div> <!-- #gre -->
+                      <div id="gmat" class="tabContent">
+                        <h4>Your Score in GMAT</h4>
+                        <div class="score">
+                            <ul>
+                              <li>
+                                <strong>Analytical writing assessment:</strong>
+                                <em><strong id="gmatAnalyticalScore" ></strong></em>
+                              </li>
+                              <li>
+                                <strong>Integrated reasoning:</strong>
+                                <em><strong id="gmatIntegratedScore" ></strong></em>
+                              </li>
+                              <li>
+                                <strong>Quantitative:</strong>
+                                <em><strong id="gmatQuantitativeScore" ></strong></em>
+                              </li>
+                              <li>
+                                <strong>Verbal:</strong>
+                                <em><strong id="gmatVerbalScore" ></strong></em>
+                              </li>
+                            </ul>
+                            <div>
+                              <strong>Total:</strong>
+                              <strong id="gmatTotalScore" ></strong>
+                            </div>
+                        </div>
+                        <div class="edit-score">
+                          <span class="fa fa-edit" data-toggle="modal" data-target="#gmatModal"></span>
+                        </div>
+                        <!-- GMAT-SCORE-MODAL SECTION-->
+                        <div>
+                          <div class="modal fade" id="gmatModal" role="dialog">
+                            <div class="modal-dialog modal-md">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">GRE SCORES</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <label>Analytical writing assessment:</label><br>
+                                  <input id="gmatAnalyticalScoreValue" type="number" name="gmat-analytical" min="0" max="6" placeholder="0-6"><br><br>
+                                  <label>Integrated reasoning:</label><br>
+                                  <input id="gmatIntegratedScoreValue" type="number" name="gmat-integrated" min="1" max="8" placeholder="1-8"><br><br>
+                                  <label>Quantitative:</label><br>
+                                  <input id="gmatQuantitativeScoreValue" type="number" name="gmat-quantitative" min="0" max="60" placeholder="0-60"><br><br>
+                                  <label>Verbal:</label><br>
+                                  <input id="gmatVerbalScoreValue" type="number" name="gmat-verbal" min="0" max="60" placeholder="0-60">
+                                </div>
+                                <div class="modal-footer" style="text-align: left;">
+                                  <button type="button" onclick="gmatScore();" data-dismiss="modal">SAVE</button>
+                                </div>
+                              </div> <!-- .modal-content -->
+                            </div>
+                          </div> <!-- #gmatModal -->
+                        </div>
+                      </div> <!-- #gmat -->
+                      <div id="toefl" class="tabContent">
+                        <h4>Your Score in TOEFL</h4>
+                        <div class="score">
+                            <ul>
+                              <li>
+                                <strong>Reading:</strong>
+                                <strong id="toeflReadingScore" ></strong>
+                              </li>
+                              <li>
+                                <strong>Listening:</strong>
+                                <strong id="toeflListeningScore" ></strong>
+                              </li>
+                              <li>
+                                <strong>Speaking:</strong>
+                                <strong id="toeflSpeakingScore" ></strong>
+                              </li>
+                              <li>
+                                <strong>Writing:</strong>
+                                <strong id="toeflWritingScore" ></strong>
+                              </li>
+                            </ul>
+                            <div>
+                              <strong>Total:</strong>
+                              <strong id="toeflTotalScore" ></strong>
+                            </div>
+                        </div>
+                        <div class="edit-score">
+                          <span class="fa fa-edit" data-toggle="modal" data-target="#toeflModal"></span>
+                        </div>
+                        <!-- TOEFL-SCORE-MODAL SECTION-->
+                        <div>
+                          <div class="modal fade" id="toeflModal" role="dialog">
+                            <div class="modal-dialog modal-md">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">TOEFL SCORES</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <label>Reading:</label><br>
+                                  <input id="toeflReadingScoreValue" type="number" name="toefl-reading" max="30" placeholder="0-30"><br><br>
+                                  <label>Listening:</label><br>
+                                  <input id="toeflListeningScoreValue" type="number" name="toefl-listening" max="30" placeholder="0-30"><br><br>
+                                  <label>Speaking:</label><br>
+                                  <input id="toeflSpeakingScoreValue" type="number" name="toefl-speaking" max="30" placeholder="0-30"><br><br>
+                                  <label>Writing:</label><br>
+                                  <input id="toeflWritingScoreValue" type="number" name="toefl-writing" max="30" placeholder="0-30">
+                                </div>
+                                <div class="modal-footer" style="text-align: left;">
+                                  <button type="button" onclick="toeflScore();" data-dismiss="modal">SAVE</button>
+                                </div>
+                              </div> <!-- .modal-content -->
+                            </div>
+                          </div> <!-- #toeflModal -->
+                        </div>
+                      </div> <!-- #toefl -->
+                      <div id="ielts" class="tabContent">
+                        <h4>Your Score in IELTS</h4>
+                        <div class="score">
+                            <ul>
+                              <li>
+                                <strong>Reading:</strong>
+                                <strong id="ieltsReadingScore" ></strong>
+                              </li>
+                              <li>
+                                <strong>Listening:</strong>
+                                <strong id="ieltsListeningScore" ></strong>
+                              </li>
+                              <li>
+                                <strong>Speaking:</strong>
+                                <strong id="ieltsSpeakingScore" ></strong>
+                              </li>
+                              <li>
+                                <strong>Writing:</strong>
+                                <strong id="ieltsWritingScore" ></strong>
+                              </li>
+                            </ul>
+                            <div>
+                              <strong>Total:</strong>
+                              <strong id="ieltsTotalScore" ></strong>
+                            </div>
+                        </div>
+                        <div class="edit-score">
+                          <span class="fa fa-edit" data-toggle="modal" data-target="#ieltsModal"></span>
+                        </div>
+                        <!-- IELTS-SCORE-MODAL SECTION-->
+                        <div>
+                          <div class="modal fade" id="ieltsModal" role="dialog">
+                            <div class="modal-dialog modal-md">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">IELTS SCORES</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <label>Reading:</label><br>
+                                  <input id="ieltsReadingScoreValue" type="number" name="ielts-reading" min="1" max="9" placeholder="1-9"><br><br>
+                                  <label>Listening:</label><br>
+                                  <input id="ieltsListeningScoreValue" type="number" name="ielts-listening" min="1" max="9" placeholder="1-9"><br><br>
+                                  <label>Speaking:</label><br>
+                                  <input id="ieltsSpeakingScoreValue" type="number" name="ielts-speaking" min="1" max="9" placeholder="1-9"><br><br>
+                                  <label>Writing:</label><br>
+                                  <input id="ieltsWritingScoreValue" type="number" name="ielts-writing" min="1" max="9" placeholder="1-9">
+                                </div>
+                                <div class="modal-footer" style="text-align: left;">
+                                  <button type="button" onclick="ieltsScore();" data-dismiss="modal">SAVE</button>
+                                </div>
+                              </div> <!-- .modal-content -->
+                            </div>
+                          </div> <!-- #ieltsModal -->
+                        </div>
+                      </div> <!-- #ielts -->
+                      <div id="lsat" class="tabContent">
+                        <h4>Your Score in LSAT</h4>
+                        <div class="score">
+                            <ul>
+                              <li>
+                                <strong>Total Score:</strong>
+                                <strong id="lsatTotalScore" ></strong>
+                              </li>
+                            </ul>
+                        </div>
+                        <div class="edit-score">
+                          <span class="fa fa-edit" data-toggle="modal" data-target="#lsatModal"></span>
+                        </div>
+                        <!-- LSAT-SCORE-MODAL SECTION-->
+                        <div>
+                          <div class="modal fade" id="lsatModal" role="dialog">
+                            <div class="modal-dialog modal-md">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">LSAT SCORES</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <label>Total Score:</label><br>
+                                  <input id="lsatTotalScoreValue" type="number" name="lsat-score" min="120" max="180" placeholder="120-180">
+                                </div>
+                                <div class="modal-footer" style="text-align: left;">
+                                  <button type="button" onclick="lsatScore();" data-dismiss="modal">SAVE</button>
+                                </div>
+                              </div> <!-- .modal-content -->
+                            </div>
+                          </div> <!-- #lsatModal -->
+                        </div>
+                      </div> <!-- #lsat -->
+                      <div id="mcat" class="tabContent">
+                        <h4>Your Score in MCAT</h4>
+                        <div class="score">
+                            <ul>
+                              <li>
+                                <strong>Total Score:</strong>
+                                <strong id="mcatTotalScore" ></strong>
+                              </li>
+                            </ul>
+                        </div>
+                        <div class="edit-score">
+                          <span class="fa fa-edit" data-toggle="modal" data-target="#mcatModal"></span>
+                        </div>
+                        <!-- MCAT-SCORE-MODAL SECTION-->
+                        <div>
+                          <div class="modal fade" id="mcatModal" role="dialog">
+                            <div class="modal-dialog modal-md">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">MCAT SCORES</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <label>Total Score:</label><br>
+                                  <input id="mcatTotalScoreValue" type="number" name="mcat-score" min="472" max="528" placeholder="472-528">
+                                </div>
+                                <div class="modal-footer" style="text-align: left;">
+                                  <button type="button" onclick="mcatScore();" data-dismiss="modal">SAVE</button>
+                                </div>
+                              </div> <!-- .modal-content -->
+                            </div>
+                          </div> <!-- #mcatModal -->
+                        </div>
+                      </div> <!-- #mcat -->
+                      <div id="sat" class="tabContent">
+                        <h4>Your Score in SAT</h4>
+                        <div class="score">
+                            <ul>
+                              <li>
+                                <strong>Evidence-Based Reading and Writing Section:</strong>
+                                <strong id="satEBRWSScore" ></strong>
+                              </li>
+                              <li>
+                                <strong>Math Section:</strong>
+                                <strong id="satMathScore" ></strong>
+                              </li>
+                              <li>
+                                <strong>SAT Essay:</strong>
+                                <strong id="satEssayScore" ></strong>
+                              </li>
+                            </ul>
+                            <div>
+                              <strong>Total:</strong>
+                              <strong id="satTotalScore" ></strong>
+                            </div>
+                        </div>
+                        <div class="edit-score">
+                          <span class="fa fa-edit" data-toggle="modal" data-target="#satModal"></span>
+                        </div>
+                        <!-- SAT-SCORE-MODAL SECTION-->
+                        <div>
+                          <div class="modal fade" id="satModal" role="dialog">
+                            <div class="modal-dialog modal-md">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">SAT SCORES</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <label>Evidence-Based Reading and Writing Section:</label><br>
+                                  <input id="satEBRWSScoreValue" type="number" name="sat-read-write" min="200" max="800" placeholder="200-800"><br><br>
+                                  <label>Math Section:</label><br>
+                                  <input id="satMathScoreValue" type="number" name="sat-math" min="200" max="800" placeholder="200-800" placeholder="200-800"><br><br>
+                                  <label>SAT Essay:</label><br>
+                                  <input id="satEssayScoreValue" type="number" name="sat-essay" min="2" max="8" placeholder="2-8">
+                                </div>
+                                <div class="modal-footer" style="text-align: left;">
+                                  <button type="button" onclick="satScore(); addScoreDetail();" data-dismiss="modal">SAVE</button>
+                                </div>
+                              </div> <!-- .modal-content -->
+                            </div>
+                          </div> <!-- #satModal -->
+                        </div>
+                      </div> <!-- #sat -->
+                    </div> <!-- #test-score -->
+                  </div>
+                </div>
+              </div> <!-- #test -->
+              <hr>
+
+              <div id="academic">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <h2>Academic Qualification</h2>
+                    <div id="academic-detail">
+                      <span data-toggle="modal" data-target="#academicModal">
+                        <i class="fa fa-plus">&nbsp; Add Academic Details</i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div id="academicDisplay">
+                      <h4>Your Academic Qualification</h4>
+                      <!-- <div class="displayData">
+                        <ul>
+                          <li>
+                            <strong>University Name:</strong>
+                            <em><strong id="universityName" ></strong></em>
+                          </li>
+                          <li>
+                            <strong>From:</strong>
+                            <em><strong id="universityFrom" ></strong></em>
+                          </li>
+                          <li>
+                            <strong>To:</strong>
+                            <em><strong id="universityTo" ></strong></em>
+                          </li>
+                          <li>
+                            <strong>Degree:</strong>
+                            <em><strong id="universityDegree" ></strong></em>
+                          </li>
+                          <li>
+                            <strong>Program:</strong>
+                            <em><strong id="universityProgram" ></strong></em>
+                          </li>
+                          <li>
+                            <strong>Your Grade:</strong>
+                            <em><strong id="universityGrade" ></strong></em>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="edit-displayData">
+                        <span class="fa fa-edit" data-toggle="modal" data-target="#academicModal"></span>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+                <!-- ACADEMIC-MODAL SECTION-->
+                <div>
+                  <div class="modal fade" id="academicModal" role="dialog">
+                    <div class="modal-dialog modal-md">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">Qualification</h4>
+                        </div>
+                        <div class="modal-body">
+                          <div class="form-group">
+                            <div>
+                              <label>University Name:</label><br>
+                              <input id="universityNameValue" type="text" name="university">
+                            </div>
+                            <br>
+                            <div class="row">
+                              <div class="col-lg-6 col-xs-6">
+                                <label>From:</label><br>
+                                <input id="universityFromValue" type="date" name="">
+                              </div>
+                              <div class="col-lg-6 col-xs-6">
+                                <label>To:</label><br>
+                                <input id="universityToValue" type="date" name="">
+                              </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                              <div class="col-lg-6 col-xs-6">
+                                <label>Degree</label><br>
+                                <input id="universityDegreeValue" type="text" name="">
+                              </div>
+                              <div class="col-lg-6 col-xs-6">
+                                <label>Program</label><br>
+                                <input id="universityProgramValue" type="text" name="">
+                              </div>
+                            </div>
+                            <br>
+                            <div>
+                              <label>Enter your grade:</label><br>
+                              <input id="universityGradeValue" type="text" name="grade" placeholder="YOUR SCORE/TOTAL">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer" style="text-align: left;">
+                          <button type="button" onclick="academicDetail(); addAcademicDetail();" data-dismiss="modal">SAVE</button>
+                        </div>
+                      </div> <!-- .modal-content -->
+                    </div>
+                  </div> <!-- #academicModal -->
+                </div>
+              </div> <!-- #academic -->
+              <hr>
+
+              <div id="work">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6">
+                    <h2>Work Experience</h2>
+                    <div id="work-detail">
+                      <span data-toggle="modal" data-target="#workModal">
+                        <i class="fa fa-plus">&nbsp; Add Your Work Experience</i></span>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div id="workDisplay">
+                      <h4>Your Work Experience</h4>
+                      <div class="displayData">
+                        <ul>
+                          <li>
+                            <strong>Total Month's of Experience:</strong>
+                            <em><strong id="workMonth" ></strong></em>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="edit-displayData">
+                        <span class="fa fa-edit" data-toggle="modal" data-target="#workModal"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- WORK-MODAL SECTION-->
+                <div>
+                  <div class="modal fade" id="workModal" role="dialog">
+                    <div class="modal-dialog modal-md">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">Work Experience</h4>
+                        </div>
+                        <div class="modal-body">
+                          <label>Total months:</label><br>
+                          <input id="workMonthValue" type="number" name="work-month">
+                        </div>
+                        <div class="modal-footer" style="text-align: left;">
+                          <button type="button" onclick="workDetail(); addWorkDetail();" data-dismiss="modal">SAVE</button>
+                        </div>
+                      </div> <!-- .modal-content -->
+                    </div>
+                  </div> <!-- #workModal -->
+                </div>
+              </div> <!-- #work -->
+              <hr>
+
+              <div id="internship">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6">
+                    <h2>Internships</h2>
+                    <div id="internship-detail">
+                      <span data-toggle="modal" data-target="#internshipModal">
+                      <i class="fa fa-plus">&nbsp; Add Your Intern Works</i></span>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div id="internshipDisplay">
+                      <h4>Your Internship Details:</h4>
+                      <!-- <div class="displayData">
+                        <ul>
+                          <li>
+                            <strong>Worked As:</strong>
+                            <em><strong id="workedAs" ></strong></em>
+                          </li>
+                          <li>
+                            <strong>From:</strong>
+                            <em><strong id="workedFrom" ></strong></em>
+                          </li>
+                          <li>
+                            <strong>To:</strong>
+                            <em><strong id="workedTo" ></strong></em>
+                          </li>
+                          <li>
+                            <strong>Project URL:</strong>
+                            <em><strong id="workedProjectUrl" ></strong></em>
+                          </li>
+                          <li>
+                            <strong>Location:</strong>
+                            <em><strong id="workedLocation" ></strong></em>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="edit-displayData">
+                        <span class="fa fa-edit" data-toggle="modal" data-target="#internshipModal"></span>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+                <!-- INTERNSHIP-MODAL SECTION-->
+                <div>
+                  <div class="modal fade" id="internshipModal" role="dialog">
+                    <div class="modal-dialog modal-md">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">Your Internships</h4>
+                        </div>
+                        <div class="modal-body">
+                          <div class="form-group">
+                            <div>
+                              <label>Worked as:</label><br>
+                              <input id="workedAsValue" type="text" name="internship" placeholder="Front-End Developer">
+                            </div>
+                            <br>
+                            <div class="row">
+                              <div class="col-lg-6 col-xs-6">
+                                <label>Worked From:</label><br>
+                                <input id="workedFromValue" type="date" name="">
+                              </div>
+                              <div class="col-lg-6 col-xs-6">
+                                <label>To:</label><br>
+                                <input id="workedToValue" type="date" name="">
+                              </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                              <div class="col-lg-6 col-xs-6">
+                                <label>Project URL</label><br>
+                                <input id="workedProjectUrlValue" type="url" name="">
+                              </div>
+                              <div class="col-lg-6 col-xs-6">
+                                <label>Location:</label><br>
+                                <input id="workedLocationValue" type="text" name="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer" style="text-align: left;">
+                          <button type="button" onclick="internshipDetail(); addInternshipDetail();" data-dismiss="modal">SAVE</button>
+                        </div>
+                      </div> <!-- .modal-content -->
+                    </div>
+                  </div> <!-- #internshipModal -->
+                </div>
+              </div> <!-- internship -->
+              <hr>
+
+              <div id="research">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6">
+                    <h2>RESEARCH PAPERS/PATENTS</h2>
+                    <div id="research-detail">
+                      <span data-toggle="modal" data-target="#researchModal">
+                      <i class="fa fa-plus">&nbsp; Add Your Research Paper/Patents</i></span>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <div id="researchDisplay">
+                      <h4>Your Research Paper/Patents Details:</h4>
+                      <div class="displayData">
+                        <ul>
+                          <li>
+                            <strong>No. of Research Papers:</strong>
+                            <em><strong id="researchPaper" ></strong></em>
+                          </li>
+                          <li>
+                            <strong>No. of Patents:</strong>
+                            <em><strong id="researchPatent" ></strong></em>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="edit-displayData">
+                        <span class="fa fa-edit" data-toggle="modal" data-target="#researchModal"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- RESEARCH-MODAL SECTION-->
+                <div>
+                  <div class="modal fade" id="researchModal" role="dialog">
+                    <div class="modal-dialog modal-md">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">Research/Patents</h4>
+                        </div>
+                        <div class="modal-body">
+                          <label>NUMBER OF RESEARCH PAPERS:</label><br>
+                          <input id="researchPaperValue" type="number" name="research"><br><br>
+                          <label>NUMBER OF PATENTS:</label><br>
+                          <input id="researchPatentValue" type="number" name="research">
+                        </div>
+                        <div class="modal-footer" style="text-align: left;">
+                          <button type="button" onclick="researchDetail(); addResearchDetail();" data-dismiss="modal">SAVE</button>
+                        </div>
+                      </div> <!-- .modal-content -->
+                    </div>
+                  </div> <!-- #researchModal -->
+                </div>
+              </div> <!-- #research -->
+              <hr>
+
+              <div id="more-info">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6">
+                    <h2>Additional information</h2>
+                    <div id="more-detail">
+                      <span data-toggle="modal" data-target="#moreInfoModal">
+                      <i class="fa fa-plus">&nbsp; Add Information</i></span>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <div id="additionalDisplay">
+                      <h4>Additional Information:</h4>
+                      <div class="displayData">
+                        <ul>
+                          <li>
+                            <strong>Additional Information:</strong>
+                            <em><strong id="additionalInfo" ></strong></em>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="edit-displayData">
+                        <span class="fa fa-edit" data-toggle="modal" data-target="#moreInfoModal"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- MORE-INFO-MODAL SECTION-->
+                <div>
+                  <div class="modal fade" id="moreInfoModal" role="dialog">
+                    <div class="modal-dialog modal-md">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">More Informations</h4>
+                        </div>
+                        <div class="modal-body">
+                          <textarea id="additionalInfoValue" placeholder="Enter any additional information"></textarea>
+                        </div>
+                        <div class="modal-footer" style="text-align: left;">
+                          <button type="button" onclick="additionalDetail(); addAdditionalDetail();" data-dismiss="modal">SAVE</button>
+                        </div>
+                      </div> <!-- .modal-content -->
+                    </div>
+                  </div> <!-- #moreInfoModal -->
+                </div>
+              </div> <!-- #more-info -->
+              <hr>
+              <div id="submitBtn">
+                <button onclick="sendProfileDetails();" >Submit Details</button>
+              </div>
+            </div> <!-- #profile-card -->
+          </div> <!-- #profile -->
+
+
+          <div id="edit-documents" class="mycontent">
+            <div id="document-card">
+              <h3>Get your documents edited through the best professionals.</h3>
+              <hr>
+              <h3 style="margin-bottom: 50px;">Tell us your requirements and we will contact you.</h3>
+              <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                  <textarea id="editDocumentValue" placeholder="Enter Documents Detail to Edit information" required="required"></textarea>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                  <div style="text-align: center;">
+                    <button id="sendDetails" onclick="sendEditDocumentDetails();" >send</button>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- #document-card -->
+          </div>
+          <div id="financial-help" class="mycontent">
+            <div id="finance-card">
+              <h3>Finance your education using the help of Abroad Manager's network of partners.</h3>
+              <hr>
+              <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                  <div class="financer-img" style="text-align: center;">
+                    <img src="../images/user.png" width="60px" height="60px">
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                  <div class="financer-img" style="text-align: center;">
+                    <img src="../images/user.png" width="60px" height="60px">
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                  <div class="financer-img" style="text-align: center;">
+                    <img src="../images/user.png" width="60px" height="60px">
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                  <div class="financer-img" style="text-align: center;">
+                    <img src="../images/user.png" width="60px" height="60px">
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                  <div class="financer-img" style="text-align: center;">
+                    <img src="../images/user.png" width="60px" height="60px">
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                  <div class="financer-img" style="text-align: center;">
+                    <img src="../images/user.png" width="60px" height="60px">
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <form style="margin: 20px;">
+                <h4>Applicant Details:</h4>
+                <label for="name">Name: &nbsp;</label> <br>
+                <input required="required" type="text" name="name" placeholder="Full Name"><br>
+                <label for="contact">Contact: &nbsp;</label> <br>
+                <input required="required" type="text" name="contact" placeholder=""><br>
+                <label for="birthdate">BirthDate: &nbsp;</label> <br>
+                <input required="required" type="text" name="birthdate" placeholder="DD/MM/YYYY"><br>
+                <label for="profile">Profile: &nbsp;</label> <br>
+                <input required="required" type="text" name="profile" placeholder=""><br>
+                <h4>Co-Applicant Details:</h4>
+                <label for="full-name">Full Name: &nbsp;</label> <br>
+                <input required="required" type="text" name="full-name" placeholder="Full Name"><br>
+                <label for="annual-income">Annual Income: &nbsp;</label> <br>
+                <input required="required" type="text" name="annual-income" placeholder=""><br>
+                <label for="relationship">Relationship: &nbsp;</label> <br>
+                <input required="required" type="text" name="relationship" placeholder=""><br>
+                <label for="collateral-detail">Collateral details: &nbsp;</label> <br>
+                <input required="required" type="text" name="collateral-detail" placeholder=""><br>
+                <label for="will-provide-collateral">Will You Provide Collateral: &nbsp;</label> <br>
+                <input required="required" style="height: auto; width: auto;" type="radio" name="will-provide-collateral" placeholder="" value="yes" required><span>Yes</span>
+                <input required="required" style="height: auto; width: auto;" type="radio" name="will-provide-collateral" value="no" required><span>No</span><br>
+                <label for="collateral-type">Collateral Type: &nbsp;</label> <br>
+                <input required="required" type="text" name="collateral-type" placeholder=""><br>
+                <label for="estimated-value">Estimated Value: &nbsp;</label> <br>
+                <input required="required" type="number" name="estimated-value" placeholder=""><br>
+                <div style="text-align: center;">
+                  <button id="submit" type="submit">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div id="interest" class="mycontent">
+            <div class="interest-card">
+              <h1>Hello John Doe,</h1>
+              <hr>
+              <h3>You have Added these groups to your Interests</h3>
+            </div>
+          <div class="interest-card">
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          </div>
+          <div id="university" class="mycontent">
+            <h1>Manage all your Dream Universities here</h1>
+            <hr>
+            <div style="text-align: center;">
+              <button data-toggle="modal" data-target="#universityModal"><span class="fa fa-plus"></span> &nbsp; ADD</button>
+            </div>
+            <div class="modal fade" id="universityModal" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title">Edit/Add the credentials</h3>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="uni-detail">
+                        <label for="sel1">University Name: &nbsp;</label>
+                        <input required="required" type="text" name="">
+                      </div>
+                      <hr>
+                      <div class="uni-detail">
+                        <label for="sel1">Program: &nbsp;</label>
+                        <input required="required" type="text" name="">
+                      </div>
+                      <hr>
+                      <div class="uni-detail">
+                        <label for="sel1">Applied on: &nbsp;</label>
+                        <input required="required" type="date" name="">
+                      </div>
+                      <hr>
+                      <div class="uni-detail">
+                        <label for="sel1">Review started on: &nbsp;</label>
+                        <input required="required" type="date" name="date">
+                      </div>
+                      <hr>
+                      <div class="uni-detail">
+                        <label for="sel1">Decision reviewed on: &nbsp;</label>
+                        <input required="required" type="date" name="date">
+                      </div>
+                      <hr>
+                      <div class="uni-detail">
+                        <label for="sel1">Current Staus: &nbsp;</label>
+                        <select class="form-control" id="sel1">
+                          <option>Pending</option>
+                          <option>Admit</option>
+                          <option>Reject</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="modal-footer" style="text-align: center;">
+                      <button type="button" onclick="university()">SAVE</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div id="university-detail">
+              <div>
+                <h1>University Name</h1>
+              </div>
+              <hr>
+              <div id="university-info">
+                <ul>
+                  <li>
+                    <span><strong>Applied On:</strong></span>
+                  </li>
+                  <li>
+                    <span><strong>Review started on:</strong></span>
+                  </li>
+                  <li>
+                    <span><strong>Decision reviewed on:</strong></span>
+                  </li>
+                  <li>
+                    <span><strong>Current Status:</strong></span>
+                  </li>
+                </ul>
+              </div> <!-- #university-info -->
+              <div id="edit">
+                <button data-toggle="modal" data-target="#universityModal">EDIT </button>
+              </div>
+            </div> <!-- #university-detail -->
+          </div> <!-- #university -->
+        </div> <!-- #right-panel -->
+      </div>
+    </div> <!-- .row -->
+  </div> <!-- #main-dashboard -->
+  </div>
+  </div>
+
+  <footer style="width:100%;">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<div class="footer-content">
+					<h4>SOCIAL MEDIA</h4>
+				</div>
+				<div class="footer-list">
+  				<p><a href=""><i class="fa fa-facebook"></i>Facebook</a><br></p>
+  				<p><a href=""><i class="fa fa-twitter"></i>Twitter</a><br></p>
+  				<p><a href=""><i class="fa fa-youtube"></i>YouTube</a><br></p>
+  				<p><a href=""><i class="fa fa-linkedin"></i>Linkedln</a><br></p>
+  				<p><a href=""><i class="fa fa-instagram"></i>Instagram</a><br></p>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<div class="footer-content">
+					<h4>FEATURES</h4>
+				</div>
+				<div class="footer-list">
+
+							<p><a href="../views/gd.html">General Discussions</a><br></p>
+  							<p><a href="../views/ud.html">University Discussions</a><br></p>
+  							<p><a href="../views/roommate-search.html">Room-mate finder</a><br></p>
+  							<p><a href="../views/dashboard.html">Personal Dashboard</a><br></p>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<div class="footer-content">
+					<h4>MORE</h4>
+				</div>
+				<div class="footer-list">
+
+			<p><a href="">About Us</a><br></p>
+				<p><a href="">Contact Us</a><br></p>
+				<p><a href="">Privacy Policy</a><br></p>
+				<p><a href="">Terms of Use</a><br></p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="../resources/lib/js/jquery-2.1.4.min.js"></script>
+  <script src="../resources/lib/js/bootstrap.min.js"></script>
+  <script src="../resources/lib/js/script.js"></script>
+  <script src="../resources/js/dashboard.js"></script>
+</body>
+</html>

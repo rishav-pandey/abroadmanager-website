@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109559667-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-109559667-1');
+    </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <title>Abroad Manager | University Search For Discussion</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="images" href="../resources/images/logo_favi.ico">
+  <link rel="stylesheet" href="../resources/lib/css/bootstrap.css">
+  <link rel="stylesheet" href="../resources/css/main-style.css">
+  <link rel="stylesheet" href="../resources/css/ud-style.css">
+  <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" style="color:#02b3e4; left:47%; margin-top:50px;">&times;
+    </a>
+    <div class="overlay-content">
+     <a href="../views/dashboard.html">Dashboard</a>
+      <a href="../views/gd.html">General Discussions</a>
+      <a href="../views/ud.html">University Specific Discussions</a>
+      <a href="../views/roommate-search.html">Rommate Finder</a>
+      <a href="../views/rent.html">Rent A Room</a>
+      <a href="../views/login.html">
+        <button style="background-color:#f2f2f2; color:#02b3e4;border-radius:7px; padding:14px 16px; width:220px; left:40%;transform: perspective(1px) translateZ(0); box-shadow: 0 0 1px transparent; transition-duration: 0.5s;">
+          LOGIN / SIGNUP
+        </button>
+      </a>
+    </div>
+  </div>
+
+<div id="main-screen">
+<div id="screen">
+<div id="color-screen">
+  <section id="innerbanner2" role="banner">
+    <header>
+      <div class="header-content cleafix">
+        <nav id="header-nav" class="navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+			<a href="../index.html" class="visible-lg visible-sm visible-md pull-left">
+                <div id="logo-img" alt="Logo Image"></div>
+                </a>
+              <div class="navbar-brand">
+                <a href="../index.html">
+                  <h1>Abroad Manager</h1>
+                </a>
+              </div>
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false" style="margin-right:20px; bottom:10px;">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div> <!-- navbar-header -->
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+              <ul id="nav-list" class="nav navbar-nav navbar-right">
+                <li>
+                  <a href="../views/dashboard.html">Dashboard</a>
+                </li>
+                <li class="dropdown dropdown1">
+                  <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Ask Anything <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="../views/gd.html">General Discussions</a></li>
+                    <li><a href="#">University Specific Discussions</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="../views/roommate-search.html">Room-mate Finder</a>
+                </li>
+                <li>
+                  <a href="../views/rent.html">Rent a Room</a>
+                </li>
+                <li>
+                  <a href="#" id="notification"><span class="fa fa-bell"></span></a>
+                </li>
+                <li>
+                  <a href="../views/login.html" id="login-btn">
+                  <button> <i class="fa fa-graduation-cap"></i> Login/ Signup</button>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div> <!-- container-fluid -->
+        </nav>
+      </div>
+    </header>
+  </section> <!-- #innerbanner -->
+
+  <div id="main-section">
+    <div class="container">
+      <div id="uni-box" style="padding-top:-100px;">
+        <h2>Now you can easily discuss university-specific questions with the global community of students</h2>
+        <div id="uni-searchbox">
+          <div class="row">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+              <div id="search-icon" class="pull-left">
+                <span class="fa fa-search"></span>
+              </div>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-6">
+              <div id="search-box" style="width:100%">
+                <form method="get" action="">
+                  <input type="text" name="search-university" id="search-university" placeholder="Search for the specific university" required="true" >
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-">
+              <div id="search-button" class="pull-right">
+                <button onclick="validate()">Go</button>
+              </div>
+            </div>
+          </div>
+        </div> <!-- #uni-searchbox -->
+    </div> <!-- .container -->
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div id="selection" class="container-fluid">
+  	<div class="row" id="degree" style="width: 100%">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <center><a href="../views/university-general.html"><button>General</button></a></center>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <center><a href="../views/university-bachelor.html"><button>Bachelor</button></a></center>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <center><a href="../views/university-master.html"><button>Master</button></a></center>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <center><a href="../views/university-phd.html"><button>Ph.D</button></a></center>
+      </div>
+    </div>
+  </div>
+
+
+  <footer style="width:100%;">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<div class="footer-content">
+					<h4>SOCIAL MEDIA</h4>
+				</div>
+				<div class="footer-list">
+
+  							<p><a href=""><i class="fa fa-facebook"></i>Facebook</a><br></p>
+  							<p><a href=""><i class="fa fa-twitter"></i>Twitter</a><br></p>
+  							<p><a href=""><i class="fa fa-youtube"></i>YouTube</a><br></p>
+  							<p><a href=""><i class="fa fa-linkedin"></i>Linkedln</a><br></p>
+  							<p><a href=""><i class="fa fa-instagram"></i>Instagram</a><br></p>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<div class="footer-content">
+					<h4>FEATURES</h4>
+				</div>
+				<div class="footer-list">
+
+  							<p><a href="../views/gd.html">General Discussions</a><br></p>
+  							<p><a href="../views/ud.html">University Discussions</a><br></p>
+  							<p><a href="../views/roommate-search.html">Room-mate finder</a><br></p>
+  							<p><a href="../views/dashboard.html">Personal Dashboard</a><br></p>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<div class="footer-content">
+					<h4>MORE</h4>
+				</div>
+				<div class="footer-list">
+
+							<p><a href="">About Us</a><br></p>
+  							<p><a href="">Contact Us</a><br></p>
+  							<p><a href="">Privacy Policy</a><br></p>
+  							<p><a href="">Terms of Use</a><br></p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="../resources/lib/js/jquery-2.1.4.min.js"></script>
+  <script src="../resources/lib/js/bootstrap.min.js"></script>
+  <script src="../resources/lib/js/script.js"></script>
+  <script>
+
+  // INCREASE HEIGHT OF INNERBANNER ON CLICK OF NAVIGATION BAR
+   $('.navbar-toggle').on('click', function () {
+
+     if ($('.navbar-collapse').hasClass("collapse")) {
+       $('#innerbanner').css("height", "350px");
+
+     }
+     if ($('.navbar-collapse').hasClass("in")) {
+       $('#innerbanner').css("height", "100px");
+     }
+
+  });
+
+//function to change color and position while clicking the nav icon on small screen
+  $(".navbar-toggle").click(function(){
+		$("#main-section").toggleClass("main-position");
+	});
+
+//function to check for the null value of 'search university' input
+  function validate(){
+  	var university_name=document.getElementById('search-university').value;
+  	if(university_name==""){
+  		alert("Please enter the University name");
+  	}
+  	else{
+  		window.location.assign("unidiscuss.html");
+  	}
+  	}
+
+    $(window).on('scroll', function(){
+    var scroll = $(window).scrollTop();
+    if (scroll > 0) {
+   $("#header-nav").css({"background-color":"white"});
+     $("#header-nav h1").css("color" , "#02b3e4");
+   $("#header-nav a").css("color" , "#02b3e4");
+     $("#header-nav button").css("color" , "#f1f1f1");
+     $("#header-nav button").css("background-color" , "#02b3e4");
+     $("#navbar-collapse-1").css("background-color" , "white");
+     $(".dropdown-menu").css("background-color", "white");
+	 $(".icon-bar").css("border-color", "white");
+    }
+  else if(scroll <= 0){
+  $("#header-nav").css("background-color" , "transparent");
+    $("#header-nav h1").css("color" , "#f1f1f1");
+    $("#header-nav a").css("color" , "#f1f1f1");
+    $("#header-nav button").css("background-color" , "####");
+    $("#header-nav button").css("color" , "#fff");
+    $("#navbar-collapse-1").css("background-color", "transparent");
+    $(".dropdown-menu").css("background-color", "transparent");
+	$(".icon-bar").css("border-color", "white");
+
+  }
+  });
+  </script>
+</body>
+</html>
