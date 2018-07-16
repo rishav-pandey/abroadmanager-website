@@ -95,7 +95,8 @@ body {
 .form-card input[type="text"], .form-card input[type="url"], .form-card input[type="tel"] {
   margin-top: 5px;
   width: 80%;
-  border: #fff;
+  border: none;
+  border-bottom: 1px solid #aaa;
 }
 
 .form-card input[type="url"] {

@@ -1,9 +1,13 @@
 *{
   box-sizing: border-box;
 }
-body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-position: relative;
-transition: all 250ms ease-in-out;}
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  position: relative;
+  transition: all 250ms ease-in-out;
+  padding-top: 100px !important;
+  /* background-color: transparent !important; */
+}
 
 .row {
   margin-left: 0px !important;
@@ -12,6 +16,10 @@ transition: all 250ms ease-in-out;}
 
 * {
   outline: none;
+}
+
+input {
+  color: rgb(0, 0, 0)
 }
 
 
@@ -111,7 +119,7 @@ transition: all 250ms ease-in-out;}
 .dropdown-menu > li {
   text-align: center;
 }
- 
+
 
 
 #login-btn {
@@ -509,7 +517,7 @@ button.btnn{
   margin-left:10px;
 }
  footer{
-	 background-color:#f2f2f2; 
+	 background-color:#f2f2f2;
 	 padding-top:40px;
  }
 .footer-content{
